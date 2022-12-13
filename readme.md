@@ -2,9 +2,6 @@
 
 ![Imagem](images/logoTex.png)
 
-![GitHub forks](https://github.com/TExpertsG1/hotelg1)
-
-![Imagem HTML](HTML.png)
 
 ## Índice
 
