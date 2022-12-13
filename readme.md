@@ -55,15 +55,7 @@ Neste projeto o aluno aprenderá a desenvolver um sistema WEB de gerenciamento d
 
 ## Pessoas Desenvolvedoras do Projeto - GRUPO 1
 
-| [<img src="https://avatars.githubusercontent.com/u/10383832?v=4" width=115><br><sub>Alexandre Seugirdor Ohtten</sub>](https://github.com/ohtten) | 
-  [<img src="https://avatars.githubusercontent.com/u/117115177?v=4" width=115><br><sub>André Barbosa</sub>](https://github.com/andrebarbosatech) | 
-  [<img src="hhttps://avatars.githubusercontent.com/u/115587292?v=4" width=115><br><sub>André Rodrigues</sub>](https://github.com/alsrodriguesbr) | 
-  [<img src="https://avatars.githubusercontent.com/u/99025849?v=4" width=115><br><sub>Ângela Felini</sub>](https://github.com/angelafelini) | 
-  [<img src="https://avatars.githubusercontent.com/u/116170868?v=4" width=115><br><sub>Arthur Emiliano</sub>](https://github.com/Arthuremiliano) | 
-  [<img src="https://avatars.githubusercontent.com/u/104469512?v=4" width=115><br><sub>Bruno Alves</sub>](https://github.com/brunonnalves) | 
-  [<img src="https://avatars.githubusercontent.com/u/102254707?v=4" width=115><br><sub>Michelle Borges</sub>](https://github.com/Mikallina) | 
-  [<img src="https://avatars.githubusercontent.com/u/26072777?v=4" width=115><br><sub>Quitumba Culyssander Ferreira/sub>](https://github.com/culyssander) | 
-  [<img src="https://avatars.githubusercontent.com/u/99926147?v=4" width=115><br><sub>Zenilson Costa</sub>](https://github.com/Znilcosta) |  |
+[<img src="https://avatars.githubusercontent.com/u/10383832?v=4" width=115><br><sub>Alexandre Seugirdor Ohtten</sub>](https://github.com/ohtten) | [<img src="https://avatars.githubusercontent.com/u/117115177?v=4" width=115><br><sub>André Barbosa</sub>](https://github.com/andrebarbosatech) | [<img src="hhttps://avatars.githubusercontent.com/u/115587292?v=4" width=115><br><sub>André Rodrigues</sub>](https://github.com/alsrodriguesbr) | [<img src="https://avatars.githubusercontent.com/u/99025849?v=4" width=115><br><sub>Ângela Felini</sub>](https://github.com/angelafelini) | [<img src="https://avatars.githubusercontent.com/u/116170868?v=4" width=115><br><sub>Arthur Emiliano</sub>](https://github.com/Arthuremiliano) | [<img src="https://avatars.githubusercontent.com/u/104469512?v=4" width=115><br><sub>Bruno Alves</sub>](https://github.com/brunonnalves) | [<img src="https://avatars.githubusercontent.com/u/102254707?v=4" width=115><br><sub>Michelle Borges</sub>](https://github.com/Mikallina) | [<img src="https://avatars.githubusercontent.com/u/26072777?v=4" width=115><br><sub>Quitumba Culyssander Ferreira/sub>](https://github.com/culyssander) | [<img src="https://avatars.githubusercontent.com/u/99926147?v=4" width=115><br><sub>Zenilson Costa</sub>](https://github.com/Znilcosta) |
 | :---: | :---: | :---: |
 
 - Gabriel Duarte
