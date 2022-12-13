@@ -56,6 +56,11 @@ Neste projeto o aluno aprenderá a desenvolver um sistema WEB de gerenciamento d
 
 ## Pessoas Desenvolvedoras do Projeto - GRUPO 1
 
+# Autores
+
+| [<img src="https://avatars.githubusercontent.com/u/37356058?v=4" width=115><br><sub>Michelle Borges</sub>](https://github.com/Mikallina) |  [<img 
+| :---: | :---: | :---: |
+
 - Alexandre Rodrigues Nettho
 - André Geraldo Barbosa
 - André Luiz da Silva Rodrigues
