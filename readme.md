@@ -17,11 +17,12 @@
   - [Status do Projeto](#status-do-projeto)
   - [Funcionalides da Aplicação](#funcionalides-da-aplicação)
   - [Pessoas Desenvolvedoras do Projeto - GRUPO 1](#pessoas-desenvolvedoras-do-projeto---grupo-1)
-  - [Licença](#licença)
   - [Github](#github)
-  - [Licença](#licença-1)
+  - [Licença](#licença)
 
 ## Crie Uma Página Web Utilizando as Tags Aprendidas
+
+Tags HTML
 
 ### Sobre o projeto
 
@@ -52,6 +53,10 @@ Neste projeto o aluno aprenderá a desenvolver um sistema WEB de gerenciamento d
 
 ## Funcionalides da Aplicação
 
+- Instale o Visual Studio Code
+- Abra os exemplos em HTML em seu navegador
+- Teste os exemplos no Console do Navegador `CTRL+SHIFT+C`
+
 ## Pessoas Desenvolvedoras do Projeto - GRUPO 1
 
 - Alexandre Rodrigues Nettho
@@ -67,13 +72,9 @@ Neste projeto o aluno aprenderá a desenvolver um sistema WEB de gerenciamento d
 
 ---
 
-## Licença
-
-[GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
-
 ## Github
 
-[Grupo 1](https://github.com/TExpertsG1/hotelg1)
+![imagem](https://img.shields.io/github/forks/Mikallina/hotelg1?style=social) [Grupo 1](https://github.com/TExpertsG1/hotelg1)
 
 ## Licença
 
