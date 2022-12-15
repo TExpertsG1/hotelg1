@@ -1,3 +1,51 @@
 .body {
   margin: 0;
 }
+
+header {
+  margin: 0;
+  padding: 8px;
+}
+
+.user-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 20px;
+  font-size: 14px;
+  gap: 16px;
+}
+
+.user-bar p {
+  display: flex;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 24px;
+  font-style: bold;
+  gap: 16px;
+}
+
+.main-header img {
+  max-height: 80px;
+  max-width: 80px;
+}
+
+a {
+  all: unset;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  gap: 8px;
+}
+
+.navbar a {
+  align-self: flex-end;
+}
