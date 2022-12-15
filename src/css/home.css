@@ -1,3 +1,8 @@
-.body {
-  margin: 0;
+@font-face {
+  font-family: Baskerville;
+  src: url(assets/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf);
+}
+
+* {
+  font-family: "Baskerville", sans-serif, "Times New Roman", Times, serif;
 }
