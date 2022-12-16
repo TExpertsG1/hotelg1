@@ -1,3 +1,51 @@
-.body {
-  margin: 0;
+@font-face {
+  font-family: Baskerville;
+  src: url(assets/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf);
+}
+
+body {
+  width: 90%;
+  margin: auto;
+  font-size: 1.3rem;
+  font-family: "Baskerville", sans-serif, "Times New Roman", Times, serif;
+  line-height: 1.3em;
+  padding: 10px;
+}
+
+/*Área de Serviços*/
+
+/*Título de Serviços*/
+.h2Color {
+  color: #82694e;
+  text-align: center;
+}
+
+/*Subtítulo de Serviços*/
+.h1Color {
+  color: #ad9479;
+  text-align: center;
+}
+
+/*Textos descritivos de Serviços*/
+.textos {
+  color: #8a6e4b;
+  font-size: medium;
+  text-align: center;
+}
+
+/*Div que engloba os 3 subitens de Serviços*/
+.container-servicos {
+  display: inline-block;
+  width: 25%;
+  margin-left: 6%;
+}
+
+/*Bloco com todo o conteúdo de Serviços*/
+#servicos {
+  background-color: #ede5e3;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 2px;
+  border-radius: 10px;
+  padding-bottom: 20px;
 }
