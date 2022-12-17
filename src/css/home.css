@@ -86,6 +86,51 @@ a {
   font-size: 18px;
 }
 
+/*------Nosso Hotel-----*/
+
+.bloco-sobre-nosso-hotel {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 0;
+}
+
+.imagem{
+  width: 300px;
+  height: 400px;
+}
+
+.nosso-servico {
+  width: 300px;
+  height: 400px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.sobre-nosso-hotel {
+  font-size: 24px;
+  color: #82694E;
+}
+
+.texto-maior {
+  font-size: 20px;
+  color: #82694E;
+}
+
+.texto {
+  text-align: justify;
+}
+
+.botao-saiba-mais{
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  padding: 10px 30px;
+  border: 1px black solid;
+  background-color: #82694E;
+}
+
 /*-----Gallery-------*/
 .galeria {
   padding-bottom: 50px;
