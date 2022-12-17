@@ -100,13 +100,12 @@ a {
 }
 
 .nosso-servico {
-  /* width: 300px;
-  height: 400px; */
+  width: 300px;
+  height: 400px;
   align-self: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 4rem;
 }
 
 .sobre-nosso-hotel {
@@ -124,7 +123,6 @@ a {
 }
 
 .botao-saiba-mais {
-  max-width: 200px;
   font-size: 20px;
   text-align: center;
   color: #fff;
@@ -184,50 +182,89 @@ div.gallery img:hover {
   padding: 10px;
 }
 
-/*Área de Serviços*/
+/*--- FOOTER ---*/
+/* -- DIV-CONTINF -- */
+div.div-continf {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(237, 229, 227);
+}
 
-/*Título de Serviços*/
-.h2Color {
-  color: #82694e;
+div.div-continf h3 {
+  color: #82694E;
+}
+
+/*-- CONTATO --*/
+
+form.form-contatos {}
+
+#name {
+  background: none;
+  border: 0;
+  top: 0px;
+  border-width: 2px;
+  border-bottom-width: 1px;
+  border-bottom-color: #82694E;
+  border-bottom-style: solid;
+}
+
+#email {
+  background: none;
+  border: 0;
+  top: 0px;
+  border-width: 2px;
+  border-bottom-width: 1px;
+  border-bottom-color: #82694E;
+  border-bottom-style: solid;
+}
+
+#message {
+  padding-bottom: 70px;
+  background: none;
+  border: 0;
+  top: 0px;
+  border-width: 2px;
+  border-bottom-width: 1px;
+  border-bottom-color: #82694E;
+  border-bottom-style: solid;
+}
+
+#button {
+  border: none;
+  background-color: #82694E;
+  color: rgb(237, 229, 227);
+  padding: 5px 15px;
+  text-align: center;
+  margin: 7px;
+  cursor: pointer;
+  -webkit-border-radius: 100px;
+}
+
+/*-- INFORMAÇÕES --*/
+
+div.informacoes {
+  background-color: rgb(237, 229, 227);
+  color: #82694E;
   text-align: center;
 }
 
-/*Subtítulo de Serviços*/
-.h1Color {
-  color: #ad9479;
+/* -- DIV MNR -- */
+
+div.div-mnr {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+/* -- COPYRIGHT -- */
+
+div.copyright {
   text-align: center;
+  color: #82694E;
 }
 
-/*Textos descritivos de Serviços*/
-.textos {
-  color: #8a6e4b;
-  font-size: medium;
-  text-align: justify;
-}
-
-/*Div que engloba os 3 subitens de Serviços*/
-.container-servicos {
-  display: inline-block;
-  width: 25%;
-  margin-left: 6%;
-}
-
-/*Bloco com todo o conteúdo de Serviços*/
-#servicos {
-  background-color: #ede5e3;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-top: 2px;
-  border-radius: 10px;
-  padding-bottom: 20px;
-}
-
-/* FOOTER */
-
-footer {
-  display: flex;
-  justify-content: space-between;
-}
 
 /*Responsividade*/
 
