@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/css/home.css">
-    <title>Home</title>
-  </head>
-  <body>
-    <header>
-        <section>
-          <span>
-            <p>Olá Usuário</p>
-            <p>Sair</p>
-          </span>
-          <span>
-            <img src="images/logo.png" /> 
-            <h1>Nosso Slogan</h1>
-          </span>      
-      </section>
-      <nav>
-        <a href="#nossohotel">Nosso Hotel |</a>
-        <a href="#acomodacoes">Nossas Acomodações |</a>
-        <a href="#servicos">Nossos Serviços |</a>
-        <a href="#gastronomia">Gastronomia</a>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <div class="bloco-sobre-nosso-hotel">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/css/home.css">
+  <title>Home</title>
+</head>
+
+<body>
+  <header>
+    <section>
+      <div class="userBar">
+        <a>Olá Usuário</a>
+        <a>Sair</a>
+      </div>
+      <span class="mainHeader">
+        <img height="100%" src="images/logo.png" />
+        <nav class="navbar">
+          <a href="#nossohotel">Nosso nós</a>
+          <a href="#acomodacoes">Acomodações</a>
+          <a href="#servicos">Nossos Serviços</a>
+          <a href="#gastronomia">Gastronomia</a>
+        </nav>
+      </span>
+      <div class="sloganContainer">
+        <h1>Nosso Slogan</h1>
+        <h2>Nosso Slogan</h2>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section>
+      <div class="bloco-sobre-nosso-hotel">
           <div>
               <img class="imagem" src="images/nossos_servicos.png" alt="Nosso Hotel">
           </div>
@@ -50,41 +54,58 @@
               </div>
           </div>
       </div>
+      <hr />
 
-        <hr />
-
-        <article id="acomodacoes">
-          <h2>Nossas Acomodações</h2>
-          <img width="400px" src="images/acomodacao1.webp" alt="">
-          <img width="400px" src="images/acomodacao2.jpg" alt="">
-          <img width="400px" src="images/acomodacao3.jpg" alt="">
-          <img width="400px" src="images/acomodacao4.jpg" alt="">
-          
-        </article>
-        <hr />
-        <article id="servicos">
-          <h2>Conheça mais sobre nossos serviços</h2>
-
-        </article>
-        <hr />
-        <article id="gastronomia">
-          <h2>Gastronomia</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos asperiores repellat beatae optio, quia autem repudiandae ab! Dolor assumenda error dicta aliquam illum inventore quibusdam, commodi facilis, minus mollitia sequi perspiciatis dolores. Iure placeat fuga nobis obcaecati, mollitia autem perspiciatis unde voluptatibus. Modi harum expedita molestias optio. Ex ratione accusantium quis, vitae voluptate, sequi dolores ad laudantium ullam, ipsum laborum temporibus totam iste perspiciatis pariatur quaerat. Consequatur sapiente dolorem, dolores eos a, odit culpa et voluptate blanditiis adipisci mollitia ea.</p>
-          <img src="images/Gastronomia.png" alt="">
-
-        </article>
-        <hr />
+      <section class="galeria">
+          <article id="acomodacoes">
+            <h2>Nossas Acomodações</h2>
+            <div class="gallery">
+              <img src="images/acomodacao1.jpg" alt="Casal" width="200" height="200" />
+              <br />
+              <div class="desc">Suite Família</div>
+            </div>
+            <div class="gallery">
+              <img src="images/acomodacao2.jpg" alt="Solteiro" width="200" height="200" />
+              <div class="desc">Suíte Master</div>
+            </div>
+            <div class="gallery">
+              <img src="images/acomodacao3.jpg" alt="Chale" width="200" height="200" />
+              <div class="desc">Suíte Premium</div>
+            </div>
+          </article>
       </section>
-    </main>
-    <footer>
-      <span>
-        <h4>Contatos</h4>
-        <h4>Localização</h4>
-      </span>
-      <span>
-        <h4>&copy;2045 - Todos direitos reservados</h4>
-        <h4>Barra de Navegação</h4>
-      </span>      
-    </footer>
-  </body>
+        <article>
+          <section id="acomodacoesfundo"></section>
+        </article>
+      <hr />
+      <article id="servicos">
+        <h2>Conheça mais sobre nossos serviços</h2>
+
+      </article>
+      <hr />
+      <article id="gastronomia">
+        <h2>Gastronomia</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos asperiores repellat beatae optio, quia autem
+          repudiandae ab! Dolor assumenda error dicta aliquam illum inventore quibusdam, commodi facilis, minus mollitia
+          sequi perspiciatis dolores. Iure placeat fuga nobis obcaecati, mollitia autem perspiciatis unde voluptatibus.
+          Modi harum expedita molestias optio. Ex ratione accusantium quis, vitae voluptate, sequi dolores ad laudantium
+          ullam, ipsum laborum temporibus totam iste perspiciatis pariatur quaerat. Consequatur sapiente dolorem,
+          dolores eos a, odit culpa et voluptate blanditiis adipisci mollitia ea.</p>
+        <img src="images/Gastronomia.png" alt="">
+      </article>
+      <hr />
+    </section>
+  </main>
+  <footer>
+    <span>
+      <h4>Contatos</h4>
+      <h4>Localização</h4>
+    </span>
+    <span>
+      <h4>&copy;2045 - Todos direitos reservados</h4>
+      <h4>Barra de Navegação</h4>
+    </span>
+  </footer>
+</body>
+
 </html>
