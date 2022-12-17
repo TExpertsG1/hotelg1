@@ -12,7 +12,7 @@
   - [Técnologias utilizadas](#técnologias-utilizadas)
   - [Status do Projeto](#status-do-projeto)
   - [Funcionalides da Aplicação](#funcionalides-da-aplicação)
-  - [Colaboradores do Projeto - GRUPO 1 e Time TEX](#colaboradores-do-projeto---grupo-1)
+  - [Colaboradores do Projeto - GRUPO 1](#colaboradores-do-projeto---grupo-1)
   - [Github](#github)
   - [Licença](#licença)
 
@@ -38,12 +38,13 @@ Neste projeto o aluno aprenderá a desenvolver um sistema WEB de gerenciamento d
 ## Técnologias utilizadas
 
 - HTML
+- CSS3
 
 ## Status do Projeto
 
 > :construction: Projeto em construção :construction:
 
-- Página Home - HTML Puro
+- Página Home - HTML
 
 ---
 
@@ -82,6 +83,7 @@ Neste projeto o aluno aprenderá a desenvolver um sistema WEB de gerenciamento d
 </table>
 
 ---
+
 ## Github
 
 ![imagem](https://img.shields.io/github/forks/Mikallina/hotelg1?style=social) [Grupo 1](https://github.com/TExpertsG1/hotelg1)
