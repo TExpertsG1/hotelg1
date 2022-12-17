@@ -70,3 +70,10 @@ a {
   padding: 8px 0;
   font-size: 18px;
 }
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
