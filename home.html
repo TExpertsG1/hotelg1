@@ -1,132 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-  </head>
-  <body>
-    <header>
-        <section>
-          <td>
-            <th>
-              
-            </th>
-          </td>
-      <img src="images/logo.png" style="height: auto" /> 
-      <h1 style="text-align: center">Nosso Slogan</h1>
-      <p style="text-align: right;">Olá Usuário</p>
-      <p style="text-align: right;">Sair</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/css/home.css">
+  <title>Home</title>
+</head>
+
+<body>
+  <header>
+    <section>
+      <div class="userBar">
+        <a>Olá Usuário</a>
+        <a>Sair</a>
+      </div>
+      <span class="mainHeader">
+        <img height="100%" src="images/logo.png" />
+        <nav class="navbar">
+          <a href="#nossohotel">Nosso nós</a>
+          <a href="#acomodacoes">Acomodações</a>
+          <a href="#servicos">Nossos Serviços</a>
+          <a href="#gastronomia">Gastronomia</a>
+        </nav>
+      </span>
+      <div class="sloganContainer">
+        <h1>Nosso Slogan</h1>
+        <h2>Nosso Slogan</h2>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section>
+      <div class="bloco-sobre-nosso-hotel">
+          <div>
+              <img class="imagem" src="images/nossos_servicos.png" alt="Nosso Hotel">
+          </div>
+          <div class="nosso-servico">
+              <div class="sobre-nosso-hotel">
+                  <h1>Sobre o nosso hotel</h1>
+              </div>
+              <div>
+                  <p class="texto-maior">Descrição</p>
+              </div>
+              <div>
+                  <p class="texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis nemo corporis, voluptatum doloremque totam molestias. Exercitationem sed est odit laborum animi cumque mollitia amet obcaecati placeat nobis, a, ipsum aliquid necessitatibus laboriosam inventore facere quod? </p>
+              </div>
+              <div>
+                  <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, nemo distinctio? Labore esse officia, assumenda dignissimos, omnis consequuntur facilis accusantium magni numquam, aperiam quibusdam.</p>
+              </div>
+              <div>
+                  <p class="botao-saiba-mais">Saiba Mais</p>
+              </div>
+          </div>
+      </div>
+      <hr />
+
+      <section class="galeria">
+          <article id="acomodacoes">
+            <h2>Nossas Acomodações</h2>
+            <div class="gallery">
+              <img src="images/acomodacao1.jpg" alt="Casal" width="200" height="200" />
+              <br />
+              <div class="desc">Suite Família</div>
+            </div>
+            <div class="gallery">
+              <img src="images/acomodacao2.jpg" alt="Solteiro" width="200" height="200" />
+              <div class="desc">Suíte Master</div>
+            </div>
+            <div class="gallery">
+              <img src="images/acomodacao3.jpg" alt="Chale" width="200" height="200" />
+              <div class="desc">Suíte Premium</div>
+            </div>
+          </article>
       </section>
-    </header>
-    <nav>
-      <a href="#nossaAcomodacao">Nossa Acomodação |</a>
-      <a href="#gastronomia">Gastronomia |</a>
-      <a href="#servicos">Nossos Serviços |</a>
-
-      <a href="../index.html">Voltar ao início</a>
-    </nav>
-    <main>
-      <section>
         <article>
-          <h2>Nosso Compromisso</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam deleniti animi
-            perferendis quod, magnam consequatur debitis magni fugiat ut culpa quae repudiandae
-            ipsum vero temporibus reiciendis, molestiae quibusdam rerum dignissimos soluta aliquid
-            hic unde perspiciatis facilis consectetur. Necessitatibus, reprehenderit porro! Ipsum
-            blanditiis aliquid earum dicta, distinctio laboriosam, beatae, architecto laborum
-            numquam dolor dolores libero? Maxime modi provident fugit adipisci rerum, possimus
-            soluta culpa accusamus quod excepturi ullam distinctio aliquam temporibus. Error autem
-            voluptatibus, aspernatur similique at enim atque odit est!
-          </p>
-          <img
-            width="400px"
-            alt="Conhença nosso menu"
-            title="Conheça nosso menu"
-            src="../images/here-take-a-look-at-our-menu.jpg"
-          />
+          <section id="acomodacoesfundo"></section>
         </article>
-        <hr />
+      <hr />
+     <article id="servicos">
+          <h2 class="h2Color">Conheça mais sobre nossos serviços</h2>
+          <div class="container-servicos">
+            <h1 class="h1Color">Recreação Infantil</h1>
+            <p class="textos">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
+              excepturi fugiat, exercitationem dolore enim nesciunt, amet eius
+              ex ipsam illum iste, consequatur aliquid quas sint id non aut.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+          <div class="container-servicos">
+            <h1 class="h1Color">Tour pelo Hotel</h1>
+            <p class="textos">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
+              excepturi fugiat, exercitationem dolore enim nesciunt, amet eius
+              ex ipsam illum iste, consequatur aliquid quas sint id non aut.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
 
-        <article>
-          <h2>Artigo 2</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique quidem magni
-            perspiciatis autem eaque cupiditate eveniet voluptatem fugiat iste inventore. Tempore
-            alias blanditiis sequi inventore ducimus minima modi? Soluta, ipsum!
-          </p>
-          <h3>Saboreie nossa Coxinha Brasileira, nossos drinks. Venha com a família e amigos</h3>
-          <picture>
-            <source media="(min-width:600px)" srcset="../images/cocktail_500.jpg" />
-            <source media="(min-width:520px)" srcset="../images/info_460.jpg" />
-            <img src="../images/coxinha_215.jpg" alt="" />
-          </picture>
-          <!--Type pode ser: Square ou circle-->
-
-          <h3>Para acompanhar</h3>
-          <ul type="circle" start="2">
-            <li>Saladas</li>
-            <li>Sobremesas</li>
-            <li>Bebidas Alcoolicas</li>
-            <li>Bebidas</li>
-          </ul>
-          <pre>
-          "Deus não joga dados"
-          <small>Albert Einstein</small>
-        </pre>
+          <div class="container-servicos">
+            <h1 class="h1Color">Aula de Artes</h1>
+            <p class="textos">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
+              excepturi fugiat, exercitationem dolore enim nesciunt, amet eius
+              ex ipsam illum iste, consequatur aliquid quas sint id non aut.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
         </article>
-        <hr />
-
-        <article>
-          <h2 id="carnes">Carnes Nobres</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias similique expedita
-            dicta! Libero, maiores at earum, eius quae expedita eos maxime odit dignissimos
-            blanditiis repudiandae modi exercitationem nostrum atque! Corporis modi dolore amet
-            debitis odit sed adipisci asperiores, soluta, provident qui perferendis ullam odio
-            totam, incidunt consectetur voluptatibus assumenda. Quibusdam sapiente eaque numquam! Et
-            placeat accusantium voluptates provident tempore accusamus, libero vel veniam impedit
-            dolores reprehenderit exercitationem doloribus totam in delectus distinctio temporibus
-            molestiae, neque ea itaque tempora? Debitis quisquam mollitia eum vitae veniam minus
-            quis similique commodi, voluptas iusto doloribus excepturi sint quam dolores unde quasi
-            quo maiores ratione enim laborum nisi tenetur. Ipsa libero deserunt laboriosam,
-            reiciendis nesciunt quasi totam similique aliquam, sapiente vero architecto! Nisi,
-            asperiores molestias! <br />
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam error sequi mollitia
-            facere ut minus corporis cumque animi, voluptatem delectus reiciendis quia maiores,
-            dicta soluta. Maiores commodi fuga inventore iste impedit reprehenderit corporis ea
-            dolor, adipisci rem quibusdam aperiam exercitationem est ducimus. Aspernatur laboriosam,
-            sequi dolorum voluptatibus temporibus impedit laudantium eum. Consequatur, reiciendis
-            voluptate tenetur tempore ipsum iure molestias rerum necessitatibus. Tempore autem
-            libero dolore necessitatibus! Numquam dignissimos blanditiis rem. Enim facere eveniet
-            quos laborum quam iure necessitatibus amet suscipit ut sint velit sit culpa accusantium
-            adipisci libero, voluptate earum voluptatum quaerat aut alias reprehenderit eos ex!
-            Numquam, consectetur! Iusto hic, quos minus quam molestias iure autem doloremque
-            sapiente cumque quae commodi fugit expedita dolores voluptas veniam aut ducimus! At!
-          </p>
-          <!--Type pode ser: Square ou circle-->
-
-          <h3>Para acompanhar</h3>
-          <dl type="circle" start="2">
-            <li>Saladas</li>
-            <li>Sobremesas</li>
-            <li>Bebidas Alcoolicas</li>
-            <li>Bebidas</li>
-          </dl>
-        </article>
-      </section>
-    </main>
-    <a href="../index.html#carnes">
-      <img
-        src="../images/here-take-a-look-at-our-menu.jpg"
-        width="150px"
-        alt="Conhença nosso menu"
-        title="Conheça nosso menu"
-      />
-    </a>
-
-    <footer>&copy;2045 - Todos direitos reservados</footer>
-  </body>
+      <hr />
+      <article id="gastronomia">
+        <h2>Gastronomia</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos asperiores repellat beatae optio, quia autem
+          repudiandae ab! Dolor assumenda error dicta aliquam illum inventore quibusdam, commodi facilis, minus mollitia
+          sequi perspiciatis dolores. Iure placeat fuga nobis obcaecati, mollitia autem perspiciatis unde voluptatibus.
+          Modi harum expedita molestias optio. Ex ratione accusantium quis, vitae voluptate, sequi dolores ad laudantium
+          ullam, ipsum laborum temporibus totam iste perspiciatis pariatur quaerat. Consequatur sapiente dolorem,
+          dolores eos a, odit culpa et voluptate blanditiis adipisci mollitia ea.</p>
+        <img src="images/Gastronomia.png" alt="">
+      </article>
+      <hr />
+    </section>
+  </main>
+  <footer>
+    <span>
+      <h4>Contatos</h4>
+      <h4>Localização</h4>
+    </span>
+    <span>
+      <h4>&copy;2045 - Todos direitos reservados</h4>
+      <h4>Barra de Navegação</h4>
+    </span>
+  </footer>
+</body>
 </html>
