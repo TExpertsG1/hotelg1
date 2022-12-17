@@ -94,18 +94,19 @@ a {
   padding: 4rem 0;
 }
 
-.imagem{
+.imagem {
   width: 300px;
   height: 400px;
 }
 
 .nosso-servico {
-  width: 300px;
-  height: 400px;
+  /* width: 300px;
+  height: 400px; */
   align-self: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding: 4rem;
 }
 
 .sobre-nosso-hotel {
@@ -122,7 +123,8 @@ a {
   text-align: justify;
 }
 
-.botao-saiba-mais{
+.botao-saiba-mais {
+  max-width: 200px;
   font-size: 20px;
   text-align: center;
   color: #fff;
