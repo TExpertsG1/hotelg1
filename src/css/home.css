@@ -1,7 +1,22 @@
-body {
-  margin: 0;
-  padding: 0;
+@font-face {
+  font-family: Baskerville;
+  src: url(assets/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf);
 }
+
+/** {
+  font-family: "Baskerville", sans-serif, "Times New Roman", Times, serif;
+}*/
+
+body {
+  width: 90%;
+  margin: auto;
+  font-size: 1.3rem;
+  font-family: "Baskerville", sans-serif, "Times New Roman", Times, serif;
+  line-height: 1.3em;
+  padding: 10px;
+}
+
+/*-----Header-------*/
 
 header {
   margin: 0;
@@ -71,9 +86,82 @@ a {
   font-size: 18px;
 }
 
+/*-----Gallery-------*/
+.galeria {
+  padding-bottom: 50px;
+  background-color: #ede5e3;
+  display: flex;
+  justify-content: center;
+}
+
+div.gallery {
+  border-radius: 15px;
+  float: left;
+  padding: 15px;
+  width: 100;
+}
+
+div.gallery img {
+  height: auto;
+  border-radius: 15px;
+}
+
+#acomodacoesfundo {
+  height: 10px;
+  background-size: cover;
+  background-image: url(../css/acomodacao5.jpg);
+  background-attachment: fixed;
+  border-top: 2px solid #c0501980;
+  border-bottom: 2px solid #c0501980;
+  padding: 200px;
+  display: block;
+  filter: grayscale(40%);
+}
+
+#acomodacoes h2 {
+  color: #82694e;
+  text-align: center;
+  padding-top: 10px;
+}
+
+div.desc {
+  padding: 5px;
+  text-align: center;
+  text-decoration: overline;
+  color: #82694e;
+}
+
+div.gallery img:hover {
+  transform: scale(1.2);
+  z-index: index 3;
+  padding: 10px;
+}
+
 /* FOOTER */
 
 footer {
   display: flex;
   justify-content: space-between;
 }
+
+/*Responsividade*/
+
+/*@media screen and (min-width: 992px) {
+  div.gallery {
+    padding: 5px;
+    max-width: 800px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 1rem;
+  }
+}*/
+
+/*
+@media screen and (min-width: 748px) {
+   {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    
+  }
+}*/
