@@ -21,7 +21,7 @@ body {
 header {
   margin: 0;
   padding: 8px;
-  background-color: #EDE5E3;
+  background-color: #ede5e3;
 }
 
 a {
@@ -42,8 +42,8 @@ a {
   min-width: 60px;
   padding: 8px;
   justify-content: center;
-  background-color: #AD9479;
-  color: #EDE5E3;
+  background-color: #ad9479;
+  color: #ede5e3;
 }
 
 .mainHeader {
@@ -66,12 +66,12 @@ a {
   padding: 8px;
   font-size: 14px;
   gap: 8px;
-  background-color: #AD9479;
-  color: #EDE5E3;
+  background-color: #ad9479;
+  color: #ede5e3;
 }
 
 .sloganContainer {
-  color: #82694E;
+  color: #82694e;
 }
 
 .sloganContainer h1 {
@@ -111,12 +111,12 @@ a {
 
 .sobre-nosso-hotel {
   font-size: 24px;
-  color: #82694E;
+  color: #82694e;
 }
 
 .texto-maior {
   font-size: 20px;
-  color: #82694E;
+  color: #82694e;
 }
 
 .texto {
@@ -130,7 +130,7 @@ a {
   color: #fff;
   padding: 10px 30px;
   border: 1px black solid;
-  background-color: #82694E;
+  background-color: #82694e;
 }
 
 /*-----Gallery-------*/
@@ -190,12 +190,14 @@ div.gallery img:hover {
 .h2Color {
   color: #82694e;
   text-align: center;
+  
 }
 
 /*Subtítulo de Serviços*/
 .h1Color {
   color: #ad9479;
-  text-align: center;
+  
+  
 }
 
 /*Textos descritivos de Serviços*/
@@ -203,13 +205,20 @@ div.gallery img:hover {
   color: #8a6e4b;
   font-size: medium;
   text-align: justify;
+  text-indent: 1.5rem;
 }
 
 /*Div que engloba os 3 subitens de Serviços*/
 .container-servicos {
-  display: inline-block;
-  width: 25%;
-  margin-left: 6%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  
+  margin: 0 2% 0 2%;
+  /* text-align: center; */
+}
+
+.container-servicos2{ 
+  padding: 0 10% 0 10%;
 }
 
 /*Bloco com todo o conteúdo de Serviços*/
@@ -217,9 +226,41 @@ div.gallery img:hover {
   background-color: #ede5e3;
   margin-top: 0px;
   margin-bottom: 20px;
-  padding-top: 2px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
 
-  padding-bottom: 20px;
+.saibaMais {
+  text-align: right;
+  display: block;
+  font-size: small;
+  color: #82694e;
+  text-decoration: underline;
+}
+
+.saibaMais:hover {
+  cursor: pointer;
+}
+
+
+.containerS1{
+  display: grid;
+  grid-template-columns: 35% 65%;
+}
+
+.divIcon{
+ 
+  display: flex;
+  align-items: center;
+  justify-self: flex-end;
+  padding-right: 10px;
+  color: #ad9479;
+
+  
+}
+.divTitulo{
+ 
+  text-align: left;
 }
 
 /* FOOTER */
