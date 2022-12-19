@@ -15,7 +15,7 @@ body {
   font-size: 1rem;
   font-family: "Baskerville", sans-serif, "Times New Roman", Times, serif;
   line-height: 1em;
-  color:#82694e;
+  color: #82694e;
   background-color: #fff3f1;
 }
 
@@ -43,7 +43,7 @@ h3 {
   margin: 0;
   padding: 0;
   font-size: 1.25rem;
-  color: #ad9479
+  color: #ad9479;
 }
 
 /*-----Header-------*/
@@ -167,48 +167,76 @@ a {
   border-radius: 10px;
 }
 
+/* ---- NavPos-------*/
+
+div.navPos {
+  background-color: #82694e;
+  width: 60px;
+  height: 130px;
+  position: fixed;
+  right: 30px;
+  top: 10vh;
+  padding: 0 0vw 0 0vw;
+  border-radius: 25px 25px 25px 25px;
+  font-weight: bold;
+}
+
+div.navPos ul {
+  padding: 0 0 0 15px;
+  list-style: none;
+}
+
+div.navPos ul li {
+  margin: 0 0 0 0;
+  text-align: left;
+  padding: 10px 0 0 9px;
+}
+
+div.navPos ul li a {
+  font-size: 0.9em;
+  color: #fff;
+}
+
 /*-----Gallery-------*/
+
+#acomodacoes h2 {
+  text-align: center;
+  padding: 40px;
+}
+
 .galeria {
-  padding-bottom: 50px;
   background-color: #ede5e3;
   display: flex;
   justify-content: center;
-  border-radius: 10px 10px 0 0;
 }
 
 div.gallery {
-  border-radius: 15px;
   float: left;
   padding: 15px;
   width: 100;
 }
 
 div.gallery img {
+  width: 200px;
   height: auto;
   border-radius: 15px;
 }
 
 #acomodacoesfundo {
-  height: 10px;
+  max-width: auto;
   background-size: cover;
-  background-image: url(../css/acomodacao5.jpg);
+  background-image: url(../../images/acomodacoes7.jpg);
   background-attachment: fixed;
   border-top: 2px solid #c0501980;
   border-bottom: 2px solid #c0501980;
   padding: 200px;
   display: block;
   filter: grayscale(40%);
-  border-radius: 0 0 10px 10px;
-}
-
-#acomodacoes h2 {
-  /* color: #82694e; */
-  text-align: center;
-  padding-top: 10px;
+  background-position: 150px;
 }
 
 div.desc {
-  padding: 5px;
+  padding: 20px;
   text-align: center;
   text-decoration: overline;
   /* color: #82694e; */
@@ -217,7 +245,6 @@ div.desc {
 div.gallery img:hover {
   transform: scale(1.2);
   z-index: index 3;
-  padding: 10px;
 }
 
 /*Área de Serviços*/
