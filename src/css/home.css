@@ -190,14 +190,11 @@ div.gallery img:hover {
 .h2Color {
   color: #82694e;
   text-align: center;
-  
 }
 
 /*Subtítulo de Serviços*/
 .h1Color {
   color: #ad9479;
-  
-  
 }
 
 /*Textos descritivos de Serviços*/
@@ -212,13 +209,12 @@ div.gallery img:hover {
 .container-servicos {
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  
-  margin: 0 2% 0 2%;
+  margin: 5% 8% 0 8%;
   /* text-align: center; */
 }
 
-.container-servicos2{ 
-  padding: 0 10% 0 10%;
+.container-servicos2 {
+  padding: 0 20% 0 1%;
 }
 
 /*Bloco com todo o conteúdo de Serviços*/
@@ -242,24 +238,20 @@ div.gallery img:hover {
   cursor: pointer;
 }
 
-
-.containerS1{
+.containerS1 {
   display: grid;
   grid-template-columns: 35% 65%;
 }
 
-.divIcon{
- 
+.divIcon {
   display: flex;
   align-items: center;
   justify-self: flex-end;
   padding-right: 10px;
   color: #ad9479;
-
-  
 }
-.divTitulo{
- 
+
+.divTitulo {
   text-align: left;
 }
 
