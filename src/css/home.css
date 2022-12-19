@@ -265,6 +265,31 @@ footer {
   justify-content: space-between;
 }
 
+/* Gastronomia */
+.gastronomia {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1rem 0;
+  margin: 0 10%;
+  align-items: center;
+}
+
+.gastronomia .imagem {
+  width: 30%;
+}
+
+.gastronomia .texto {
+  width: 60%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 4rem;
+  color: #82694e;
+}
+
+
 /*Responsividade*/
 
 /*@media screen and (min-width: 992px) {
@@ -286,3 +311,5 @@ footer {
     
   }
 }*/
+
+
