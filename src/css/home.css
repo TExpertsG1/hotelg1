@@ -179,6 +179,7 @@ div.navPos {
   padding: 0 0vw 0 0vw;
   border-radius: 25px 25px 25px 25px;
   font-weight: bold;
+  z-index: 1;
 }
 
 div.navPos ul {
