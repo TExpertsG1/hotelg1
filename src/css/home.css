@@ -87,50 +87,56 @@ a {
 }
 
 /*------Nosso Hotel-----*/
-
-.bloco-sobre-nosso-hotel {
+#sobre{
   display: flex;
-  justify-content: space-around;
-  padding: 4rem 0;
+  margin: 0 auto;
+  align-items: center;
+  margin: 1rem 4rem;
 }
 
-.imagem {
-  width: 300px;
-  height: 400px;
+#sobre img{
+  border-radius: 15px;
+  opacity: 1;
+  height: 40%;
+  width: 40%;
 }
 
-.nosso-servico {
-  /* width: 300px;
-  height: 400px; */
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 4rem;
+#sobre img:hover {
+  transition: 400ms;
+	opacity: 0.8;
 }
 
-.sobre-nosso-hotel {
-  font-size: 24px;
+#sobre div{
+  padding: 2rem;
+}
+
+#sobre h2{
   color: #82694E;
 }
 
-.texto-maior {
-  font-size: 20px;
+#sobre h3{
   color: #82694E;
 }
 
-.texto {
+#sobre p{
+  font-family: "Baskerville", sans-serif;
   text-align: justify;
+  font-size: medium;
 }
 
-.botao-saiba-mais {
-  max-width: 200px;
-  font-size: 20px;
-  text-align: center;
+#sobre button{
+  background-color: #AD9479;
+  border-radius: 10px;
+  border: none;
+  padding: 0.6rem 2rem;
+
+
   color: #fff;
-  padding: 10px 30px;
-  border: 1px black solid;
-  background-color: #82694E;
+  font-size: 20px;
+}
+
+#sobre button:hover{
+  transform: scale(1.1);
 }
 
 /*-----Gallery-------*/
