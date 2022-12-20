@@ -7,13 +7,43 @@
   font-family: "Baskerville", sans-serif, "Times New Roman", Times, serif;
 }*/
 
+/*----Default Values----*/
+
 body {
-  width: 90%;
-  margin: auto;
-  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
   font-family: "Baskerville", sans-serif, "Times New Roman", Times, serif;
-  line-height: 1.3em;
-  padding: 10px;
+  line-height: 1em;
+  color:#82694e;
+  background-color: #fff3f1;
+}
+
+a {
+  all: unset;
+  font-size: 0.85rem;
+  cursor: pointer;
+  color: #fff3f1;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.25rem;
+  font-style: bold;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.25rem;
+  color: #ad9479
 }
 
 /*-----Header-------*/
@@ -21,12 +51,12 @@ body {
 header {
   margin: 0;
   padding: 8px;
-  background-color: #EDE5E3;
+  background-color: #ede5e3;
 }
-
+/* 
 a {
   all: unset;
-}
+} */
 
 .userBar {
   display: flex;
@@ -34,7 +64,7 @@ a {
   justify-content: flex-end;
   width: 100%;
   height: 20px;
-  font-size: 14px;
+  /* font-size: 14px; */
 }
 
 .userBar a {
@@ -42,15 +72,15 @@ a {
   min-width: 60px;
   padding: 8px;
   justify-content: center;
-  background-color: #AD9479;
-  color: #EDE5E3;
+  background-color: #ad9479;
+  /* color: #ede5e3; */
 }
 
 .mainHeader {
   display: flex;
   align-items: center;
   width: 100%;
-  font-size: 24px;
+  /* font-size: 24px; */
   font-style: bold;
   justify-content: space-between;
 }
@@ -64,26 +94,26 @@ a {
 .navbar {
   display: flex;
   padding: 8px;
-  font-size: 14px;
+  /* font-size: 14px; */
   gap: 8px;
-  background-color: #AD9479;
-  color: #EDE5E3;
+  background-color: #ad9479;
+  /* color: #ede5e3; */
 }
 
 .sloganContainer {
-  color: #82694E;
+  /* color: #82694e; */
 }
 
 .sloganContainer h1 {
   margin: 0;
   padding: 8px 0;
-  font-size: 40px;
+  /* font-size: 40px; */
 }
 
 .sloganContainer h2 {
   margin: 0;
   padding: 8px 0;
-  font-size: 18px;
+  /* font-size: 18px; */
 }
 
 /*------Nosso Hotel-----*/
@@ -91,12 +121,13 @@ a {
 .bloco-sobre-nosso-hotel {
   display: flex;
   justify-content: space-around;
-  padding: 4rem 0;
+  padding: 1rem 0;
+  margin: 0 10%;
+  align-items: center;
 }
 
 .imagem {
-  width: 300px;
-  height: 400px;
+  width: 100%;
 }
 
 .nosso-servico {
@@ -109,27 +140,31 @@ a {
 }
 
 .sobre-nosso-hotel {
-  font-size: 24px;
-  color: #82694E;
+  /* font-size: 24px; */
+  /* color: #82694e; */
 }
 
 .texto-maior {
-  font-size: 20px;
-  color: #82694E;
+  /* font-size: 20px; */
+  /* color: #82694e; */
 }
 
 .texto {
   text-align: justify;
+  /* color: #82694e; */
 }
 
 .botao-saiba-mais {
   font-size: 20px;
+  display: flex;
+  max-width: 100px;
+  /* font-size: 15px; */
   text-align: center;
-  color: #fff;
+  /* color: #fff; */
   padding: 10px 30px;
-  border: 1px black solid;
-  background-color: #82694E;
-}
+  background-color: #82694e;
+  margin: 0 auto;
+  border-radius: 10px;
 
 /*-----Gallery-------*/
 .galeria {
@@ -137,6 +172,7 @@ a {
   background-color: #ede5e3;
   display: flex;
   justify-content: center;
+  border-radius: 10px 10px 0 0;
 }
 
 div.gallery {
@@ -161,10 +197,11 @@ div.gallery img {
   padding: 200px;
   display: block;
   filter: grayscale(40%);
+  border-radius: 0 0 10px 10px;
 }
 
 #acomodacoes h2 {
-  color: #82694e;
+  /* color: #82694e; */
   text-align: center;
   padding-top: 10px;
 }
@@ -173,7 +210,7 @@ div.desc {
   padding: 5px;
   text-align: center;
   text-decoration: overline;
-  color: #82694e;
+  /* color: #82694e; */
 }
 
 div.gallery img:hover {
@@ -182,15 +219,34 @@ div.gallery img:hover {
   padding: 10px;
 }
 
+/*Área de Serviços*/
+
+/*Título de Serviços*/
+.h2Color {
+  /* color: #82694e; */
+  text-align: center;
+  background-color: rgb(237, 229, 227);
+}
+
+/*Subtítulo de Serviços*/
+.h1Color {
+  /* color: #ad9479; */
+  text-align: center;
+}
+
+/*Textos descritivos de Serviços*/
+.textos {
+  /* color: #8a6e4b; */
+  /* font-size: medium; */
+  text-align: justify;
+}
+
 /*--- FOOTER ---*/
 /* -- DIV-CONTINF -- */
 div.div-continf {
   display: grid;
   grid-template-columns: auto auto;
   padding: 10px;
-  text-align: center;
-  background-color: rgb(237, 229, 227);
-}
 
 div.div-continf h3 {
   color: #82694E;
@@ -208,7 +264,6 @@ form.form-contatos {}
   border-bottom-width: 1px;
   border-bottom-color: #82694E;
   border-bottom-style: solid;
-}
 
 #email {
   background: none;
@@ -263,8 +318,30 @@ div.div-mnr {
 div.copyright {
   text-align: center;
   color: #82694E;
+
+/* Gastronomia */
+.gastronomia {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1rem 0;
+  margin: 0 10%;
+  align-items: center;
 }
 
+.gastronomia .imagem {
+  width: 30%;
+}
+
+.gastronomia .texto {
+  width: 60%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 4rem;
+  color: #82694e;
+}
 
 /*Responsividade*/
 
@@ -280,10 +357,7 @@ div.copyright {
 
 /*
 @media screen and (min-width: 748px) {
-   {
     width: 100%;
     height: auto;
     padding: 30px;
-    
-  }
-}*/
+}
