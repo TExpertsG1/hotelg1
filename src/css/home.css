@@ -324,8 +324,7 @@ div.gallery img:hover {
 
 /*Subtítulo de Serviços*/
 .h1Color {
-  /* color: #ad9479; */
-  text-align: center;
+  color: #ad9479;
 }
 
 /*Textos descritivos de Serviços*/
@@ -333,6 +332,57 @@ div.gallery img:hover {
   /* color: #8a6e4b; */
   /* font-size: medium; */
   text-align: justify;
+  text-indent: 1.5rem;
+}
+
+/*Div que engloba os 3 subitens de Serviços*/
+.container-servicos {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  margin: 5% 8% 0 8%;
+  /* text-align: center; */
+}
+
+.container-servicos2 {
+  padding: 0 20% 0 1%;
+}
+
+/*Bloco com todo o conteúdo de Serviços*/
+#servicos {
+  background-color: #ede5e3;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.saibaMais {
+  text-align: right;
+  display: block;
+  font-size: small;
+  color: #82694e;
+  text-decoration: underline;
+}
+
+.saibaMais:hover {
+  cursor: pointer;
+}
+
+.containerS1 {
+  display: grid;
+  grid-template-columns: 35% 65%;
+}
+
+.divIcon {
+  display: flex;
+  align-items: center;
+  justify-self: flex-end;
+  padding-right: 10px;
+  color: #ad9479;
+}
+
+.divTitulo {
+  text-align: left;
 }
 
 /*--- FOOTER ---*/
