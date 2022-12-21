@@ -440,24 +440,59 @@ div.copyright {
   color: #82694E;
 }
 
-/* Gastronomia */
-.gastronomia {
+/*------ Gastronomia -----*/
+#gastronomia{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 1rem 0;
-  margin: 0 10%;
+  margin: 0 auto;
   align-items: center;
+  margin: 1rem 4rem;
 }
 
-.gastronomia .texto {
-  width: 60%;
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 4rem;
-  color: #82694e;
+#gastronomia img{
+  border-radius: 15px;
+  opacity: 1;
+  height: 40%;
+  width: 40%;
+}
+
+#gastronomia img:hover {
+  transition: 400ms;
+	opacity: 0.8;
+}
+
+#gastronomia div{
+  padding: 2rem;
+}
+
+#gastronomia h2{
+  color: #82694E;
+}
+
+#gastronomia h3{
+  color: #82694E;
+}
+
+#gastronomia p{
+  font-family: "Baskerville", sans-serif;
+  text-align: justify;
+  font-size: medium;
+}
+
+#gastronomia button{
+  background-color: #AD9479;
+  border-radius: 10px;
+  border: none;
+  padding: 0.6rem 2rem;
+
+
+  color: #fff;
+  font-size: 20px;
+
+  margin-left: 35%;
+}
+
+#gastronomia button:hover{
+  transform: scale(1.1);
 }
 
 /* -------------- Michelle ------------ */
