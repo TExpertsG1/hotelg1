@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -124,32 +125,58 @@
           </div>
         </article>
         <hr />
-        <article id="gastronomia">
-          <h2>Gastronomia</h2>
+
+        <div class="gastronomia">
+          <div class="texto">
+            <h2>Gastronomia</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos asperiores repellat beatae
             optio, quia autem repudiandae ab! Dolor assumenda error dicta aliquam illum inventore
             quibusdam, commodi facilis, minus mollitia sequi perspiciatis dolores. Iure placeat fuga
             nobis obcaecati, mollitia autem perspiciatis unde voluptatibus. Modi harum expedita
-            molestias optio. Ex ratione accusantium quis, vitae voluptate, sequi dolores ad
+            molestias optio. 
+
+          </p>
+          <p>
+            Ex ratione accusantium quis, vitae voluptate, sequi dolores ad
             laudantium ullam, ipsum laborum temporibus totam iste perspiciatis pariatur quaerat.
             Consequatur sapiente dolorem, dolores eos a, odit culpa et voluptate blanditiis adipisci
             mollitia ea.
           </p>
-          <img src="images/Gastronomia.png" alt="" />
-        </article>
+          </div>
+          <div class="imagem">
+            <img src="images/Gastronomia.png" alt="gastronomia" />
+          </div>
+        </div>
         <hr />
       </section>
     </main>
-    <footer>
-      <span id="contatos">
-        <h4>Contatos</h4>
-        <h4>Localização</h4>
-      </span>
-      <span>
-        <h4>&copy;2045 - Todos direitos reservados</h4>
-        <h4>Barra de Navegação</h4>
-      </span>
-    </footer>
-  </body>
+  <footer>
+    <div class="div-continf">
+      <div>
+        <h3>Contato</h3>
+        <form class="form-contatos">
+          <label for="name"></label>
+          <input type="text" id="name" name="name" placeholder="Nome"><br>
+          <label for="email"></label>
+          <input type="email" id="email" name="Email" placeholder="Email"><br>
+          <label for="message"></label></label>
+          <input type="message" id="message" name="Mensagem" placeholder="Mensagem"><br>
+          <input type="button" id="button" value="Enviar">
+        </form>
+      </div>
+
+      <div class="informacoes">
+        <p><i class="fa-solid fa-location-dot"></i> Rua T.EXPERT</p>
+        <p><i class="fa-solid fa-phone-volume"></i> (00) 0 0000-0000</p>
+        <p><i class="fa-brands fa-square-whatsapp"></i> (00) 0 0000-0000</p>
+        <p><i class="fa-solid fa-envelope"></i> email@email.com.br</p>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+      </div>
+  </footer>
+  <div class="copyright">
+    <h6> &copy;2077 - Todos os direitos reservados</h6>
+  </div>
+</body>
 </html>
