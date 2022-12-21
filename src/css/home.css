@@ -197,13 +197,12 @@ header section:first-of-type {
 }
 
 .nosso-servico {
-  /* width: 300px;
-  height: 400px; */
+  width: 300px;
+  height: 400px;
   align-self: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 4rem;
 }
 
 .sobre-nosso-hotel {
@@ -222,6 +221,7 @@ header section:first-of-type {
 }
 
 .botao-saiba-mais {
+  font-size: 20px;
   display: flex;
   max-width: 100px;
   /* font-size: 15px; */
@@ -231,50 +231,78 @@ header section:first-of-type {
   background-color: #82694e;
   margin: 0 auto;
   border-radius: 10px;
+
+/* ---- NavPos-------*/
+
+div.navPos {
+  background-color: #82694e;
+  width: 60px;
+  height: 130px;
+  position: fixed;
+  right: 30px;
+  top: 10vh;
+  padding: 0 0vw 0 0vw;
+  border-radius: 25px 25px 25px 25px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+div.navPos ul {
+  padding: 0 0 0 15px;
+  list-style: none;
+}
+
+div.navPos ul li {
+  margin: 0 0 0 0;
+  text-align: left;
+  padding: 10px 0 0 9px;
+}
+
+div.navPos ul li a {
+  font-size: 0.9em;
+  color: #fff;
 }
 
 /*-----Gallery-------*/
+
+#acomodacoes h2 {
+  text-align: center;
+  padding: 40px;
+}
+
 .galeria {
-  padding-bottom: 50px;
   background-color: #ede5e3;
   display: flex;
   justify-content: center;
-  border-radius: 10px 10px 0 0;
 }
 
 div.gallery {
-  border-radius: 15px;
   float: left;
   padding: 15px;
   width: 100;
 }
 
 div.gallery img {
+  width: 200px;
   height: auto;
   border-radius: 15px;
 }
 
 #acomodacoesfundo {
-  height: 10px;
+  max-width: auto;
   background-size: cover;
-  background-image: url(../css/acomodacao5.jpg);
+  background-image: url(../../images/acomodacoes7.jpg);
   background-attachment: fixed;
   border-top: 2px solid #c0501980;
   border-bottom: 2px solid #c0501980;
   padding: 200px;
   display: block;
   filter: grayscale(40%);
-  border-radius: 0 0 10px 10px;
-}
-
-#acomodacoes h2 {
-  /* color: #82694e; */
-  text-align: center;
-  padding-top: 10px;
+  background-position: 150px;
 }
 
 div.desc {
-  padding: 5px;
+  padding: 20px;
   text-align: center;
   text-decoration: overline;
   /* color: #82694e; */
@@ -283,7 +311,6 @@ div.desc {
 div.gallery img:hover {
   transform: scale(1.2);
   z-index: index 3;
-  padding: 10px;
 }
 
 /*Área de Serviços*/
@@ -292,6 +319,7 @@ div.gallery img:hover {
 .h2Color {
   /* color: #82694e; */
   text-align: center;
+  background-color: rgb(237, 229, 227);
 }
 
 /*Subtítulo de Serviços*/
@@ -307,29 +335,83 @@ div.gallery img:hover {
   text-align: justify;
 }
 
-/*Div que engloba os 3 subitens de Serviços*/
-.container-servicos {
-  display: inline-block;
-  width: 25%;
-  margin-left: 6%;
+/*--- FOOTER ---*/
+/* -- DIV-CONTINF -- */
+div.div-continf {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+
+div.div-continf h3 {
+  color: #82694E;
 }
 
-/*Bloco com todo o conteúdo de Serviços*/
-#servicos {
-  background-color: #ede5e3;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-top: 2px;
-  border-radius: 10px;
-  padding-bottom: 20px;
+/*-- CONTATO --*/
+
+form.form-contatos {}
+
+#name {
+  background: none;
+  border: 0;
+  top: 0px;
+  border-width: 2px;
+  border-bottom-width: 1px;
+  border-bottom-color: #82694E;
+  border-bottom-style: solid;
+
+#email {
+  background: none;
+  border: 0;
+  top: 0px;
+  border-width: 2px;
+  border-bottom-width: 1px;
+  border-bottom-color: #82694E;
+  border-bottom-style: solid;
 }
 
-/* FOOTER */
-
-footer {
-  display: flex;
-  justify-content: space-between;
+#message {
+  padding-bottom: 70px;
+  background: none;
+  border: 0;
+  top: 0px;
+  border-width: 2px;
+  border-bottom-width: 1px;
+  border-bottom-color: #82694E;
+  border-bottom-style: solid;
 }
+
+#button {
+  border: none;
+  background-color: #82694E;
+  color: rgb(237, 229, 227);
+  padding: 5px 15px;
+  text-align: center;
+  margin: 7px;
+  cursor: pointer;
+  -webkit-border-radius: 100px;
+}
+
+/*-- INFORMAÇÕES --*/
+
+div.informacoes {
+  background-color: rgb(237, 229, 227);
+  color: #82694E;
+  text-align: center;
+}
+
+/* -- DIV MNR -- */
+
+div.div-mnr {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+/* -- COPYRIGHT -- */
+
+div.copyright {
+  text-align: center;
+  color: #82694E;
 
 /* Gastronomia */
 .gastronomia {
@@ -355,7 +437,6 @@ footer {
   color: #82694e;
 }
 
-
 /*Responsividade*/
 
 /*@media screen and (min-width: 992px) {
@@ -370,12 +451,7 @@ footer {
 
 /*
 @media screen and (min-width: 748px) {
-   {
     width: 100%;
     height: auto;
     padding: 30px;
-    
-  }
-}*/
-
-
+}
