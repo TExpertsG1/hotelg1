@@ -9,9 +9,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://kit.fontawesome.com/54d71879ed.js" crossorigin="anonymous"></script>
     <title>Home</title>
   </head>
-
   <body>
     <header>
       <section>
@@ -20,7 +20,7 @@
           <a>Sair</a>
         </div>
         <span class="mainHeader">
-          <img height="100%" src="images/logo.png" />
+          <img height="100%" src="./images/nossoServico.jpg" />
           <nav class="navbar">
             <a href="#nossohotel">Nosso nós</a>
             <a href="#acomodacoes">Acomodações</a>
@@ -28,82 +28,85 @@
             <a href="#gastronomia">Gastronomia</a>
           </nav>
         </span>
-        <div class="sloganContainer">
-          <h1>Nosso Slogan</h1>
-          <h2>Nosso Slogan</h2>
-        </div>
+      </section>
+      <section>
+        <span class="slideshowContainer">
+          <a class="prev">&#10094;</a>
+          <span id="slide1" tabindex="0" class="mySlides">
+            <h1>Nosso Slogan 1</h1>
+            <h2>Nosso Slogan 1</h2>
+          </span>
+          <!-- <span class="mySlides">
+            <h1>Nosso Slogan 2</h1>
+            <h2>Nosso Slogan 2</h2>
+          </span>
+          <span class="mySlides">
+            <h1>Nosso Slogan 3</h1>
+            <h2>Nosso Slogan 3</h2>
+          </span> -->
+          <a class="next">&#10095;</a>
+        </span>
+        <span class="dotsContainer">
+          <a class="dot"></a>
+          <a class="dot"></a>
+          <a class="dot"></a>
+        </span>
       </section>
     </header>
     <main>
       <section>
         <div class="bloco-sobre-nosso-hotel">
           <div>
-            <img
-              class="imagem"
-              src="images/nossos_servicos.png"
-              alt="Nosso Hotel"
-            />
+            <img class="imagem" src="images/nossoServico.jpg" alt="Nosso Hotel" />
           </div>
           <div class="nosso-servico">
             <div class="sobre-nosso-hotel">
-              <h1>Sobre o nosso hotel</h1>
+              <h2>Sobre o nosso hotel</h2>
             </div>
             <div>
-              <p class="texto-maior">Descrição</p>
-            </div>
-            <div>
-              <p class="texto">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
-                nemo corporis, voluptatum doloremque totam molestias.
-                Exercitationem sed est odit laborum animi cumque mollitia amet
-                obcaecati placeat nobis, a, ipsum aliquid necessitatibus
-                laboriosam inventore facere quod?
-              </p>
+              <p class="texto-maior">História da casa</p>
             </div>
             <div>
               <p class="texto">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
-                nemo distinctio? Labore esse officia, assumenda dignissimos,
-                omnis consequuntur facilis accusantium magni numquam, aperiam
-                quibusdam.
+                O Hotel Casa 1800 Sevilla é uma mansão-palácio localizada no centro histórico de
+                Sevilha. A história das mansões-palácios de Sevilha remonta ao início do século XIX,
+                a Idade de Ouro de Sevilha, com grandes românticos, os heróis da lenda, Don Juan
+                Tenorio, Carmen la Cigarrera, Lord Byron, Bécquer…
               </p>
             </div>
-            <div>
-              <p class="botao-saiba-mais">Saiba Mais</p>
+
+            <div class="botao-saiba-mais">
+              <a href="">Saiba Mais</a>
             </div>
           </div>
         </div>
-        <hr />
-
+        <div class="navPos">
+          <ul>
+            <li>
+              <a href="calendario"><i class="fa-solid fa-calendar-days"></i></a>
+            </li>
+            <li>
+              <a href="#servicos"><i class="fa-solid fa-bell-concierge"></i></a>
+            </li>
+            <li>
+              <a href="#contatos"><i class="fa-solid fa-address-book"></i></a>
+            </li>
+          </ul>
+        </div>
         <section class="galeria">
           <article id="acomodacoes">
             <h2>Nossas Acomodações</h2>
             <div class="gallery">
-              <img
-                src="images/acomodacao1.jpg"
-                alt="Casal"
-                width="200"
-                height="200"
-              />
+              <img src="images/acomodacao1.jpg" alt="Suíte Familia" />
               <br />
               <div class="desc">Suite Família</div>
             </div>
             <div class="gallery">
-              <img
-                src="images/acomodacao2.jpg"
-                alt="Solteiro"
-                width="200"
-                height="200"
-              />
+              <img src="images/acomodacao2.jpg" alt="Suíte Master" />
               <div class="desc">Suíte Master</div>
             </div>
             <div class="gallery">
-              <img
-                src="images/acomodacao3.jpg"
-                alt="Chale"
-                width="200"
-                height="200"
-              />
+              <img src="images/acomodacao3.jpg" alt="Suíte Premium" />
               <div class="desc">Suíte Premium</div>
             </div>
           </article>
@@ -170,34 +173,57 @@
             </div>
           </div>
         </article>
-
-        <article id="gastronomia">
-          <h2>Gastronomia</h2>
+        <div class="gastronomia">
+          <div class="texto">
+            <h2>Gastronomia</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-            asperiores repellat beatae optio, quia autem repudiandae ab! Dolor
-            assumenda error dicta aliquam illum inventore quibusdam, commodi
-            facilis, minus mollitia sequi perspiciatis dolores. Iure placeat
-            fuga nobis obcaecati, mollitia autem perspiciatis unde voluptatibus.
-            Modi harum expedita molestias optio. Ex ratione accusantium quis,
-            vitae voluptate, sequi dolores ad laudantium ullam, ipsum laborum
-            temporibus totam iste perspiciatis pariatur quaerat. Consequatur
-            sapiente dolorem, dolores eos a, odit culpa et voluptate blanditiis
-            adipisci mollitia ea.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos asperiores repellat beatae
+            optio, quia autem repudiandae ab! Dolor assumenda error dicta aliquam illum inventore
+            quibusdam, commodi facilis, minus mollitia sequi perspiciatis dolores. Iure placeat fuga
+            nobis obcaecati, mollitia autem perspiciatis unde voluptatibus. Modi harum expedita
+            molestias optio. 
+
           </p>
-          <img src="images/Gastronomia.png" alt="" />
-        </article>
+          <p>
+            Ex ratione accusantium quis, vitae voluptate, sequi dolores ad
+            laudantium ullam, ipsum laborum temporibus totam iste perspiciatis pariatur quaerat.
+            Consequatur sapiente dolorem, dolores eos a, odit culpa et voluptate blanditiis adipisci
+            mollitia ea.
+          </p>
+          </div>
+          <div class="imagem">
+            <img src="images/Gastronomia.png" alt="gastronomia" />
+          </div>
+        </div>
+        <hr />
       </section>
     </main>
-    <footer>
-      <span>
-        <h4>Contatos</h4>
-        <h4>Localização</h4>
-      </span>
-      <span>
-        <h4>&copy;2045 - Todos direitos reservados</h4>
-        <h4>Barra de Navegação</h4>
-      </span>
-    </footer>
-  </body>
+  <footer>
+    <div class="div-continf">
+      <div>
+        <h3>Contato</h3>
+        <form class="form-contatos">
+          <label for="name"></label>
+          <input type="text" id="name" name="name" placeholder="Nome"><br>
+          <label for="email"></label>
+          <input type="email" id="email" name="Email" placeholder="Email"><br>
+          <label for="message"></label></label>
+          <input type="message" id="message" name="Mensagem" placeholder="Mensagem"><br>
+          <input type="button" id="button" value="Enviar">
+        </form>
+      </div>
+
+      <div class="informacoes">
+        <p><i class="fa-solid fa-location-dot"></i> Rua T.EXPERT</p>
+        <p><i class="fa-solid fa-phone-volume"></i> (00) 0 0000-0000</p>
+        <p><i class="fa-brands fa-square-whatsapp"></i> (00) 0 0000-0000</p>
+        <p><i class="fa-solid fa-envelope"></i> email@email.com.br</p>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+      </div>
+  </footer>
+  <div class="copyright">
+    <h6> &copy;2077 - Todos os direitos reservados</h6>
+  </div>
+</body>
 </html>

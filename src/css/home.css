@@ -7,25 +7,67 @@
   font-family: "Baskerville", sans-serif, "Times New Roman", Times, serif;
 }*/
 
+/*----Default Values----*/
+
 body {
-  width: 100%;
   margin: 0;
-  font-size: 1.3rem;
+  padding: 0;
+  font-size: 1rem;
   font-family: "Baskerville", sans-serif, "Times New Roman", Times, serif;
-  line-height: 1.3em;
-  padding: 0px;
+  color:#82694e;
+  background-color: #fff3f1;
+}
+
+a {
+  all: unset;
+  font-size: 0.85rem;
+  cursor: pointer;
+  color: #fff3f1;
+  transition: background-color 0.6s ease;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.25rem;
+  font-style: bold;
+  line-height: 2.25rem;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  color: #ad9479
 }
 
 /*-----Header-------*/
 
 header {
+  display: flex;
+  flex-direction: column;
   margin: 0;
-  padding: 8px;
   background-color: #ede5e3;
+  justify-content: center;
+  align-items: center;
+  width: 100%
 }
 
-a {
-  all: unset;
+header section {
+  width: 100%;
+}
+
+header section:first-of-type {
+  min-width: 10%;
+  max-width: 50%;
 }
 
 .userBar {
@@ -33,57 +75,111 @@ a {
   align-items: center;
   justify-content: flex-end;
   width: 100%;
-  height: 20px;
-  font-size: 14px;
+  height: 1rem;
+  padding: 1rem 0;
+  gap: 0.25rem;
 }
 
 .userBar a {
   display: flex;
   min-width: 60px;
-  padding: 8px;
+  padding: 0.5rem;
   justify-content: center;
   background-color: #ad9479;
-  color: #ede5e3;
+  border-radius: 0.5rem;
+}
+
+.userBar a:hover {
+  font-weight: bold;
+  background-color: #82694e;
 }
 
 .mainHeader {
   display: flex;
   align-items: center;
   width: 100%;
-  font-size: 24px;
-  font-style: bold;
   justify-content: space-between;
+  gap: 2rem;
 }
 
 .mainHeader img {
-  max-height: 120px;
-  max-width: 120px;
-  border-radius: 40px;
+  max-height: 8rem;
+  max-width: 8rem;
+  border-radius: 4rem;
 }
 
 .navbar {
   display: flex;
-  padding: 8px;
-  font-size: 14px;
-  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.25rem
+}
+
+.navbar a {
+  padding: 0.5rem;
   background-color: #ad9479;
-  color: #ede5e3;
+  border-radius: 0.5rem;
 }
 
-.sloganContainer {
-  color: #82694e;
+.navbar a:hover {
+  font-weight: bold;
+  background-color: #82694e;
 }
 
-.sloganContainer h1 {
-  margin: 0;
+.slideshowContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.mySlides {
+  /* display: none; */
+  min-width: 10%;
+  max-width: 50%;
+  padding: 1.5rem 0;
+}
+
+.prev {
+  width: 25%;
+  font-size: 2rem;
+  color: #82694E;
+}
+
+.next {
+  margin-left: auto;
+  font-size: 2rem;
+  color: #82694E;
+}
+
+.dotsContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0.5rem 0;
+  gap: 1rem;
+}
+
+.dot {
+  height: 0.75rem;
+  width: 0.75rem;
+  background-color: #ad9479;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+  font-weight: bold;
+  background-color: #82694e;
+}
+
+.slideshowContainer h1 {
   padding: 8px 0;
-  font-size: 40px;
+
 }
 
-.sloganContainer h2 {
-  margin: 0;
+.slideshowContainer h2 {
   padding: 8px 0;
-  font-size: 18px;
 }
 
 /*------Nosso Hotel-----*/
@@ -91,105 +187,139 @@ a {
 .bloco-sobre-nosso-hotel {
   display: flex;
   justify-content: space-around;
-  padding: 4rem 0;
+  padding: 1rem 0;
+  margin: 0 10%;
+  align-items: center;
 }
 
 .imagem {
-  width: 300px;
-  height: 400px;
+  width: 100%;
 }
 
 .nosso-servico {
-  /* width: 300px;
-  height: 400px; */
+  width: 300px;
+  height: 400px;
   align-self: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 4rem;
 }
 
 .sobre-nosso-hotel {
-  font-size: 24px;
-  color: #82694e;
+  /* font-size: 24px; */
+  /* color: #82694e; */
 }
 
 .texto-maior {
-  font-size: 20px;
-  color: #82694e;
+  /* font-size: 20px; */
+  /* color: #82694e; */
 }
 
 .texto {
   text-align: justify;
+  /* color: #82694e; */
 }
 
 .botao-saiba-mais {
-  max-width: 200px;
   font-size: 20px;
+  display: flex;
+  max-width: 100px;
+  /* font-size: 15px; */
   text-align: center;
-  color: #fff;
+  /* color: #fff; */
   padding: 10px 30px;
-  border: 1px black solid;
   background-color: #82694e;
+  margin: 0 auto;
+  border-radius: 10px;
+
+/* ---- NavPos-------*/
+
+div.navPos {
+  background-color: #82694e;
+  width: 60px;
+  height: 130px;
+  position: fixed;
+  right: 30px;
+  top: 10vh;
+  padding: 0 0vw 0 0vw;
+  border-radius: 25px 25px 25px 25px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+div.navPos ul {
+  padding: 0 0 0 15px;
+  list-style: none;
+}
+
+div.navPos ul li {
+  margin: 0 0 0 0;
+  text-align: left;
+  padding: 10px 0 0 9px;
+}
+
+div.navPos ul li a {
+  font-size: 0.9em;
+  color: #fff;
 }
 
 /*-----Gallery-------*/
+
+#acomodacoes h2 {
+  text-align: center;
+  padding: 40px;
+}
+
 .galeria {
-  padding-bottom: 50px;
   background-color: #ede5e3;
   display: flex;
   justify-content: center;
 }
 
 div.gallery {
-  border-radius: 15px;
   float: left;
   padding: 15px;
   width: 100;
 }
 
 div.gallery img {
+  width: 200px;
   height: auto;
   border-radius: 15px;
 }
 
 #acomodacoesfundo {
-  height: 10px;
+  max-width: auto;
   background-size: cover;
-  background-image: url(../css/acomodacao5.jpg);
+  background-image: url(../../images/acomodacoes7.jpg);
   background-attachment: fixed;
   border-top: 2px solid #c0501980;
   border-bottom: 2px solid #c0501980;
   padding: 200px;
   display: block;
   filter: grayscale(40%);
-}
-
-#acomodacoes h2 {
-  color: #82694e;
-  text-align: center;
-  padding-top: 10px;
+  background-position: 150px;
 }
 
 div.desc {
-  padding: 5px;
+  padding: 20px;
   text-align: center;
   text-decoration: overline;
-  color: #82694e;
+  /* color: #82694e; */
 }
 
 div.gallery img:hover {
   transform: scale(1.2);
   z-index: index 3;
-  padding: 10px;
 }
 
 /*Área de Serviços*/
 
 /*Título de Serviços*/
 .h2Color {
-  color: #82694e;
+  /* color: #82694e; */
   text-align: center;
+  background-color: rgb(237, 229, 227);
 }
 
 /*Subtítulo de Serviços*/
@@ -199,8 +329,8 @@ div.gallery img:hover {
 
 /*Textos descritivos de Serviços*/
 .textos {
-  color: #8a6e4b;
-  font-size: medium;
+  /* color: #8a6e4b; */
+  /* font-size: medium; */
   text-align: justify;
   text-indent: 1.5rem;
 }
@@ -255,11 +385,106 @@ div.gallery img:hover {
   text-align: left;
 }
 
-/* FOOTER */
+/*--- FOOTER ---*/
+/* -- DIV-CONTINF -- */
+div.div-continf {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
 
-footer {
+div.div-continf h3 {
+  color: #82694E;
+}
+
+/*-- CONTATO --*/
+
+form.form-contatos {}
+
+#name {
+  background: none;
+  border: 0;
+  top: 0px;
+  border-width: 2px;
+  border-bottom-width: 1px;
+  border-bottom-color: #82694E;
+  border-bottom-style: solid;
+
+#email {
+  background: none;
+  border: 0;
+  top: 0px;
+  border-width: 2px;
+  border-bottom-width: 1px;
+  border-bottom-color: #82694E;
+  border-bottom-style: solid;
+}
+
+#message {
+  padding-bottom: 70px;
+  background: none;
+  border: 0;
+  top: 0px;
+  border-width: 2px;
+  border-bottom-width: 1px;
+  border-bottom-color: #82694E;
+  border-bottom-style: solid;
+}
+
+#button {
+  border: none;
+  background-color: #82694E;
+  color: rgb(237, 229, 227);
+  padding: 5px 15px;
+  text-align: center;
+  margin: 7px;
+  cursor: pointer;
+  -webkit-border-radius: 100px;
+}
+
+/*-- INFORMAÇÕES --*/
+
+div.informacoes {
+  background-color: rgb(237, 229, 227);
+  color: #82694E;
+  text-align: center;
+}
+
+/* -- DIV MNR -- */
+
+div.div-mnr {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+/* -- COPYRIGHT -- */
+
+div.copyright {
+  text-align: center;
+  color: #82694E;
+
+/* Gastronomia */
+.gastronomia {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1rem 0;
+  margin: 0 10%;
+  align-items: center;
+}
+
+.gastronomia .imagem {
+  width: 30%;
+}
+
+.gastronomia .texto {
+  width: 60%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 4rem;
+  color: #82694e;
 }
 
 /*Responsividade*/
@@ -276,10 +501,7 @@ footer {
 
 /*
 @media screen and (min-width: 748px) {
-   {
     width: 100%;
     height: auto;
     padding: 30px;
-    
-  }
-}*/
+}
