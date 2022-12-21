@@ -365,8 +365,9 @@ div.div-continf {
   display: grid;
   grid-template-columns: auto auto;
   padding: 10px;
+}
 
-div.div-continf h3 {
+div .div-continf h3 {
   color: #82694E;
 }
 
@@ -382,6 +383,7 @@ form.form-contatos {}
   border-bottom-width: 1px;
   border-bottom-color: #82694E;
   border-bottom-style: solid;
+}
 
 #email {
   background: none;
@@ -436,6 +438,7 @@ div.div-mnr {
 div.copyright {
   text-align: center;
   color: #82694E;
+}
 
 /* Gastronomia */
 .gastronomia {
