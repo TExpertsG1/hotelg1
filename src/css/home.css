@@ -422,7 +422,7 @@ form.form-contatos {}
 div.informacoes {
   background-color: rgb(237, 229, 227);
   color: #82694E;
-  text-align: center;
+  text-align: center;  
 }
 
 /* -- DIV MNR -- */
@@ -450,10 +450,6 @@ div.copyright {
   align-items: center;
 }
 
-.gastronomia .imagem {
-  width: 30%;
-}
-
 .gastronomia .texto {
   width: 60%;
   align-self: center;
@@ -464,21 +460,60 @@ div.copyright {
   color: #82694e;
 }
 
-/*Responsividade*/
+/* ---------- responsive ----------------------- */
 
-/*@media screen and (min-width: 992px) {
-  div.gallery {
-    padding: 5px;
-    max-width: 800px;
-    height: auto;
-    margin: 1rem auto;
-    border-radius: 1rem;
-  }
-}*/
-
-/*
-@media screen and (min-width: 748px) {
+@media (max-width: 800px) {
+  
+  header section {
     width: 100%;
-    height: auto;
-    padding: 30px;
+  }
+  .menu a {
+    width: 100%;
+    float:none;    
+  }
+  .menu {
+    margin-top: 5px;    
+    margin-bottom: 10px;
+    transition: all .4s;
+  }
+  .mainHeader img, .slideshowContainer, .dotsContainer {
+    display:none;
+  }
+  .container-servicos, .informacoes {
+    display: flex;
+    flex-direction: column;
+    margin: 10 0 5 0;   
+  }
+
+  img {  
+    width: 100%;  
+    min-height: auto;  
+    object-fit: cover;  
+    object-position: bottom;
+  }
+
+  div.gallery {
+
+    float: none;
+    text-align: center;
+
+  }
+
+  .saibaMais {
+
+    margin-bottom: 5px;
+
+  }
+
+  div.informacoes {
+    text-align: left;
+    padding-left: 5px;
+    border-radius: 5px;
+  }
+  
+  .informacoes .social {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
 }
