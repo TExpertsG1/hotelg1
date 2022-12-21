@@ -516,4 +516,8 @@ div.copyright {
     margin-bottom: 5px;
   }
   
+  section #sobre div {
+    text-align: center;
+  }
+  
 }
