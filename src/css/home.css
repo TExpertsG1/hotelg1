@@ -183,84 +183,58 @@ header section:first-of-type {
 }
 
 /*------Nosso Hotel-----*/
-
-.bloco-sobre-nosso-hotel {
+#sobre{
   display: flex;
-  justify-content: space-around;
-  padding: 1rem 0;
-  margin: 0 10%;
-  align-items: center;
-}
-
-.imagem {
-  width: 100%;
-}
-
-.nosso-servico {
-  width: 300px;
-  height: 400px;
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.sobre-nosso-hotel {
-  /* font-size: 24px; */
-  /* color: #82694e; */
-}
-
-.texto-maior {
-  /* font-size: 20px; */
-  /* color: #82694e; */
-}
-
-.texto {
-  text-align: justify;
-  /* color: #82694e; */
-}
-
-.botao-saiba-mais {
-  font-size: 20px;
-  display: flex;
-  max-width: 100px;
-  /* font-size: 15px; */
-  text-align: center;
-  /* color: #fff; */
-  padding: 10px 30px;
-  background-color: #82694e;
   margin: 0 auto;
+  align-items: center;
+  margin: 1rem 4rem;
+}
+
+#sobre img{
+  border-radius: 15px;
+  opacity: 1;
+  height: 40%;
+  width: 40%;
+}
+
+#sobre img:hover {
+  transition: 400ms;
+	opacity: 0.8;
+}
+
+#sobre div{
+  padding: 2rem;
+}
+
+#sobre h2{
+  color: #82694E;
+}
+
+#sobre h3{
+  color: #82694E;
+}
+
+#sobre p{
+  font-family: "Baskerville", sans-serif;
+  text-align: justify;
+  font-size: medium;
+}
+
+#sobre button{
+  background-color: #AD9479;
   border-radius: 10px;
+  border: none;
+  padding: 0.6rem 2rem;
 
-/* ---- NavPos-------*/
 
-div.navPos {
-  background-color: #82694e;
-  width: 60px;
-  height: 130px;
-  position: fixed;
-  right: 30px;
-  top: 10vh;
-  padding: 0 0vw 0 0vw;
-  border-radius: 25px 25px 25px 25px;
-  font-weight: bold;
-  z-index: 1;
-}
-
-div.navPos ul {
-  padding: 0 0 0 15px;
-  list-style: none;
-}
-
-div.navPos ul li {
-  margin: 0 0 0 0;
-  text-align: left;
-  padding: 10px 0 0 9px;
-}
-
-div.navPos ul li a {
-  font-size: 0.9em;
   color: #fff;
+  font-size: 20px;
+
+  margin-left: 35%;
+}
+
+#sobre button:hover{
+  transform: scale(1.1);
 }
 
 /*-----Gallery-------*/
