@@ -460,6 +460,38 @@ div.copyright {
   color: #82694e;
 }
 
+/* -------------- Michelle ------------ */
+/* ---- NavPos-------*/
+
+div.navPos {
+  background-color: #82694e;
+  width: 60px;
+  height: 130px;
+  position: fixed;
+  right: 30px;
+  top: 10vh;
+  padding: 0 0vw 0 0vw;
+  border-radius: 25px 25px 25px 25px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+div.navPos ul {
+  padding: 0 0 0 15px;
+  list-style: none;
+}
+
+div.navPos ul li {
+  margin: 0 0 0 0;
+  text-align: left;
+  padding: 10px 0 0 9px;
+}
+
+div.navPos ul li a {
+  font-size: 0.9em;
+  color: #fff;
+}
+
 /* ---------- responsive ----------------------- */
 
 @media (max-width: 800px) {
