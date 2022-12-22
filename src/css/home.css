@@ -14,7 +14,7 @@ body {
   padding: 0;
   font-size: 1rem;
   font-family: "Baskerville", sans-serif, "Times New Roman", Times, serif;
-  color:#82694e;
+  color: #82694e;
   background-color: #fff3f1;
 }
 
@@ -183,14 +183,14 @@ header section:first-of-type {
 }
 
 /*------Nosso Hotel-----*/
-#sobre{
+#sobre {
   display: flex;
   margin: 0 auto;
   align-items: center;
   margin: 1rem 4rem;
 }
 
-#sobre img{
+#sobre img {
   border-radius: 15px;
   opacity: 1;
   height: 40%;
@@ -199,28 +199,28 @@ header section:first-of-type {
 
 #sobre img:hover {
   transition: 400ms;
-	opacity: 0.8;
+  opacity: 0.8;
 }
 
-#sobre div{
+#sobre div {
   padding: 2rem;
 }
 
-#sobre h2{
+#sobre h2 {
   color: #82694E;
 }
 
-#sobre h3{
+#sobre h3 {
   color: #82694E;
 }
 
-#sobre p{
+#sobre p {
   font-family: "Baskerville", sans-serif;
   text-align: justify;
   font-size: medium;
 }
 
-#sobre button{
+#sobre button {
   background-color: #AD9479;
   border-radius: 10px;
   border: none;
@@ -233,7 +233,7 @@ header section:first-of-type {
   margin-left: 35%;
 }
 
-#sobre button:hover{
+#sobre button:hover {
   transform: scale(1.1);
 }
 
@@ -360,52 +360,39 @@ div.gallery img:hover {
 }
 
 /*--- FOOTER ---*/
-/* -- DIV-CONTINF -- */
-div.div-continf {
+/* -- CONTINF -- */
+div.continf {
+  padding: 10px;
   display: grid;
   grid-template-columns: auto auto;
   padding: 10px;
-}
-
-div .div-continf h3 {
-  color: #82694E;
+  text-align: center;
+  background-color: #ede5e3;
+  font-size: 1.5rem;
 }
 
 /*-- CONTATO --*/
 
-form.form-contatos {}
-
-#name {
-  background: none;
-  border: 0;
-  top: 0px;
-  border-width: 2px;
-  border-bottom-width: 1px;
-  border-bottom-color: #82694E;
-  border-bottom-style: solid;
+.div-contatos {
+  padding: 40px;
 }
 
-#email {
+.contatos {
+  width: 50%;
   background: none;
-  border: 0;
-  top: 0px;
+  border: none;
   border-width: 2px;
   border-bottom-width: 1px;
   border-bottom-color: #82694E;
   border-bottom-style: solid;
+  font-size: 1rem;
 }
 
 #message {
-  padding-bottom: 70px;
-  background: none;
-  border: 0;
-  top: 0px;
-  border-width: 2px;
-  border-bottom-width: 1px;
-  border-bottom-color: #82694E;
-  border-bottom-style: solid;
+  padding-bottom: 6rem;
 }
 
+/* Botão antigo
 #button {
   border: none;
   background-color: #82694E;
@@ -415,14 +402,32 @@ form.form-contatos {}
   margin: 7px;
   cursor: pointer;
   -webkit-border-radius: 100px;
+} */
+
+#button {
+  font-size: 1.2rem;
+  border: none;
+  background-color: #82694e;
+  color: #ffffff;
+  padding: 8px 24px;
+  margin: 10px;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
 }
 
 /*-- INFORMAÇÕES --*/
-
 div.informacoes {
-  background-color: rgb(237, 229, 227);
+  padding: 20px;
+  padding-left: 30%;
+  width: 100%;
+  height: 100%;
   color: #82694E;
-  text-align: center;  
+  text-align: left;
+}
+
+div.redes-sociais {
+  font-size: 2.3rem;
+  padding-left: 15%;
 }
 
 /* -- DIV MNR -- */
@@ -441,14 +446,14 @@ div.copyright {
 }
 
 /*------ Gastronomia -----*/
-#gastronomia{
+#gastronomia {
   display: flex;
   margin: 0 auto;
   align-items: center;
   margin: 1rem 4rem;
 }
 
-#gastronomia img{
+#gastronomia img {
   border-radius: 15px;
   opacity: 1;
   height: 40%;
@@ -457,28 +462,28 @@ div.copyright {
 
 #gastronomia img:hover {
   transition: 400ms;
-	opacity: 0.8;
+  opacity: 0.8;
 }
 
-#gastronomia div{
+#gastronomia div {
   padding: 2rem;
 }
 
-#gastronomia h2{
+#gastronomia h2 {
   color: #82694E;
 }
 
-#gastronomia h3{
+#gastronomia h3 {
   color: #82694E;
 }
 
-#gastronomia p{
+#gastronomia p {
   font-family: "Baskerville", sans-serif;
   text-align: justify;
   font-size: medium;
 }
 
-#gastronomia button{
+#gastronomia button {
   background-color: #AD9479;
   border-radius: 10px;
   border: none;
@@ -491,7 +496,7 @@ div.copyright {
   margin-left: 35%;
 }
 
-#gastronomia button:hover{
+#gastronomia button:hover {
   transform: scale(1.1);
 }
 
@@ -530,32 +535,40 @@ div.navPos ul li a {
 /* ---------- responsive ----------------------- */
 
 @media (max-width: 800px) {
-  
+
   header section {
     width: 100%;
   }
+
   .menu a {
     width: 100%;
-    float:none;    
+    float: none;
   }
+
   .menu {
-    margin-top: 5px;    
+    margin-top: 5px;
     margin-bottom: 10px;
     transition: all .4s;
   }
-  .mainHeader img, .slideshowContainer, .dotsContainer {
-    display:none;
-  }
-  .container-servicos, .informacoes, section #sobre {
-    display: flex;
-    flex-direction: column;
-    margin: 10 0 5 0;   
+
+  .mainHeader img,
+  .slideshowContainer,
+  .dotsContainer {
+    display: none;
   }
 
-  img {  
-    width: 100%;  
-    min-height: auto;  
-    object-fit: cover;  
+  .container-servicos,
+  .informacoes,
+  section #sobre {
+    display: flex;
+    flex-direction: column;
+    margin: 10 0 5 0;
+  }
+
+  img {
+    width: 100%;
+    min-height: auto;
+    object-fit: cover;
     object-position: bottom;
   }
 
@@ -577,14 +590,14 @@ div.navPos ul li a {
     padding-left: 5px;
     border-radius: 5px;
   }
-  
+
   .informacoes .social {
     text-align: center;
     margin-bottom: 5px;
   }
-  
+
   section #sobre div {
     text-align: center;
   }
-  
+
 }
