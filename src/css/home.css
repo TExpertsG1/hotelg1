@@ -38,15 +38,19 @@ h2 {
   margin: 0;
   padding: 0;
   font-size: 1.5rem;
-  line-height: 1.5rem;
+  line-height: 5rem;
 }
 
 h3 {
   margin: 0;
   padding: 0;
   font-size: 1.25rem;
-  line-height: 1.25rem;
+  line-height: 5rem;
   color: #ad9479
+}
+
+.principal {
+  margin: 10px 30px;
 }
 
 /*-----Header-------*/
@@ -185,16 +189,12 @@ header section:first-of-type {
 /*------Nosso Hotel-----*/
 #sobre{
   display: flex;
-  margin: 0 auto;
   align-items: center;
-  margin: 1rem 4rem;
 }
 
 #sobre img{
   border-radius: 15px;
   opacity: 1;
-  height: 40%;
-  width: 40%;
 }
 
 #sobre img:hover {
@@ -206,18 +206,16 @@ header section:first-of-type {
   padding: 2rem;
 }
 
-#sobre h2{
-  color: #82694E;
-}
-
-#sobre h3{
+#sobre {
   color: #82694E;
 }
 
 #sobre p{
+  padding: 0 2.5rem 1.5rem 2.5rem;
   font-family: "Baskerville", sans-serif;
   text-align: justify;
   font-size: medium;
+  padding-bottom: 1.5rem;
 }
 
 #sobre button{
@@ -225,7 +223,6 @@ header section:first-of-type {
   border-radius: 10px;
   border: none;
   padding: 0.6rem 2rem;
-
 
   color: #fff;
   font-size: 20px;
