@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/css/reservas.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/54d71879ed.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <section>
+            <div class="userBar">
+                <a>Olá Usuário</a>
+                <a>Sair</a>
+            </div>
+            <span class="mainHeader">
+                <img height="100%" src="../images/nossoServico.jpg" />
+                <nav class="navbar menu">
+                    <a href="#nossohotel">Nosso nós</a>
+                    <a href="#acomodacoes">Acomodações</a>
+                    <a href="#servicos">Nossos Serviços</a>
+                    <a href="#gastronomia">Gastronomia</a>
+                </nav>
+            </span>
+        </section>
+        <section>
+            <span class="slideshowContainer">
+                <a class="prev">&#10094;</a>
+                <span id="slide1" tabindex="0" class="mySlides">
+                    <h1>Nome do nosso hotel</h1>
+                    <h2>Nosso Slogan</h2>
+                </span>
+                <a class="next">&#10095;</a>
+            </span>
+            <span class="dotsContainer">
+                <a class="dot"></a>
+                <a class="dot"></a>
+                <a class="dot"></a>
+            </span>
+        </section>
+    </header>
+    <main>
+        <section>
+            <!--RESERVA-->
+            <div class="reserva">
+                <div>
+                    <h2>Minha Reserva</h2>
+                    <h4>Forneça data de entrada, saída e quantidade de pessoas.</h4>
+                    <div class="divInputReserva">
+                        <div class="entrada">
+                            <label for="entrada"></label>
+                            <input class="inputEntSaiQnt" type="text" id="entrada" name="entrada" placeholder="Entrada">
+                        </div>
+                        <div class="saida">
+                            <label for="saida"></label>
+                            <input class="inputEntSaiQnt" type="text" id="saida" name="saida" placeholder="Saída">
+                        </div>
+                        <div class="qntpessoas">
+                            <label for="qntpessoas"></label>
+                            <input class="inputEntSaiQnt" type="text" id="qntpessoas" name="qntpessoas"
+                                placeholder="Quantidade de pessoas">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navPos">
+                <ul>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-calendar-days"></i></a>
+                    </li>
+                    <li>
+                        <a href="#servicos"><i class="fa-solid fa-bell-concierge"></i></a>
+                    </li>
+                    <li>
+                        <a href="#contatos"><i class="fa-solid fa-address-book"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <!--QUARTOS-->
+            <h2 class="h2Escolha">Escolha um quarto</h2>
+            <div class="divPost">
+                <div>
+                    <div class="divPostCompleto">
+                        <div class="postArea">
+                            <img src="../images/acomodacao1.jpg" alt="Suíte Família">
+                            <div class="postQuarto">
+                                <h2>Suíte Família</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam pariatur minus, ea
+                                    totam
+                                    perferendis magnam placeat hic unde provident accusantium at voluptatum commodi
+                                    possimus est
+                                    explicabo similique. Repellat, iste veniam dolores enim eius aliquam ullam nisi eos,
+                                    asperiores
+                                    magnam consequuntur, omnis expedita quas neque autem quibusdam nihil vel fugit quod!
+                                </p>
+                                <h4>R$ 150.00</h4>
+                                <label>
+                                    <input type="checkbox" name="checkbox" class="checkboxSuite">
+                                    Selecionar Suíte Premium
+                                </label>
+                            </div>
+                        </div>
+                        <div class="postArea">
+                            <img src="../images/acomodacao2.jpg" alt="Suíte Master">
+                            <div class="postQuarto">
+                                <h2>Suíte Master</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam pariatur minus, ea
+                                    totam
+                                    perferendis magnam placeat hic unde provident accusantium at voluptatum commodi
+                                    possimus est
+                                    explicabo similique. Repellat, iste veniam dolores enim eius aliquam ullam nisi eos,
+                                    asperiores
+                                    magnam consequuntur, omnis expedita quas neque autem quibusdam nihil vel fugit quod!
+                                </p>
+                                <h4>R$ 250.00</h4>
+                                <label>
+                                    <input type="checkbox" name="checkbox" class="checkboxSuite">
+                                    Selecionar Suíte Premium
+                                </label>
+                            </div>
+                        </div>
+                        <div class="postArea">
+                            <img src="../images/acomodacao3.jpg" alt="Suíte Premium">
+                            <div class="postQuarto">
+                                <h2>Suíte Premium</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam pariatur minus, ea
+                                    totam
+                                    perferendis magnam placeat hic unde provident accusantium at voluptatum commodi
+                                    possimus est
+                                    explicabo similique. Repellat, iste veniam dolores enim eius aliquam ullam nisi eos,
+                                    asperiores
+                                    magnam consequuntur, omnis expedita quas neque autem quibusdam nihil vel fugit quod!
+                                </p>
+                                <h4>R$ 350.00</h4>
+                                <label>
+                                    <input type="checkbox" name="checkbox" class="checkboxSuite">
+                                    Selecionar Suíte Premium
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="resumoReserva">
+                        <h2>Resumo da reserva</h2>
+                        <div class="infoReserva">
+                            <h4>Apartamento: XXX</h4>
+                            <h4>Checkin: XXX</h4>
+                            <h4>Checkout: XXX</h4>
+                            <h4>Quantidade de pessoas: XXX</h4>
+                        </div>
+                        <h3>adicionar mais serviços</h3>
+                        <label>
+                            <input class="buttonReserva" type="button" id="button" value="Enviar">
+                        </label>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <div class="continf">
+            <div class="div-contatos">
+                <form class="form-contatos">
+                    <h2>Contato</h2>
+                    <label for="name"></label>
+                    <input class="contatos" type="text" id="name" name="name" placeholder="Nome"><br>
+                    <label for="email"></label>
+                    <input class="contatos" type="email" id="email" name="Email" placeholder="Email"><br>
+                    <label for="message"></label></label>
+                    <input class="contatos" type="message" id="message" name="Mensagem" placeholder="Mensagem"><br>
+                    <input class="buttonContatos" type="button" id="button" value="Enviar">
+                </form>
+            </div>
+
+            <div class="informacoes">
+                <p><i class="fa-solid fa-location-dot"></i> Rua T.EXPERT</p>
+                <p><i class="fa-solid fa-phone-volume"></i> (00) 0 0000-0000</p>
+                <p><i class="fa-brands fa-square-whatsapp"></i> (00) 0 0000-0000</p>
+                <p><i class="fa-solid fa-envelope"></i> email@email.com.br</p>
+                <div class="redes-sociais">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <div class="copyright">
+        <h5> &copy;2077 - Todos os direitos reservados</h5>
+    </div>
+</body>
+
+</html>
