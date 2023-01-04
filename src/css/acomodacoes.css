@@ -28,7 +28,7 @@
   font-family: "Baskerville", sans-serif;
   text-align: justify;
   line-height: 1.5rem;
-  width: 100%;
+
   display: inline-block;
 }
 
@@ -281,6 +281,19 @@ ul#album-fotos li span {
   fieldset{
     width:auto;
   }
+.mainHeader {
+  width: 50%;
+  padding: 20px 100px 10px;
+  align-items: center;
+  font-size: 10px;
+}
+
+
+.nomeLogo h1{
+  width: 50%;
+  padding-left:30% ;
+}
+
 
 
 /* Medium devices (landscape tablets, 768px and up) */
