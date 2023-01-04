@@ -154,3 +154,12 @@ header{
     color: #ad9479;
     font-weight: 700;
   }
+
+  /**** Posição do Título ****/
+ section{
+    position: absolute;
+    padding-left: 0.5rem;
+    padding-bottom: 1rem;
+    max-height: 280px;
+    height: auto;
+  }
