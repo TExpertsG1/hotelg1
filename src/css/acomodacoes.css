@@ -227,7 +227,8 @@ ul#album-fotos li:hover {
 }
 
 /* ***** Media Querie*****/
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 415px) and (orientation: portrait),
+  (max-width: 1025px) {
   .container-grid-acomodacoes {
     display: flex;
     flex-wrap: wrap-reverse;
@@ -280,6 +281,7 @@ ul#album-fotos li:hover {
 
   fieldset {
     width: auto;
+    float: left;
   }
 
   .mainHeader {
