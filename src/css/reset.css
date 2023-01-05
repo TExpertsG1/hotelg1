@@ -46,3 +46,27 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+#leftNavbar a {
+    text-decoration: none;
+}
+
+#leftNavbar a:link {
+    text-decoration: none;
+}
+
+#leftNavbar a:visited {
+    text-decoration: none;
+}
+
+#leftNavbar a:focus {
+    text-decoration: none;
+}
+
+#leftNavbar a:hover {
+    text-decoration: none;
+}
+
+#leftNavbar a:active {
+    text-decoration: none;
+}
