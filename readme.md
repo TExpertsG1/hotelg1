@@ -9,6 +9,8 @@
   - [Crie Uma Página Web Utilizando as Tags Aprendidas](#crie-uma-página-web-utilizando-as-tags-aprendidas)
     - [Sobre o projeto](#sobre-o-projeto)
   - [Definição do Projeto](#definição-do-projeto)
+    - [Área Pública](#área-pública)
+    - [Área Administrativa](#área-administrativa)
   - [Técnologias utilizadas](#técnologias-utilizadas)
   - [Status do Projeto](#status-do-projeto)
   - [Funcionalides da Aplicação](#funcionalides-da-aplicação)
@@ -26,6 +28,7 @@ Neste projeto o aluno aprenderá a desenvolver um sistema WEB de gerenciamento d
 
 ## Definição do Projeto
 
+### Área Pública
 - Tela Home
 - Tela Contato
 - Tela Reservas
@@ -34,6 +37,13 @@ Neste projeto o aluno aprenderá a desenvolver um sistema WEB de gerenciamento d
 - Tela Login
 - Estrutura DOM
 - Refinamento de Estrutura
+  
+### Área Administrativa
+- Login
+- Home
+- Funcionários
+- Hóspedes
+- Reservas 
 
 ## Técnologias utilizadas
 
@@ -44,7 +54,8 @@ Neste projeto o aluno aprenderá a desenvolver um sistema WEB de gerenciamento d
 
 > :construction: Projeto em construção :construction:
 
-- Página Home - HTML
+- Página Home - HTML - CSS3
+- Página Acomodações - HTML e CSS3
 
 ---
 
