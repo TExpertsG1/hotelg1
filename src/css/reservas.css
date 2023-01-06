@@ -176,16 +176,20 @@ header section:first-of-type {
 }
 
 /*------RESERVA-----*/
-.reserva {
-    font-size: large;
-    margin: 2rem 0 2rem 10rem;
+.reserva h2 {
+    margin-left: 10rem;
+    margin-top: 1rem;
 }
 
-.entrada,
-.saida,
-.qntpessoas {
-    display: inline-block;
-    padding-right: 10px;
+.reserva h4 {
+    margin-left: 10rem;
+}
+
+.divInputReserva {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-left: 10rem;
 }
 
 .inputEntSaiQnt {
