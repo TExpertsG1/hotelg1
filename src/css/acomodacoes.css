@@ -1,0 +1,395 @@
+.separador {
+  text-align: center;
+  padding: 2vh 0 0 0vh;
+  align-items: center;
+  position: relative;
+}
+
+.container-grid-acomodacoes {
+  display: flex;
+  padding: 5px;
+}
+.container-grid-acomodacoes1 {
+  display: flex;
+  padding: 5px;
+}
+
+.container-grid-acomodacoes div h2 {
+  padding: 2rem 0 0 0;
+  text-align: center;
+  text-decoration: overline;
+}
+
+.container-grid-acomodacoes img:hover {
+  transition: 400ms;
+  opacity: 0.8;
+}
+.container-grid-acomodacoes p {
+  font-family: "Baskerville", sans-serif;
+  text-align: justify;
+  line-height: 1.5rem;
+
+  display: inline-block;
+}
+
+.container-grid-acomodacoes div button {
+  background-color: #ad9479;
+  border-radius: 10px;
+  border: none;
+  padding: 0.2rem 1rem 0.2rem;
+  color: #fff;
+  font-size: 15px;
+  position: relative;
+  left: 40%;
+  top: 0.3rem;
+}
+
+.container-grid-acomodacoes button:hover {
+  transform: scale(1.1);
+}
+
+fieldset {
+  min-width: none;
+  border-radius: 15px;
+  border-color: #ad9479;
+  font-size: 12px;
+  width: 40%;
+  line-height: 1.5rem;
+  font-weight: bold;
+}
+
+/****** Galeria*******/
+
+ul#album-fotos {
+  width: 700px;
+  margin: 0 auto;
+}
+
+ul#album-fotos li {
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  border: 5px solid #ad9479;
+  border-radius: 15px;
+  -webkit-transition: all 0.4s ease-in;
+}
+
+ul#album-fotos li span {
+  opacity: 0;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  line-height: 370px;
+  padding: 5px;
+}
+
+ul#album-fotos li:hover span {
+  opacity: 1;
+}
+
+ul#album-fotos {
+  list-style: none;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+ul#galeria-foto li {
+  display: block;
+  float: left;
+  margin: 15px;
+  position: relative;
+}
+
+input {
+  width: auto;
+  border: none;
+  background: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #ad9479;
+  color: #ad9479;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+div.continf1 {
+  display: flex;
+  text-align: center;
+  background-color: #ede5e3;
+  font-size: 1.5rem;
+}
+
+/* ..... Suíte Família.....*/
+
+ul#album-fotos li.fotos01 {
+  background: url(../../images/acomodacoes/suiteFamilia01.jpg) no-repeat;
+  background-position: 90% 40%;
+  background-size: 300px 300px;
+}
+ul#album-fotos li.fotos02 {
+  background: url(../../images/acomodacoes/suiteFamilia02.jpg) no-repeat;
+  background-position: 30% 50%;
+  background-size: 300px 300px;
+}
+
+ul#album-fotos li.fotos03 {
+  background: url(../../images/acomodacoes/suiteFamilia03.jpg) no-repeat;
+  background-position: 50% 50%;
+  background-size: 300px 300px;
+}
+ul#album-fotos li.fotos04 {
+  background: url(../../images/acomodacoes/suiteFamilia04.jpg) no-repeat;
+  background-position: 50% 50%;
+  background-size: 300px 300px;
+}
+ul#album-fotos li.fotos05 {
+  background: url(../../images/acomodacoes/suiteFamilia05.jpg) no-repeat;
+  background-position: 50% 50%;
+  background-size: 300px 300px;
+}
+
+ul#album-fotos li.fotos06 {
+  background: url(../../images/acomodacoes/suiteFamilia06.jpg) no-repeat;
+  background-position: 90% 50%;
+  background-size: 300px 300px;
+}
+
+/* ..... Suíte Master.....*/
+
+ul#album-fotos li.fotos07 {
+  background: url(../../images/acomodacoes/suiteMaster01.jpg) no-repeat;
+  background-position: 40% 89%;
+  background-size: 300px 300px;
+}
+ul#album-fotos li.fotos08 {
+  background: url(../../images/acomodacoes/suiteMaster02.jpg) no-repeat;
+  background-position: 50% 50%;
+  background-size: 300px 300px;
+}
+
+ul#album-fotos li.fotos09 {
+  background: url(../../images/acomodacoes/suiteMaster03.jpg) no-repeat;
+  background-position: 40% 80%;
+  background-size: 300px 300px;
+}
+ul#album-fotos li.fotos10 {
+  background: url(../../images/acomodacoes/suiteMaster04.jpg) no-repeat;
+  background-position: 80% 80%;
+  background-size: 300px 300px;
+}
+ul#album-fotos li.fotos11 {
+  background: url(../../images/acomodacoes/suiteMaster05.jpg) no-repeat;
+  background-position: 40% 60%;
+  background-size: 300px 300px;
+}
+
+ul#album-fotos li.fotos12 {
+  background: url(../../images/acomodacoes/suiteMaster06.jpg) no-repeat;
+  background-position: 50% 50%;
+  background-size: 300px 300px;
+}
+/* ..... Suíte Premium.....*/
+
+ul#album-fotos li.fotos13 {
+  background: url(../../images/acomodacoes/suitePremium01.jpg) no-repeat;
+  background-position: 50% 50%;
+  background-size: 300px 300px;
+}
+ul#album-fotos li.fotos14 {
+  background: url(../../images/acomodacoes/suitePremium02.jpg) no-repeat;
+  background-position: 50% 80%;
+  background-size: 300px 300px;
+}
+ul#album-fotos li.fotos15 {
+  background: url(../../images/acomodacoes/suitePremium03.jpg) no-repeat;
+  background-position: 50% 50%;
+  background-size: 300px 300px;
+}
+ul#album-fotos li.fotos16 {
+  background: url(../../images/acomodacoes/suitePremium04.jpg) no-repeat;
+  background-position: 10% 90%;
+  background-size: 300px 300px;
+}
+ul#album-fotos li.fotos17 {
+  background: url(../../images/acomodacoes/suitePremium05.jpg) no-repeat;
+  background-position: 30% 80%;
+  background-size: 300px 300px;
+}
+ul#album-fotos li.fotos18 {
+  background: url(../../images/acomodacoes/suitePremium06.jpg) no-repeat;
+  background-position: 10% 100%;
+  background-size: 300px 300px;
+}
+
+ul#album-fotos li:hover {
+  background-position: 0% 0%;
+  background-size: 200px 200px;
+  -webkit-transform: scale(1.5);
+}
+
+/* ***** Media Querie*****/
+@media only screen and (max-width: 415px) and (orientation: portrait),
+  (max-width: 1025px) {
+  .container-grid-acomodacoes {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+  }
+
+  .container-grid-acomodacoes1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  div #galeria1 #album-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .separador {
+    width: 20%;
+    padding: 0px 0px 0px 140px;
+  }
+
+  ul#album-fotos li {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #ad9479;
+    background: #fff;
+    border-radius: 15px;
+    -webkit-transition: all 0.4s ease-in;
+    background-position: 50% 50%;
+    background-size: 350px 250px;
+  }
+
+  ul#album-fotos li span {
+    opacity: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 5px;
+    padding: 5px;
+    font-size: 0.2rem;
+  }
+  .menu a {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+
+  fieldset {
+    width: auto;
+    float: left;
+  }
+
+  .mainHeader {
+    width: 50%;
+    padding: 20px 100px 10px;
+    align-items: center;
+    font-size: 10px;
+  }
+
+  .nomeLogo h1 {
+    width: 50%;
+    padding-left: 30%;
+  }
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 1024px) {
+  }
+  .container-grid-acomodacoes {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+  }
+
+  .container-grid-acomodacoes1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  div #galeria1 #album-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .separador {
+    width: 20%;
+    padding: 0px 0px 0px 140px;
+  }
+
+  ul#album-fotos li {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #ad9479;
+    background: #fff;
+    border-radius: 15px;
+    -webkit-transition: all 0.4s ease-in;
+    background-position: 50% 50%;
+    background-size: 350px 250px;
+  }
+
+  ul#album-fotos li span {
+    opacity: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 5px;
+    padding: 5px;
+    font-size: 0.2rem;
+  }
+  .menu a {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+
+  fieldset {
+    width: auto;
+  }
+
+  .mainHeader {
+    width: 50%;
+    padding: 20px 100px 10px;
+    align-items: center;
+    font-size: 10px;
+  }
+
+  .nomeLogo h1 {
+    width: 50%;
+    padding-left: 30%;
+  }
+  .continf {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .div-contatos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .form-contatos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .form-contatos h2 {
+    font-size: 1rem;
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .example {
+      background: orange;
+    }
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+  }
+}
