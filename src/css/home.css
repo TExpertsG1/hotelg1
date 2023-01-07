@@ -177,6 +177,7 @@ header section {
 
 /****  Sobre Nosso Hotel ****/
 
+
 .container-grid {
   display: flex;
   grid-template-columns: 45% 55%;
@@ -541,20 +542,24 @@ div.copyright {
   header section {
     width: 100%;
   }
+
   .menu a {
     width: 100%;
     float: none;
   }
+
   .menu {
     margin-top: 5px;
     margin-bottom: 10px;
     transition: all 0.4s;
   }
+
   .mainHeader img,
   .slideshowContainer,
   .dotsContainer {
     display: none;
   }
+
   .container-servicos,
   .informacoes,
   section #sobre {
@@ -594,3 +599,4 @@ div.copyright {
     text-align: center;
   }
 }
+
