@@ -3,10 +3,9 @@
   src: url(../font/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf);
 }
 
-:root {
-  --Background: #fff3f1;
-  --Color: #82694e;
-}
+/** {
+  font-family: "Baskerville", sans-serif, "Times New Roman", Times, serif;
+}*/
 
 /*----Default Values----*/
 
@@ -15,15 +14,15 @@ body {
   padding: 0;
   font-size: 1rem;
   font-family: "Baskerville", sans-serif, "Times New Roman", Times, serif;
-  color: var(--Color);
-  background-color: var(--Background);
+  color: #82694e;
+  background-color: #fff3f1;
 }
 
 a {
   all: unset;
   font-size: 0.85rem;
   cursor: pointer;
-  color: var(--Background);
+  color: #fff3f1;
   transition: background-color 0.6s ease;
 }
 
@@ -105,7 +104,7 @@ header section:first-of-type {
 
 .navbar a:hover {
   font-weight: bold;
-  background-color: var(--Color);
+  background-color: #82694e;
 }
 
 /*-------- Form -------*/
@@ -159,13 +158,13 @@ button {
   background-color: #ad9479;
   border-radius: 0.5rem;
   font-size: 1rem;
-  color: var(--Background);
+  color: #fff3f1;
   transition: background-color 0.6s ease;
 }
 
 button:hover {
   font-weight: bold;
-  background-color: var(--Color);
+  background-color: #82694e;
 }
 
 p {

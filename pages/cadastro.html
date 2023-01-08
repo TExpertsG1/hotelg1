@@ -5,10 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../src/css/reset.css" />
-  <link rel="stylesheet" href="../src/css/login.css" />
+  <link rel="stylesheet" href="../src/css/cadastro.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <script src="https://kit.fontawesome.com/54d71879ed.js" crossorigin="anonymous"></script>
-  <title>Login</title>
+  <title>Cadastro</title>
 </head>
 <body>
   <header>
@@ -24,7 +24,7 @@
   <main>
     <div>
       <form>
-        <h1 class="mainText">Faça seu login</h1>
+        <h1 class="mainText">Faça seu cadastro</h1>
         <span class="inputContainer">
           <label>Email</label>
           <input type="email" name="email" required>
@@ -33,7 +33,11 @@
           <label>Senha</label>
           <input type="password" name="password" required>
         </span>
-        <button type="submit">Fazer login</button>
+        <span class="inputContainer">
+          <label>Confirmação da senha</label>
+          <input type="password" name="passwordConfirmation" required>
+        </span>
+        <button type="submit">Finalizar cadastro</button>
       </form>
       <hr/>
       <p>
@@ -43,7 +47,7 @@
         </p>
       </p>
       <hr/>
-      <p>Não tem uma conta? Crie sua conta <a href="./cadastro.html" class="formLinks">aqui</a></p>
+      <p>Já possui uma conta? Faça seu login <a href="./login.html" class="formLinks">aqui</a></p>
       <hr/>
       <p>
         Todos os direitos reservados.
