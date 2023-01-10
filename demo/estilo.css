@@ -3,6 +3,12 @@
     font-family: 'FonteLogo';
     src: url("../_fonts/bubblegum-sans-regular.otf");
 }
+
+:root {
+    --Background: #fff3f1;
+    --Color: #82694e;
+}
+
 body{
     font-family: Arial, sans-serif;
     background-color: #fff;
@@ -38,7 +44,7 @@ header#cabecalho {
 header#cabecalho h1{
     font-family: 'FonteLogo', sans-serif;
     font-size: 30pt;
-    color: #82694E;
+    color: var(--Color);
     text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
     padding: 0px;
     margin-bottom: 0px;
@@ -47,7 +53,7 @@ header#cabecalho h1{
 header#cabecalho h2{
     font-family: Arial, sans-serif;
     font-size: 15pt;
-    color: #82694E;
+    color: var(--Color);
     padding: 0px;
     margin-top: 0px;
     text-transform: uppercase;
@@ -73,7 +79,7 @@ nav#menu li{
     transition: background-color 1s;
 }
 nav#menu li:hover{
-    background-color: #82694E;
+    background-color: var(--Color);
 }
 nav#menu h1{
     display: none;
@@ -89,7 +95,7 @@ nav#menu a:hover{
 
 nav#menu #select {
     font-weight: bold;
-    background-color: #82694E;
+    background-color: var(--Color);
 }
 
 
@@ -112,7 +118,7 @@ section#sobre h2 {
     font-family: Arial, sans-serif;
     font-size: 18pt;
     font-weight: bold;
-    color: #82694E;
+    color: var(--Color);
     padding: 0px;
     margin-top: 0px;
 }
@@ -120,7 +126,7 @@ section#sobre h2 {
 section#sobre h3 {
     font-family: Arial, sans-serif;
     font-size: 15pt;
-    color: #82694E;
+    color: var(--Color);
     padding: 0px;
     margin-top: 0px;
 }
@@ -156,7 +162,7 @@ section#acomodacoes h2 {
     font-family: Arial, sans-serif;
     font-size: 18pt;
     font-weight: bold;
-    color: #82694E;
+    color: var(--Color);
     padding: 0px;
     padding-top: 10px;
     text-align: center;
@@ -309,7 +315,7 @@ section#gastronomia h2 {
     font-family: Arial, sans-serif;
     font-size: 18pt;
     font-weight: bold;
-    color: #82694E;
+    color: var(--Color);
     padding: 0px;
     margin-top: 0px;
 }

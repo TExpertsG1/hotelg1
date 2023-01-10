@@ -1,0 +1,206 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --Nav: #87664B;
+    --NavFont: #fff;
+    --Color: rgb(237, 229, 227);
+    --Main: #fff;
+}
+
+.left{
+    background: var(--Nav);
+    color: var(--NavFont);   
+}
+
+.right{
+    background: var(--Main);
+    color: var(--Nav);   
+}
+
+.column {
+  padding: 5rem;
+  height: auto;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  
+  grid-template-columns: 1fr 5fr;
+ }
+
+nav {
+    margin-top: 20%;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+
+    line-height: 3.5em;
+}
+
+nav ul li:hover {
+
+   background-color: var(--Color);   
+}
+
+nav ul li:hover a {
+
+   color: var(--Nav);   
+}
+
+a {
+    text-decoration: none;
+    color: var(--NavFont);
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+    background-color: var(-Nav);
+  }
+
+.btn-cad-client {
+    float: right;
+    color: var(--NavFont);
+    background-color: var(--Nav);
+    border:none;
+    width: 15%;
+    height: 3em;
+    margin-bottom: 10px;
+}
+
+.btns {
+ float:right;
+ margin-top: 10px;
+}
+
+.btn-page {
+    color: var(--NavFont);
+    background-color: var(--Nav);
+    border:none;
+    width: 30px;
+    height: 3em;
+}
+
+.btn-list {
+    color: var(--Nav);
+    background-color: var(--Color);
+    border:none;
+    width: 100px;
+    height: 3em;
+}
+
+table {
+    border: 1px solid #eee;
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+table thead th {
+    padding: 10px;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+table tbody tr td {
+    display: table-cell;
+    font-weight: 400;
+    padding: 10px;
+    text-align: left;
+    position: relative;
+}
+
+table tbody tr {
+    border: none;
+    display: table-row;
+}
+
+table tbody tr:nth-child(odd) {
+    background: #f2f2f2;
+}
+
+table tbody tr td button {
+    display: inline-block;
+    padding: 10px 15px;
+    position: initial;
+    transform: translate(0);
+    width: auto;
+}
+
+table tbody tr td button {
+    background: #4CAF50;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(34, 34, 34, 0.2);
+    color: #fff;
+    font-weight: 700;;
+    padding: 10px 0;
+    width: 100%;
+}
+
+table thead {
+    display: table-header-group;
+    font-weight: 500;
+}
+
+
+table tbody tr td:before {
+    display: none;
+}
+
+table tbody tr td button:hover, table tbody tr td button:focus {
+    background: #a795fe;
+    cursor: pointer;
+}
+
+@media all and (max-width: 800px) {
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    }
+
+     table tbody tr td {
+        display: block;
+        text-align: right;
+    }
+
+    table tbody tr td:before {
+        content: attr(data-title);
+        position: absolute;
+        left: 15px;
+        display: block;
+        font-weight: 600;
+        font-size: 1em;
+    }
+
+    table {
+        border: none;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table tbody tr {
+        margin-bottom: 10px;
+        display: block;
+        border: 1px solid #dad6eb;
+    }
+}   
