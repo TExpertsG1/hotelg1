@@ -34,7 +34,7 @@
   display: grid;
   height: 100vh;
   
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 8fr;
  }
 
 nav {
