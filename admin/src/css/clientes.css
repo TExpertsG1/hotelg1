@@ -32,6 +32,7 @@
   max-width: 100%;
   margin: 0 auto;
   display: grid;
+  height: 100vh;
   
   grid-template-columns: 1fr 5fr;
  }
