@@ -1,37 +1,30 @@
+@charset "UTF-8";
+* {
+  font-family: "Baskerville";
+  box-sizing: border-box;
+  line-height: 1.5rem;
+}
+
 @font-face {
   font-family: Baskerville;
   src: url(../font/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf);
 }
-
-:root {
-  --Background: #fff3f1;
-  --Color: #82694e;
-}
-
-/*----Default Values----*/
-
-
 body {
-  margin: 0;
-  padding: 0;
-  font-size: 1rem;
-  font-family: "Baskerville", sans-serif, "Times New Roman", Times, serif;
-  color: var(--Color);
-  background-color: var(--Background);
+  color: #82694e;
+  background-color: #fff3f1;
+  font-family: "Baskerville";
 }
 
 a {
   all: unset;
-  font-size: 0.85rem;
   cursor: pointer;
-  color: var(--Background);
+  color: #fff3f1;
   transition: background-color 0.6s ease;
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 3rem;
   font-style: bold;
-  line-height: 2.25rem;
   padding: 0vh 0vh 0vh 25vh;
   color: #e9cb6b;
 }
@@ -40,33 +33,34 @@ h2 {
   margin: 0;
   font-size: 1.5rem;
   line-height: 5rem;
+  text-align: center;
+  font-family: "Baskerville";
 }
 
 .principal {
   margin: 1px 30px;
 }
 
-/*-----Header-------*/
+.nomeLogo {
+  display: flex;
+  float: left;
+}
 
+/*-----Header-------*/
 header {
   display: flex;
-  flex-direction: column;
   background-color: #ede5e3;
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-image: url(../../images/imagemHeader.jpg);
   background-attachment: fixed;
-  border-top: 2px solid #c0501980;
-  border-bottom: 2px solid #c0501980;
+  border-top: 2px solid rgba(192, 80, 25, 0.5019607843);
+  border-bottom: 2px solid rgba(192, 80, 25, 0.5019607843);
+  background-image: url("../../images/imagemHeader.jpg");
+  background-attachment: fixed;
 }
-
 header section {
   width: 100%;
-}
-
-.nomeLogo {
-  position: relative;
 }
 
 .userBar {
@@ -75,9 +69,8 @@ header section {
   justify-content: flex-end;
   height: 1rem;
   padding: 20px 40px 20px 20px;
-  gap: 0.25rem;
+  gap: 0.3rem;
 }
-
 .userBar a {
   display: flex;
   min-width: 60px;
@@ -86,10 +79,9 @@ header section {
   background-color: #ad9479;
   border-radius: 0.5rem;
 }
-
 .userBar a:hover {
   font-weight: bold;
-  background-color: var(--Color);
+  background-color: #82694e;
 }
 
 .mainHeader {
@@ -97,7 +89,6 @@ header section {
   align-items: center;
   justify-content: space-around;
 }
-
 .mainHeader img {
   max-height: 8rem;
   max-width: 8rem;
@@ -109,91 +100,32 @@ header section {
   justify-content: flex-end;
   gap: 0.3rem;
 }
-
 .navbar a {
   padding: 0.5rem;
   background-color: #ad9479;
   border-radius: 0.5rem;
   font-size: 1rem;
 }
-
 .navbar a:hover {
   font-weight: bold;
-  background-color: var(--Color);
+  background-color: #82694e;
 }
-
-/*.slideshowContainer {
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-.mySlides {
-  /* display: none; 
-  min-width: 10%;
-  max-width: 50%;
-  padding: 1.5rem 0;
-}
-.prev {
-  width: 25%;
-  font-size: 2rem;
-  color: var(--Color);
-}
-.next {
-  margin-left: auto;
-  font-size: 2rem;
-  color: var(--Color);
-}
-.dotsContainer {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 0.5rem 0;
-  gap: 1rem;
-}
-.dot {
-  height: 0.75rem;
-  width: 0.75rem;
-  background-color: #ad9479;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.dot:hover {
-  font-weight: bold;
-  background-color: var(--Color);
-}
-.slideshowContainer h1 {
-  padding: 8px 0;
-}
-.slideshowContainer h2 {
-  padding: 8px 0;
-}*/
 
 /****  Sobre Nosso Hotel ****/
-
-
-.container-grid {
+.container-grid,
+.container-grid-gastro {
   display: flex;
   grid-template-columns: 45% 55%;
   width: 100%;
-  text-align: left;
 }
-
-.container-grid div h2 {
-  padding: 0 4.5rem 0rem 4rem;
-}
-
-.container-grid div img {
+.container-grid div img,
+.container-grid-gastro div img {
   border-radius: 15px;
   opacity: 1;
+  width: 450px;
 }
-
-.container-grid img:hover {
-  transition: 400ms;
-  opacity: 0.8;
-}
-
-.container-grid p {
+.container-grid p,
+.container-grid-gastro p {
   padding: 2rem 10rem 2.5rem 10rem;
   font-family: "Baskerville", sans-serif;
   text-align: justify;
@@ -202,8 +134,8 @@ header section {
   line-height: 1.5rem;
   width: auto;
 }
-
-.container-grid div button {
+.container-grid div button,
+.container-grid-gastro div button {
   background-color: #ad9479;
   border-radius: 10px;
   border: none;
@@ -211,30 +143,24 @@ header section {
   color: #fff;
   font-size: 15px;
   position: relative;
-  top: 70%;
-  left: 32%;
+  left: 78%;
 }
-
-.container-grid button:hover {
+.container-grid button:hover,
+.container-grid-gastro button:hover {
   transform: scale(1.1);
 }
-
-#containersobre01 {
-  width: 50%;
-  height: auto;
+.container-grid img:hover,
+.container-grid-gastro img:hover {
+  transition: 400ms;
+  opacity: 0.8;
 }
 
-#containersobre02 {
-  align-items: center;
-  text-align: center;
+/*------ Gastronomia -----*/
+.container-grid-gastro div h2 {
+  padding: 0 2.5rem 0rem 1rem;
 }
 
 /*-----Gallery-------*/
-#acomodacoes h2 {
-  text-align: center;
-  padding: 1rem;
-}
-
 .galeria {
   background-color: #ede5e3;
   display: flex;
@@ -247,63 +173,39 @@ div.gallery {
   padding: 15px;
   width: 100;
 }
-
 div.gallery img {
   width: 200px;
   height: auto;
   border-radius: 15px;
 }
+div.gallery img:hover {
+  transform: scale(1.2);
+}
 
 #acomodacoesfundo {
   background-size: cover;
-  background-image: url(../../images/acomodacoes7.jpg);
+  background-image: url("../../images/acomodacoes7.jpg");
   background-attachment: fixed;
-  border-top: 2px solid #c0501980;
-  border-bottom: 2px solid #c0501980;
+  border-top: 2px solid rgba(192, 80, 25, 0.5019607843);
+  border-bottom: 2px solid rgba(192, 80, 25, 0.5019607843);
   padding: 200px;
   display: block;
   filter: grayscale(40%);
   background-position: 150px;
 }
+
 div.desc {
   padding: 20px;
   text-align: center;
   text-decoration: overline;
   font-weight: bold;
-  /* color: var(--Color); */
+  /* color: v.$fontColor; */
 }
 
-div.gallery img:hover {
-  transform: scale(1.2);
-}
-
-/*Área de Serviços*/
-
-/*Título de Serviços*/
-.h2Color {
-  /* color: var(--Color); */
-  text-align: center;
-  background-color: rgb(237, 229, 227);
-}
-
-/*Subtítulo de Serviços*/
-.h1Color {
-  color: #ad9479;
-}
-
-/*Textos descritivos de Serviços*/
-.textos {
-  /* color: #8a6e4b; */
-  /* font-size: medium; */
-  text-align: justify;
-  text-indent: 1.5rem;
-}
-
-/*Div que engloba os 3 subitens de Serviços*/
 .container-servicos {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  padding-top: 5vh; /* text-align: center; */
+  display: flex;
+  grid-template-columns: 45% 55%;
+  width: 100%;
 }
 
 .container-servicos2 {
@@ -321,7 +223,7 @@ div.gallery img:hover {
   text-align: right;
   display: block;
   font-size: small;
-  color: var(--Color);
+  color: #82694e;
   text-decoration: underline;
 }
 
@@ -333,90 +235,26 @@ div.gallery img:hover {
   display: grid;
   grid-template-columns: 35% 65%;
 }*/
-
 .divIcon {
   display: inline-flex;
   align-items: center;
-  justify-self: flex-end;
-  color: #ad9479;
-  padding: 10px 10px 10px 80px;
-  font-size: 1.7rem;
+  justify-content: flex-end;
+  color: #82694e;
+  padding: 0px 0px 0px 80px;
+  font-size: 1.5rem;
 }
-
 .divIcon h2 {
   width: 100%;
-  text-align: center;
-  padding-left: 10px;
-  font-size: 2rem;
-}
-
-.divTitulo {
-  text-align: center;
-}
-
-/*------ Gastronomia -----*/
-
-.container-grid-gastro {
-  display: flex;
-  grid-template-columns: 55% 45%;
-  text-align: left;
-}
-
-.container-grid-gastro div h2 {
-  padding: 0 2.5rem 0rem 1rem;
-}
-
-.container-grid-gastro div img {
-  border-radius: 15px;
-  opacity: 1;
-  width: 450px;
-}
-
-.container-grid-gastro img:hover {
-  transition: 400ms;
-  opacity: 0.8;
-}
-
-.container-grid-gastro p {
-  padding: 2rem 10rem 2.5rem 10rem;
-  font-family: "Baskerville", sans-serif;
   text-align: justify;
-  font-size: medium;
-  padding-bottom: 1.5rem;
-  line-height: 1.5rem;
+  font-size: 1.5rem;
 }
 
-.container-grid-gastro div button {
-  background-color: #ad9479;
-  border-radius: 10px;
-  border: none;
-  padding: 0.4rem 2rem;
-  color: #fff;
-  font-size: 15px;
-  position: relative;
-  top: 70%;
-  left: 34%;
+.textos {
+  text-align: jus;
 }
-
-.container-grid-gastro button:hover {
-  transform: scale(1.1);
-}
-
-#containergastro01 {
-  width: 450px;
-}
-
-#containergastro02 {
-  padding: 1%;
-  align-items: center;
-  text-align: center;
-}
-
-/* -------------- Michelle ------------ */
-/* ---- NavPos-------*/
 
 div.navPos {
-  background-color: var(--Color);
+  background-color: #82694e;
   width: 60px;
   height: 130px;
   position: fixed;
@@ -427,18 +265,15 @@ div.navPos {
   font-weight: bold;
   z-index: 1;
 }
-
 div.navPos ul {
   padding: 0 0 0 15px;
   list-style: none;
 }
-
 div.navPos ul li {
   margin: 0 0 0 0;
   text-align: left;
   padding: 10px 0 0 9px;
 }
-
 div.navPos ul li a {
   font-size: 0.9em;
   color: #fff;
@@ -455,9 +290,9 @@ div.continf {
 }
 
 /*-- CONTATO --*/
-
 .div-contatos {
   padding: 1rem;
+  text-align: center;
 }
 
 .contatos {
@@ -466,7 +301,7 @@ div.continf {
   border: none;
   border-width: 2px;
   border-bottom-width: 1px;
-  border-bottom-color: var(--Color);
+  border-bottom-color: #82694e;
   border-bottom-style: solid;
   font-size: 1rem;
 }
@@ -475,22 +310,10 @@ div.continf {
   padding-bottom: 6rem;
 }
 
-/* Botão antigo
-#button {
-  border: none;
-  background-color: var(--Color);
-  color: rgb(237, 229, 227);
-  padding: 5px 15px;
-  text-align: center;
-  margin: 7px;
-  cursor: pointer;
-  -webkit-border-radius: 100px;
-} */
-
 #button {
   font-size: 1.2rem;
   border: none;
-  background-color: var(--Color);
+  background-color: #82694e;
   color: #ffffff;
   padding: 8px 24px;
   margin: 10px;
@@ -501,7 +324,7 @@ div.continf {
 /*-- INFORMAÇÕES --*/
 div.informacoes {
   padding: 13% 10% 10% 24%;
-  color: var(--Color);
+  color: #82694e;
   text-align: left;
   font-size: 80%;
 }
@@ -516,7 +339,6 @@ div.redes-sociais {
 }
 
 /* -- DIV MNR -- */
-
 div.div-mnr {
   display: grid;
   grid-template-columns: auto auto;
@@ -524,36 +346,59 @@ div.div-mnr {
 }
 
 /* -- COPYRIGHT -- */
-
 div.copyright {
   text-align: center;
-  color: var(--Color);
+  color: #82694e;
 }
 
 /* ---------- responsive ----------------------- */
-
 @media (max-width: 800px) {
-  header section {
-    width: 100%;
-  }
-
-  .menu a {
-    width: 100%;
-    float: none;
-  }
-
-  .menu {
-    margin-top: 5px;
-    margin-bottom: 10px;
-    transition: all 0.4s;
-  }
-
-  .mainHeader img,
-  .slideshowContainer,
-  .dotsContainer {
+  .mainHeader img {
     display: none;
   }
-
+  .menu {
+    flex-flow: column;
+    min-width: 100%;
+    transition: all 0.4s;
+    text-align: center;
+  }
+  .container-grid p,
+  .container-grid-gastro p {
+    padding: 0;
+    font-size: 12px;
+  }
+  .container-grid div img {
+    display: none;
+  }
+  .container-grid div button,
+  .container-grid-gastro div button {
+    padding: 0.5rem;
+  }
+  .container-grid-gastro img {
+    display: none;
+  }
+  .navbar a {
+    padding: 10px;
+  }
+  .userBar a {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  .divIcon {
+    font-size: 15px;
+  }
+  .divIcon h2 {
+    font-size: 25px;
+  }
+  h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .textos {
+    font-size: 12px;
+    text-align: justify;
+    font-family: "Baskerville";
+  }
   .container-servicos,
   .informacoes,
   section #sobre {
@@ -561,35 +406,83 @@ div.copyright {
     flex-direction: column;
     margin: 10 0 5 0;
   }
-
+  div.informações {
+    flex-flow: column;
+  }
   img {
     width: 100%;
     min-height: auto;
     object-fit: cover;
     object-position: bottom;
   }
-
   div.gallery {
     float: none;
     text-align: center;
   }
-
   .saibaMais {
     margin-bottom: 5px;
   }
-
   div.informacoes {
     text-align: left;
     padding-left: 5px;
     border-radius: 5px;
   }
-
   .informacoes .social {
     text-align: center;
     margin-bottom: 5px;
   }
-
   section #sobre div {
     text-align: center;
   }
+  .div-contatos {
+    padding: 0px;
+  }
+  .contatos {
+    width: 100%;
+    border-bottom-width: 1px;
+    border-bottom-color: #82694E;
+    border-bottom-style: solid;
+    font-size: large;
+  }
+  select.contatos {
+    color: rgba(107, 94, 94, 0.8235294118);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+  }
+  #message {
+    padding-bottom: 6rem;
+  }
+  .buttonContatos {
+    margin: 1rem 0;
+    font-size: 1rem;
+    border: none;
+    background-color: #82694e;
+    color: #ffffff;
+    padding: 0.6rem 2rem;
+    cursor: none;
+    border-radius: none;
+    transition: none;
+  }
+  .buttonContatos:hover {
+    background-color: none;
+  }
+  .buttonContatos:focus {
+    box-shadow: none;
+  }
+  div.informacoes {
+    padding: 0% 0% 0% 0%;
+    text-align: center;
+  }
+  div.redes-sociais {
+    padding-left: 0;
+  }
+  /* -- COPYRIGHT -- */
+  div.copyright {
+    font-size: large;
+  }
+  .navPos {
+    display: none;
+  }
 }
+
+/*# sourceMappingURL=_style.css.map */

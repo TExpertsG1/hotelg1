@@ -1,0 +1,126 @@
+@use "variaveis" as va;
+@use "mixins_acomodacoes" as ma;
+@use "extends";
+
+.separador {
+  text-align: center;
+  padding: 2vh 0 0 0vh;
+  position: relative;
+}
+
+.container-grid-acomodacoes,
+.container-grid-acomodacoes1 {
+  display: flex;
+  padding: 5px;
+
+  & div h2 {
+    padding: 2rem 0 0 0;
+    text-align: center;
+    text-decoration: overline;
+  }
+
+  & img:hover {
+    transition: 400ms;
+    opacity: 0.8;
+  }
+  & p {
+    font-family: va.$fonte;
+    text-align: justify;
+    padding-right: 50px;
+  }
+
+  & div button {
+    background-color: va.$backgroundNav;
+    border-radius: va.$borderRadius;
+    border: none;
+    padding: 0.2rem 1rem 0.2rem;
+    color: va.$background;
+    font-size: 15px;
+    position: relative;
+    left: 40%;
+    top: 0.3rem;
+  }
+
+  & button:hover {
+    transform: scale(1.1);
+  }
+}
+
+fieldset {
+  min-width: none;
+  border-radius: va.$borderRadius;
+  border-color: va.$backgroundNav;
+  font-size: 12px;
+  width: 40%;
+  font-weight: bold;
+}
+
+/****** Galeria*******/
+
+.album-fotos {
+  @extend %list-none;
+  margin: 0 auto;
+  padding: 5px;
+
+  & ul {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  & li {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    border: va.$border;
+    border-radius: va.$borderRadius;
+    -webkit-transition: all 0.4s ease-in;
+  }
+
+  & li span {
+    opacity: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: va.$borderRadius;
+  }
+
+  & li:hover span {
+    opacity: 1;
+  }
+
+  & li:hover {
+    background-position: 0% 0%;
+    -webkit-transform: scale(1.5);
+  }
+}
+
+/*ul#galeria-foto li {
+  display: block;
+  float: left;
+  margin: 15px;
+  position: relative;
+}*/
+
+input {
+  width: auto;
+  border: none;
+  background: none;
+  border-bottom-width: 2px;
+  border-bottom-color: va.$backgroundNav;
+  color: va.$backgroundNav;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+div.continf1 {
+  display: flex;
+  text-align: center;
+  background-color: va.$colorNav;
+  font-size: 1.5rem;
+}
+
+/* ***** Media Querie*****/
+@media (max-width: 800px) {
+  @include ma.midiaacomodacoes;
+}
