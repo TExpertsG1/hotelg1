@@ -173,7 +173,7 @@ main{
 }
 
 .texto-apresentacao{
-    margin: 0 15%;
+    margin: 2rem 10%;
 }
 
 .texto-apresentacao h1{
@@ -182,6 +182,7 @@ main{
 
 .texto-apresentacao p{
     text-align: justify;
+    margin-top: 2rem;
 }
 
 .secao-esquerda{
@@ -197,6 +198,7 @@ main{
 
 .secao-esquerda p{
     text-align: justify;
+    padding-top: 1rem;
 }
 
 .imagem-secao{
@@ -208,7 +210,7 @@ main{
 }
 
 .imagem-secao:hover{
-    transition: 400ms;
+  transition: 400ms;
 	opacity: 0.8;
 }
 
@@ -222,6 +224,7 @@ main{
 
 .secao-direita p {
     text-align: justify;
+    margin-top: 1rem;
 }
 
 /* ---- NavPos-------*/
