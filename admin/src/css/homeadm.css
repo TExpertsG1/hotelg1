@@ -178,3 +178,11 @@ h1 {
     text-align: right;
     vertical-align: middle;
   }
+
+  /**** Funcionários ****/
+  .funcionariosMenu {
+    margin-left: 45vh;
+    border: 1px black solid;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
