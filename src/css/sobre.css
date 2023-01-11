@@ -186,8 +186,9 @@ main{
 .secao-esquerda{
     display: flex;
     align-items: initial;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 4rem 0;
+    background-color: #ede5e3;
 }
 
 .texto{
@@ -216,7 +217,7 @@ main{
     align-items: initial;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 4rem 0;
 }
 
