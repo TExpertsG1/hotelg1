@@ -142,13 +142,7 @@ header{
     max-height: 300px;
     position: -ms-page;
 }
-
-h1 {
-    font-size: 3.2rem;
-    color: #FFCB55;
-    font-weight: 900;
-  }
-
+  
   h2 {
     font-size: 2.5rem;
     color: #87664B;
@@ -168,13 +162,4 @@ h1 {
     padding-bottom: 1rem;
     max-height: 280px;
     height: auto;
-  }
-
-  #linha img{
-    align-items: flex-start;
-    vertical-align: middle  ;
-  }
-  #linha h1{
-    text-align: right;
-    vertical-align: middle;
   }
