@@ -7,7 +7,7 @@
 
 /*.....teste Acomodações......*/
 #card1 {
-  background-image: url(../../images/acomodacoes/suiteFamilia01.jpg);
+  background-image: url(/root/images/acomodacoes/suiteFamilia01.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -20,7 +20,7 @@
 }
 
 #card2 {
-  background-image: url(../../images/acomodacoes/suiteFamilia02.jpg);
+  background-image: url(/root/images/acomodacoes/suiteFamilia02.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -33,7 +33,7 @@
 }
 
 #card3 {
-  background-image: url(../../images/acomodacoes/suiteFamilia03.jpg);
+  background-image: url(/root/images/acomodacoes/suiteFamilia03.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -46,7 +46,7 @@
 }
 
 #card4 {
-  background-image: url(../../images/acomodacoes/suiteFamilia04.jpg);
+  background-image: url(/root/images/acomodacoes/suiteFamilia04.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -59,7 +59,7 @@
 }
 
 #card5 {
-  background-image: url(../../images/acomodacoes/suiteFamilia05.jpg);
+  background-image: url(/root/images/acomodacoes/suiteFamilia05.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -72,7 +72,7 @@
 }
 
 #card6 {
-  background-image: url(../../images/acomodacoes/suiteFamilia06.jpg);
+  background-image: url(/root/images/acomodacoes/suiteFamilia06.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -85,7 +85,7 @@
 }
 
 #card7 {
-  background-image: url(../../images/acomodacoes/suiteMaster01.jpg);
+  background-image: url(/root/images/acomodacoes/suiteMaster01.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -98,7 +98,7 @@
 }
 
 #card8 {
-  background-image: url(../../images/acomodacoes/suiteMaster02.jpg);
+  background-image: url(/root/images/acomodacoes/suiteMaster02.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -111,7 +111,7 @@
 }
 
 #card9 {
-  background-image: url(../../images/acomodacoes/suiteMaster03.jpg);
+  background-image: url(/root/images/acomodacoes/suiteMaster03.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -124,7 +124,7 @@
 }
 
 #card10 {
-  background-image: url(../../images/acomodacoes/suiteMaster04.jpg);
+  background-image: url(/root/images/acomodacoes/suiteMaster04.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -137,7 +137,7 @@
 }
 
 #card11 {
-  background-image: url(../../images/acomodacoes/suiteMaster05.jpg);
+  background-image: url(/root/images/acomodacoes/suiteMaster05.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -150,7 +150,7 @@
 }
 
 #card12 {
-  background-image: url(../../images/acomodacoes/suiteMaster06.jpg);
+  background-image: url(/root/images/acomodacoes/suiteMaster06.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -163,7 +163,7 @@
 }
 
 #card13 {
-  background-image: url(../../images/acomodacoes/suitePremium01.jpg);
+  background-image: url(/root/images/acomodacoes/suitePremium01.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -176,7 +176,7 @@
 }
 
 #card14 {
-  background-image: url(../../images/acomodacoes/suitePremium02.jpg);
+  background-image: url(/root/images/acomodacoes/suitePremium02.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -189,7 +189,7 @@
 }
 
 #card15 {
-  background-image: url(../../images/acomodacoes/suitePremium03.jpg);
+  background-image: url(/root/images/acomodacoes/suitePremium03.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -202,7 +202,7 @@
 }
 
 #card16 {
-  background-image: url(../../images/acomodacoes/suitePremium04.jpg);
+  background-image: url(/root/images/acomodacoes/suitePremium04.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -215,7 +215,7 @@
 }
 
 #card17 {
-  background-image: url(../../images/acomodacoes/suitePremium05.jpg);
+  background-image: url(/root/images/acomodacoes/suitePremium05.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -228,7 +228,7 @@
 }
 
 #card18 {
-  background-image: url(../../images/acomodacoes/suitePremium06.jpg);
+  background-image: url(/root/images/acomodacoes/suitePremium06.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -404,52 +404,6 @@ div.continf1 {
   h1 {
     font-size: 20px;
     text-align: justify;
-  }
-  .div-contatos {
-    padding: 0px;
-  }
-  .contatos {
-    width: 100%;
-    border-bottom-width: 1px;
-    border-bottom-color: #82694e;
-    border-bottom-style: solid;
-    font-size: large;
-  }
-  select.contatos {
-    color: rgba(107, 94, 94, 0.8235294118);
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-  }
-  #message {
-    padding-bottom: 6rem;
-  }
-  .buttonContatos {
-    margin: 1rem 0;
-    font-size: 1.2rem;
-    border: none;
-    background-color: #82694e;
-    color: #ffffff;
-    padding: 0.6rem 2rem;
-    cursor: none;
-    border-radius: none;
-    transition: none;
-  }
-  .buttonContatos:hover {
-    background-color: none;
-  }
-  .buttonContatos:focus {
-    box-shadow: none;
-  }
-  div.informacoes {
-    padding: 0% 0% 0% 0%;
-    text-align: center;
-  }
-  div.redes-sociais {
-    padding-left: 0;
-  }
-  /* -- COPYRIGHT -- */
-  div.copyright {
-    font-size: large;
   }
 }
 

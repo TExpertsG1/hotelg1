@@ -27,7 +27,7 @@ $n: 0;
 @each $titulo, $url in $imgs {
   $n: $n + 1; // contador para no CSS ficar com #Card e a numeração correta
   #card#{$n} {
-    background-image: url(../../images/acomodacoes/#{$url});
+    background-image: url(/root/images/acomodacoes/#{$url});
     background-position: 10% 100%;
     background-size: 300px 300px;
 
@@ -97,51 +97,4 @@ $n: 0;
     font-size: 20px;
     text-align: justify;
   }
-  .div-contatos {
-    padding: 0px;
-  }
-  .contatos {
-    width: 100%;
-    border-bottom-width: 1px;
-    border-bottom-color: #82694e;
-    border-bottom-style: solid;
-    font-size: large;
-  }
-  select.contatos {
-    color: rgba(107, 94, 94, 0.8235294118);
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-  }
-  #message {
-    padding-bottom: 6rem;
-  }
-  .buttonContatos {
-    margin: 1rem 0;
-    font-size: 1.2rem;
-    border: none;
-    background-color: #82694e;
-    color: #ffffff;
-    padding: 0.6rem 2rem;
-    cursor: none;
-    border-radius: none;
-    transition: none;
-  }
-  .buttonContatos:hover {
-    background-color: none;
-  }
-  .buttonContatos:focus {
-    box-shadow: none;
-  }
-  div.informacoes {
-    padding: 0% 0% 0% 0%;
-    text-align: center;
-  }
-  div.redes-sociais {
-    padding-left: 0;
-  }
-  /* -- COPYRIGHT -- */
-  div.copyright {
-    font-size: large;
-  }
-
 }
