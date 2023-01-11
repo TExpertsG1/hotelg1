@@ -185,7 +185,7 @@ input[type=checkbox]:checked {
   background: #ede5e3;
   width: 80%;
   position: sticky;
-  top: 0%;
+  top: 2%;
 }
 .resumoReserva h3 {
   font-size: medium;
