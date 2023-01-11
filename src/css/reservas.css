@@ -3,20 +3,25 @@
     src: url(../font/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf);
 }
 
+:root {
+    --Background: #fff3f1;
+    --Color: #82694e;
+  }
+
 body {
     margin: 0;
     padding: 0;
     font-size: 1rem;
     font-family: "Baskerville", sans-serif, "Times New Roman", Times, serif;
-    color: #82694e;
-    background-color: #fff3f1;
+    color: var(--Color);
+    background-color: var(--Background);
 }
 
 a {
     all: unset;
     font-size: 0.85rem;
     cursor: pointer;
-    color: #fff3f1;
+    color: var(--Background);
     transition: background-color 0.6s ease;
 }
 
@@ -85,7 +90,7 @@ header section:first-of-type {
 
 .userBar a:hover {
     font-weight: bold;
-    background-color: #82694e;
+    background-color: var(--Color);
 }
 
 .mainHeader {
@@ -117,7 +122,7 @@ header section:first-of-type {
 
 .navbar a:hover {
     font-weight: bold;
-    background-color: #82694e;
+    background-color: var(--Color);
 }
 
 .slideshowContainer {
@@ -135,13 +140,13 @@ header section:first-of-type {
 .prev {
     width: 25%;
     font-size: 2rem;
-    color: #82694E;
+    color: var(--Color);
 }
 
 .next {
     margin-left: auto;
     font-size: 2rem;
-    color: #82694E;
+    color: var(--Color);
 }
 
 .dotsContainer {
@@ -163,7 +168,7 @@ header section:first-of-type {
 
 .dot:hover {
     font-weight: bold;
-    background-color: #82694e;
+    background-color: var(--Color);
 }
 
 .slideshowContainer h1 {
@@ -197,7 +202,7 @@ header section:first-of-type {
     border: none;
     border-width: 2px;
     border-bottom-width: 1px;
-    border-bottom-color: #82694E;
+    border-bottom-color: var(--Color);
     border-bottom-style: solid;
     font-size: 1rem;
 }
@@ -240,7 +245,7 @@ input[type="checkbox"] {
     appearance: none;
     width: 1.5rem;
     height: 1.5rem;
-    border: 1px solid #82694e;
+    border: 1px solid var(--Color);
     border-radius: 50%;
     outline: none;
     cursor: pointer;
@@ -248,7 +253,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked {
-    background-color: #82694e;
+    background-color: var(--Color);
 }
 
 .resumoReserva {
@@ -270,7 +275,7 @@ input[type="checkbox"]:checked {
 
 .infoReserva {
     border: #6b5435 1px solid;
-    background: #fff3f1;
+    background: var(--Background);
     padding: 0 0 0 10px;
 }
 
@@ -278,7 +283,7 @@ input[type="checkbox"]:checked {
     margin: 1rem 0;
     font-size: 1.2rem;
     border: none;
-    background-color: #82694e;
+    background-color: var(--Color);
     color: #ffffff;
     padding: 0.6rem 2rem;
     cursor: pointer;
@@ -319,7 +324,7 @@ div.continf {
     border: none;
     border-width: 2px;
     border-bottom-width: 1px;
-    border-bottom-color: #82694E;
+    border-bottom-color: var(--Color);
     border-bottom-style: solid;
     font-size: 1rem;
 }
@@ -332,7 +337,7 @@ div.continf {
     margin: 1rem 0;
     font-size: 1.2rem;
     border: none;
-    background-color: #82694e;
+    background-color: var(--Color);
     color: #ffffff;
     padding: 0.6rem 2rem;
     cursor: pointer;
@@ -355,7 +360,7 @@ div.informacoes {
     padding-left: 30%;
     width: 100%;
     height: 100%;
-    color: #82694E;
+    color: var(--Color);
     text-align: left;
 }
 
@@ -376,13 +381,13 @@ div.div-mnr {
 
 div.copyright {
     text-align: center;
-    color: #82694E;
+    color: var(--Color);
 }
 
 /* ---- NavPos-------*/
 
 div.navPos {
-    background-color: #82694e;
+    background-color: var(--Color);
     width: 60px;
     height: 130px;
     position: fixed;
