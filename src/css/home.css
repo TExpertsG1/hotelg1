@@ -3,6 +3,11 @@
   src: url(../font/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf);
 }
 
+/** {
+  font-family: "Baskerville", sans-serif, "Times New Roman", Times, serif;
+}*/
+
+/*----Default Values----*/
 
 body {
   margin: 0;
@@ -586,3 +591,4 @@ div.copyright {
     text-align: center;
   }
 }
+
