@@ -118,7 +118,7 @@ div.continf1 {
   font-size: 1.5rem;
 }
 
-/* ..... Suíte Família.....*/
+/* ..... Suíte Família.....*/ /*
 
 ul#album-fotos li.fotos01 {
   background: url(../../images/acomodacoes/suiteFamilia01.jpg) no-repeat;
@@ -153,7 +153,7 @@ ul#album-fotos li.fotos06 {
   background-size: 300px 300px;
 }
 
-/* ..... Suíte Master.....*/
+/* ..... Suíte Master.....*/ /*
 
 ul#album-fotos li.fotos07 {
   background: url(../../images/acomodacoes/suiteMaster01.jpg) no-repeat;
@@ -187,7 +187,7 @@ ul#album-fotos li.fotos12 {
   background-position: 50% 50%;
   background-size: 300px 300px;
 }
-/* ..... Suíte Premium.....*/
+/* ..... Suíte Premium.....*/ /*
 
 ul#album-fotos li.fotos13 {
   background: url(../../images/acomodacoes/suitePremium01.jpg) no-repeat;
@@ -227,8 +227,7 @@ ul#album-fotos li:hover {
 }
 
 /* ***** Media Querie*****/
-@media only screen and (max-width: 415px) and (orientation: portrait),
-  (max-width: 1025px) {
+@media only screen and (max-width: 415px) and (orientation: portrait), (max-width: 1025px) {
   .container-grid-acomodacoes {
     display: flex;
     flex-wrap: wrap-reverse;

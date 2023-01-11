@@ -1,0 +1,100 @@
+@import "functions_acomodacoes";
+
+$imgs: (
+  "Suíte Família 1": "suiteFamilia01.jpg",
+  "Suíte Família 2": "suiteFamilia02.jpg",
+  "Suíte Família 3": "suiteFamilia03.jpg",
+  "Suíte Família 4": "suiteFamilia04.jpg",
+  "Suíte Família 5": "suiteFamilia05.jpg",
+  "Suíte Família 6": "suiteFamilia06.jpg",
+  "Suíte Master 1": "suiteMaster01.jpg",
+  "Suíte Master 2": "suiteMaster02.jpg",
+  "Suíte Master 3": "suiteMaster03.jpg",
+  "Suíte Master 4": "suiteMaster04.jpg",
+  "Suíte Master 5": "suiteMaster05.jpg",
+  "Suíte Master 6": "suiteMaster06.jpg",
+  "Suíte Premium 1": "suitePremium01.jpg",
+  "Suíte Premium 2": "suitePremium02.jpg",
+  "Suíte Premium 3": "suitePremium03.jpg",
+  "Suíte Premium 4": "suitePremium04.jpg",
+  "Suíte Premium 5": "suitePremium05.jpg",
+  "Suíte Premium 6": "suitePremium06.jpg",
+);
+
+/*.....teste Acomodações......*/
+
+$n: 0;
+@each $titulo, $url in $imgs {
+  $n: $n + 1; // contador para no CSS ficar com #Card e a numeração correta
+  #card#{$n} {
+    background-image: url(/root/images/acomodacoes/#{$url});
+    background-position: 10% 100%;
+    background-size: 300px 300px;
+
+    /*& h2::before {
+      opacity: 0;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.5);
+      line-height: 370px;
+      padding: 5px;
+    }*/
+  }
+}
+
+@mixin midiaacomodacoes {
+  .menu {
+    flex-flow: column;
+    min-width: 100%;
+    transition: all 0.4s;
+    text-align: center;
+  }
+
+  .container-grid-acomodacoes {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+
+    & p {
+      padding: 0;
+    }
+  }
+  h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .container-grid-acomodacoes1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .separador {
+    display: none;
+  }
+
+  .album-fotos li {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ad9479;
+    -webkit-transition: all 0.4s ease-in;
+  }
+
+  .album-fotos li span {
+    opacity: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 5px;
+    padding: 5px;
+    font-size: 0.2rem;
+  }
+
+  fieldset {
+    width: auto;
+    float: right;
+  }
+
+  h1 {
+    font-size: 20px;
+    text-align: justify;
+  }
+}

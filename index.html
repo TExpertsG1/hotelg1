@@ -4,12 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/css/home.css" />
+    <link rel="stylesheet" href="../root/src/css/_style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script src="https://kit.fontawesome.com/54d71879ed.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap"
+      rel="stylesheet"
+    />
     <title>Home</title>
   </head>
   <body>
@@ -19,16 +25,16 @@
           <div>
             <div class="userBar">
               <a>Olá Usuário</a>
-              <a>Sair</a>
+              <a>Sair</a>p
             </div>
             <span class="mainHeader">
-              <img height="100%" src="./images/logo_1800.png" />
+              <a href="index.html"> <img height="100%" src="../root/images/logo_1800.png" /></a>
               <nav class="navbar menu">
-                <a href="#nossohotel">O Hotel</a>
-                <a href="#acomodacoes">Acomodações</a>
-                <a href="#servicos">Nossos Serviços</a>
-                <a href="#gastronomia">Gastronomia</a>
-                <a href="#reservas">Reservas</a>
+                <a href="index.html">Home</a>
+                <a href="pages/acomodacoes.html">Acomodações</a>
+                <a href="pages/nossosservicos.html">Nossos Serviços</a>
+                <a href="pages/reservas.html">Reservas</a>
+                <a href="#contato">Contato</a>
               </nav>
             </span>
             <div class="nomeLogo">
@@ -36,34 +42,9 @@
             </div>
           </div>
         </section>
-
-        <!-- <section>
-          <span class="slideshowContainer">
-            <a class="prev">&#10094;</a>
-            
-            <span id="slide1" tabindex="0" class="mySlides">
-           
-            </span>
-           <span class="mySlides">
-            <h1>Nosso Slogan 2</h1>
-            <h2>Nosso Slogan 2</h2>
-          </span>
-          <span class="mySlides">
-            <h1>Nosso Slogan 3</h1>
-            <h2>Nosso Slogan 3</h2>
-          </span> 
-            <a class="next">&#10095;</a>
-          </span>
-          <span class="dotsContainer">
-            <a class="dot"></a>
-            <a class="dot"></a>
-            <a class="dot"></a>
-          </span>
-        </section>-->
       </header>
     </div>
     <main>
-
       <!--Inicio seção sobre-->
       <section>
         <div class="principal">
@@ -99,23 +80,27 @@
           </li>
         </ul>
       </div>
-
-      <!--Fim seção sobre-->
       <section class="principal">
         <div class="galeria">
           <div id="acomodacoes">
             <h2>Nossas Acomodações</h2>
             <div class="gallery">
-              <img src="images/acomodacao1.jpg" alt="Suíte Familia" />
+              <a href="pages/acomodacoes.html#suiteFamilia">
+                <img src="images/acomodacao1.jpg" alt="Suíte Familia"
+              /></a>
               <br />
               <div class="desc">Suite Família</div>
             </div>
             <div class="gallery">
-              <img src="images/acomodacao2.jpg" alt="Suíte Master" />
+              <a href="pages/acomodacoes.html#suiteMaster">
+                <img src="images/acomodacao2.jpg" alt="Suíte Master"
+              /></a>
               <div class="desc">Suíte Master</div>
             </div>
             <div class="gallery">
-              <img src="images/acomodacao3.jpg" alt="Suíte Premium" />
+              <a href="pages/acomodacoes.html#suitePremium"
+                ><img src="images/acomodacao3.jpg" alt="Suíte Premium"
+              /></a>
               <div class="desc">Suíte Premium</div>
             </div>
           </div>
@@ -125,7 +110,6 @@
         <div id="acomodacoesfundo"></div>
       </div>
 
-      <!-- SERVICOS ANGELA -->
       <section>
         <div class="principal">
           <h2 class="h2Color">Conheça mais sobre nossos serviços</h2>
@@ -142,7 +126,9 @@
                   aliquid quas sint id non aut. Lorem ipsum dolor sit amet consectetur, adipisicing
                   elit.
                 </p>
-                <a class="saibaMais" href="#">Saiba mais</a>
+                <a class="saibaMais" href="pages/nossosservicos.html#recreacaoInfantil"
+                  >Saiba mais</a
+                >
               </div>
               <div class="container-servicos2">
                 <div class="divIcon">
@@ -155,7 +141,7 @@
                   aliquid quas sint id non aut. Lorem ipsum dolor sit amet consectetur, adipisicing
                   elit.
                 </p>
-                <a class="saibaMais" href="#">Saiba mais</a>
+                <a class="saibaMais" href="pages/nossosservicos.html#tour">Saiba mais</a>
               </div>
               <div class="container-servicos2">
                 <div class="divIcon">
@@ -168,14 +154,13 @@
                   aliquid quas sint id non aut. Lorem ipsum dolor sit amet consectetur, adipisicing
                   elit.
                 </p>
-                <a class="saibaMais" href="#">Saiba mais</a>
+                <a class="saibaMais" href="pages/nossosservicos.html/#miniMuseu">Saiba mais</a>
               </div>
             </div>
           </article>
         </div>
       </section>
 
-      <!--- Inicio Gastronomia --->
       <section>
         <div class="principal">
           <div class="container-grid-gastro">
@@ -205,7 +190,7 @@
         <div class="continf">
           <div class="div-contatos">
             <form class="form-contatos">
-              <h2>Contato</h2>
+              <h2 id="contato">Contato</h2>
               <label for="name"></label>
               <input class="contatos" type="text" id="name" name="name" placeholder="Nome" /><br />
               <label for="email"></label>

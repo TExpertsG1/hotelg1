@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../src/css/acomodacoes.css" />
-    <link rel="stylesheet" href="../src/css/home.css" />
+    <link rel="stylesheet" href="../src/css/_style.css" />
+    <link rel="stylesheet" href="../src/css/_style_acomodacoes.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -24,13 +24,13 @@
             </div>
 
             <span class="mainHeader">
-              <img height="100%" src="../images/logo_1800.png" />
+              <a href="/index.html"> <img height="100%" src="../images/logo_1800.png" /></a>
               <nav class="navbar menu">
-                <a href="home.html">O Hotel</a>
-                <a href="acomodacoes.html">Acomodações</a>
-                <a href="#servicos">Nossos Serviços</a>
-                <a href="#gastronomia">Gastronomia</a>
-                <a href="#reservas">Reservas</a>
+                <a href="/index.html">Home</a>
+                <a href="/pages/acomodacoes.html">Acomodações</a>
+                <a href="/pages/nossosServicos">Nossos Serviços</a>
+                <a href="/pages/reservas.html">Reservas</a>
+                <a href="#contato">Contato</a>
               </nav>
             </span>
             <div class="nomeLogo">
@@ -64,16 +64,16 @@
       <section class="principal">
         <div class="container-grid-acomodacoes" id="familia">
           <div id="galeria1">
-            <ul id="album-fotos">
-              <li class="fotos01"><span>Suíte Família</span></li>
-              <li class="fotos02"><span>Suíte Família</span></li>
-              <li class="fotos03"><span>Suíte Família</span></li>
-              <li class="fotos04"><span>Suíte Família</span></li>
-              <li class="fotos05"><span>Suíte Família</span></li>
-              <li class="fotos06"><span>Suíte Família</span></li>
+            <ul class="album-fotos">
+              <li id="card1" class="fotos01 titulo"><span class="card__titulo">Suíte Familia</span></li>
+              <li id="card2" class="fotos02 titulo"><span class="card__titulo">Suíte Família</span></li>
+              <li id="card3" class="fotos03 titulo"><span class="card__titulo">Suíte Família</span></li>
+              <li id="card4" class="fotos04 titulo"><span class="card__titulo">Suíte Família</span></li>
+              <li id="card5" class="fotos05 titulo"><span class="card__titulo">Suíte Família</span></li>
+              <li id="card6" class="fotos06 titulo"><span class="card__titulo">Suíte Família</span></li>
             </ul>
           </div>
-          <div class="container-grid-acomodacoes">
+          <div id="suiteFamilia" class="container-grid-acomodacoes">
             <div>
               <h2>Suíte Família</h2>
               <p>
@@ -117,9 +117,9 @@
       <section class="principal">
         <div class="container-grid-acomodacoes" id="master">
           <div class="container-grid-acomodacoes1">
-            <div>
+            <div id="suiteMaster">
               <h2>Suíte Master</h2>
-               <p>
+              <p>
                 Estes quartos são amplos e cheios de luz, proporcionando uma experiência
                 inesquecível em pleno bairro de Santa Cruz. Com estilo único e respeitando a
                 estrutura original da casa, todos os nossos quartos Deluxe Premium possuem
@@ -153,13 +153,13 @@
               </form>
             </div>
             <div id="galeria1">
-              <ul id="album-fotos">
-                <li class="fotos07"><span>Suíte Master</span></li>
-                <li class="fotos08"><span>Suíte Master</span></li>
-                <li class="fotos09"><span>Suíte Master</span></li>
-                <li class="fotos10"><span>Suíte Master</span></li>
-                <li class="fotos11"><span>Suíte Master</span></li>
-                <li class="fotos12"><span>Suíte Master</span></li>
+              <ul class="album-fotos">
+                <li id="card7" class="fotos07"><span>Suíte Master</span></li>
+                <li id="card8" class="fotos08"><span>Suíte Master</span></li>
+                <li id="card9" class="fotos09"><span>Suíte Master</span></li>
+                <li id="card10" class="fotos10"><span>Suíte Master</span></li>
+                <li id="card11" class="fotos11"><span>Suíte Master</span></li>
+                <li id="card12" class="fotos12"><span>Suíte Master</span></li>
               </ul>
             </div>
           </div>
@@ -171,50 +171,50 @@
       <section class="principal">
         <div class="container-grid-acomodacoes" id="premium">
           <div id="galeria1">
-            <ul id="album-fotos">
-              <li class="fotos13"><span>Suíte Premium</span></li>
-              <li class="fotos14"><span>Suíte Premium</span></li>
-              <li class="fotos15"><span>Suíte Premium</span></li>
-              <li class="fotos16"><span>Suíte Premium</span></li>
-              <li class="fotos17"><span>Suíte Premium</span></li>
-              <li class="fotos18"><span>Suíte Premium</span></li>
+            <ul class="album-fotos">
+              <li id="card13" class="fotos13"><span>Suíte Premium</span></li>
+              <li id="card14" class="fotos14"><span>Suíte Premium</span></li>
+              <li id="card15" class="fotos15"><span>Suíte Premium</span></li>
+              <li id="card16" class="fotos16"><span>Suíte Premium</span></li>
+              <li id="card17" class="fotos17"><span>Suíte Premium</span></li>
+              <li id="card18" class="fotos18"><span>Suíte Premium</span></li>
             </ul>
           </div>
-            <div>
-              <h2>Suíte Premium</h2>
-              <p>
-                Fiel ao estilo dos edifícios tradicionais sevilhanos, todos os nossos quartos
-                Premium são diferentes e únicos. Preservamos várias partes do edifício original –
-                varandas, persianas, tectos em caixotões e muito mais – para proporcionar aos nossos
-                hóspedes uma sensação única.
-              </p>
-              <ul>
-                <li>Jacuzzi no terraço</li>
-                <li>Cadeiras e mesas no pátio</li>
-                <li>Terreo</li>
-                <li>Banheira</li>
-                <li>Ar condicionado</li>
-                <li>Lençois 100% algodão egípcio</li>
-              </ul>
-              <form id="reserva" action method="post" enctype="multipart/form-data">
-                <fieldset>
-                  <legend>Faça sua Reserva</legend>
-                  <div class="">
-                    <span>Do dia </span> <input type="date" /> <span>Até o dia </span>
-                    <input type="date" name="dataReserva" />
-                    <br />
-                    <span>Adultos</span>
-                    <input type="number" required min="1" max="4" />
-                    <span>Criança até 12 anos</span>
-                    <input type="number" required min="0" max="5" />
-                  </div>
-                  <div>
-                    <button id="">Reservar</button>
-                  </div>
-                </fieldset>
-              </form>
-            </div>
+          <div id="suitePremium">
+            <h2>Suíte Premium</h2>
+            <p>
+              Fiel ao estilo dos edifícios tradicionais sevilhanos, todos os nossos quartos Premium
+              são diferentes e únicos. Preservamos várias partes do edifício original – varandas,
+              persianas, tectos em caixotões e muito mais – para proporcionar aos nossos hóspedes
+              uma sensação única.
+            </p>
+            <ul>
+              <li>Jacuzzi no terraço</li>
+              <li>Cadeiras e mesas no pátio</li>
+              <li>Terreo</li>
+              <li>Banheira</li>
+              <li>Ar condicionado</li>
+              <li>Lençois 100% algodão egípcio</li>
+            </ul>
+            <form id="reserva" action method="post" enctype="multipart/form-data">
+              <fieldset>
+                <legend>Faça sua Reserva</legend>
+                <div class="">
+                  <span>Do dia </span> <input type="date" /> <span>Até o dia </span>
+                  <input type="date" name="dataReserva" />
+                  <br />
+                  <span>Adultos</span>
+                  <input type="number" required min="1" max="4" />
+                  <span>Criança até 12 anos</span>
+                  <input type="number" required min="0" max="5" />
+                </div>
+                <div>
+                  <button id="">Reservar</button>
+                </div>
+              </fieldset>
+            </form>
           </div>
+        </div>
       </section>
     </main>
     <footer>
@@ -222,7 +222,7 @@
         <div class="continf">
           <div class="div-contatos">
             <form class="form-contatos">
-              <h2>Contato</h2>
+              <h2 id="contato">Contato</h2>
               <label for="name"></label>
               <input class="contatos" type="text" id="name" name="name" placeholder="Nome" /><br />
               <label for="email"></label>
