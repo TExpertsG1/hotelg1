@@ -1,0 +1,172 @@
+@import "functions";
+
+@mixin box {
+  display: flex;
+  background-color: #ede5e3;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-attachment: fixed;
+  border-top: 2px solid #c0501980;
+  border-bottom: 2px solid #c0501980;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@mixin h1 {
+  font-size: 3rem;
+  font-style: bold;
+  padding: 0vh 0vh 0vh 25vh;
+  color: #e9cb6b;
+}
+
+@mixin h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 5rem;
+  text-align: center;
+  font-family: "Baskerville";
+}
+
+@mixin p {
+  padding: 2rem 10rem 2.5rem 10rem;
+  font-family: "Baskerville", sans-serif;
+  text-align: justify;
+  font-size: medium;
+  padding-bottom: 1.5rem;
+  line-height: 1.5rem;
+  width: auto;
+}
+
+@mixin button {
+  background-color: #ad9479;
+  border-radius: 10px;
+  border: none;
+  padding: 0.4rem 2rem;
+  color: #fff;
+  font-size: 15px;
+  position: relative;
+  left: 78%;
+}
+
+@mixin container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  padding-top: 5vh;
+  text-align: justify; /* text-align: center; */
+}
+
+@mixin container2 {
+  padding: 20px 20px 20px 20px;
+}
+
+@mixin img {
+  border-radius: 15px;
+  opacity: 1;
+  width: 450px;
+}
+
+@mixin container {
+  display: flex;
+  grid-template-columns: 45% 55%;
+  width: 100%;
+
+}
+
+@mixin midia{
+    .menu {
+    flex-flow: column;
+    min-width: 100%;
+    transition: all 0.4s;
+    text-align: center;
+  }
+
+  .container-grid p,
+  .container-grid-gastro p {
+    padding: 0;
+    font-size: 12px;
+  }
+
+  .container-grid div img {
+    display: none;
+  }
+
+  .container-grid div button,
+  .container-grid-gastro div button {
+    padding: 0.5rem;
+  }
+
+  .container-grid-gastro img {
+    display: none;
+  }
+
+  .navbar a {
+    padding: 10px;
+  }
+  .userBar a {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  .divIcon {
+    font-size: 15px;
+  }
+  .divIcon h2 {
+    font-size: 25px;
+  }
+  h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .textos {
+    font-size: 12px;
+    text-align: justify;
+    font-family: "Baskerville";
+  }
+  .container-servicos,
+  .informacoes,
+  section #sobre {
+    display: flex;
+    flex-direction: column;
+    margin: 10 0 5 0;
+  }
+  div.informações {
+    flex-flow: column;
+  }
+
+  img {
+    width: 100%;
+    min-height: auto;
+    object-fit: cover;
+    object-position: bottom;
+  }
+
+  div.gallery {
+    float: none;
+    text-align: center;
+  }
+
+  .saibaMais {
+    margin-bottom: 5px;
+  }
+
+  div.informacoes {
+    text-align: left;
+    padding-left: 5px;
+    border-radius: 5px;
+  }
+
+  .informacoes .social {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  section #sobre div {
+    text-align: center;
+  }
+}
+

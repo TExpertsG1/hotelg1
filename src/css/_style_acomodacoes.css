@@ -1,0 +1,410 @@
+@charset "UTF-8";
+* {
+  font-family: "Baskerville";
+  box-sizing: border-box;
+  line-height: 1.5rem;
+}
+
+/*.....teste Acomodações......*/
+#card1 {
+  background-image: url(/root/images/acomodacoes/suiteFamilia01.jpg);
+  background-position: 10% 100%;
+  background-size: 300px 300px;
+  /*& h2::before {
+    opacity: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 370px;
+    padding: 5px;
+  }*/
+}
+
+#card2 {
+  background-image: url(/root/images/acomodacoes/suiteFamilia02.jpg);
+  background-position: 10% 100%;
+  background-size: 300px 300px;
+  /*& h2::before {
+    opacity: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 370px;
+    padding: 5px;
+  }*/
+}
+
+#card3 {
+  background-image: url(/root/images/acomodacoes/suiteFamilia03.jpg);
+  background-position: 10% 100%;
+  background-size: 300px 300px;
+  /*& h2::before {
+    opacity: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 370px;
+    padding: 5px;
+  }*/
+}
+
+#card4 {
+  background-image: url(/root/images/acomodacoes/suiteFamilia04.jpg);
+  background-position: 10% 100%;
+  background-size: 300px 300px;
+  /*& h2::before {
+    opacity: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 370px;
+    padding: 5px;
+  }*/
+}
+
+#card5 {
+  background-image: url(/root/images/acomodacoes/suiteFamilia05.jpg);
+  background-position: 10% 100%;
+  background-size: 300px 300px;
+  /*& h2::before {
+    opacity: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 370px;
+    padding: 5px;
+  }*/
+}
+
+#card6 {
+  background-image: url(/root/images/acomodacoes/suiteFamilia06.jpg);
+  background-position: 10% 100%;
+  background-size: 300px 300px;
+  /*& h2::before {
+    opacity: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 370px;
+    padding: 5px;
+  }*/
+}
+
+#card7 {
+  background-image: url(/root/images/acomodacoes/suiteMaster01.jpg);
+  background-position: 10% 100%;
+  background-size: 300px 300px;
+  /*& h2::before {
+    opacity: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 370px;
+    padding: 5px;
+  }*/
+}
+
+#card8 {
+  background-image: url(/root/images/acomodacoes/suiteMaster02.jpg);
+  background-position: 10% 100%;
+  background-size: 300px 300px;
+  /*& h2::before {
+    opacity: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 370px;
+    padding: 5px;
+  }*/
+}
+
+#card9 {
+  background-image: url(/root/images/acomodacoes/suiteMaster03.jpg);
+  background-position: 10% 100%;
+  background-size: 300px 300px;
+  /*& h2::before {
+    opacity: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 370px;
+    padding: 5px;
+  }*/
+}
+
+#card10 {
+  background-image: url(/root/images/acomodacoes/suiteMaster04.jpg);
+  background-position: 10% 100%;
+  background-size: 300px 300px;
+  /*& h2::before {
+    opacity: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 370px;
+    padding: 5px;
+  }*/
+}
+
+#card11 {
+  background-image: url(/root/images/acomodacoes/suiteMaster05.jpg);
+  background-position: 10% 100%;
+  background-size: 300px 300px;
+  /*& h2::before {
+    opacity: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 370px;
+    padding: 5px;
+  }*/
+}
+
+#card12 {
+  background-image: url(/root/images/acomodacoes/suiteMaster06.jpg);
+  background-position: 10% 100%;
+  background-size: 300px 300px;
+  /*& h2::before {
+    opacity: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 370px;
+    padding: 5px;
+  }*/
+}
+
+#card13 {
+  background-image: url(/root/images/acomodacoes/suitePremium01.jpg);
+  background-position: 10% 100%;
+  background-size: 300px 300px;
+  /*& h2::before {
+    opacity: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 370px;
+    padding: 5px;
+  }*/
+}
+
+#card14 {
+  background-image: url(/root/images/acomodacoes/suitePremium02.jpg);
+  background-position: 10% 100%;
+  background-size: 300px 300px;
+  /*& h2::before {
+    opacity: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 370px;
+    padding: 5px;
+  }*/
+}
+
+#card15 {
+  background-image: url(/root/images/acomodacoes/suitePremium03.jpg);
+  background-position: 10% 100%;
+  background-size: 300px 300px;
+  /*& h2::before {
+    opacity: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 370px;
+    padding: 5px;
+  }*/
+}
+
+#card16 {
+  background-image: url(/root/images/acomodacoes/suitePremium04.jpg);
+  background-position: 10% 100%;
+  background-size: 300px 300px;
+  /*& h2::before {
+    opacity: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 370px;
+    padding: 5px;
+  }*/
+}
+
+#card17 {
+  background-image: url(/root/images/acomodacoes/suitePremium05.jpg);
+  background-position: 10% 100%;
+  background-size: 300px 300px;
+  /*& h2::before {
+    opacity: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 370px;
+    padding: 5px;
+  }*/
+}
+
+#card18 {
+  background-image: url(/root/images/acomodacoes/suitePremium06.jpg);
+  background-position: 10% 100%;
+  background-size: 300px 300px;
+  /*& h2::before {
+    opacity: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 370px;
+    padding: 5px;
+  }*/
+}
+
+.album-fotos {
+  list-style: none;
+}
+
+.separador {
+  text-align: center;
+  padding: 2vh 0 0 0vh;
+  position: relative;
+}
+
+.container-grid-acomodacoes,
+.container-grid-acomodacoes1 {
+  display: flex;
+  padding: 5px;
+}
+.container-grid-acomodacoes div h2,
+.container-grid-acomodacoes1 div h2 {
+  padding: 2rem 0 0 0;
+  text-align: center;
+  text-decoration: overline;
+}
+.container-grid-acomodacoes img:hover,
+.container-grid-acomodacoes1 img:hover {
+  transition: 400ms;
+  opacity: 0.8;
+}
+.container-grid-acomodacoes p,
+.container-grid-acomodacoes1 p {
+  font-family: "Baskerville";
+  text-align: justify;
+  padding-right: 50px;
+}
+.container-grid-acomodacoes div button,
+.container-grid-acomodacoes1 div button {
+  background-color: #ad9479;
+  border-radius: 10px;
+  border: none;
+  padding: 0.2rem 1rem 0.2rem;
+  color: #fff3f1;
+  font-size: 15px;
+  position: relative;
+  left: 40%;
+  top: 0.3rem;
+}
+.container-grid-acomodacoes button:hover,
+.container-grid-acomodacoes1 button:hover {
+  transform: scale(1.1);
+}
+
+fieldset {
+  min-width: none;
+  border-radius: 10px;
+  border-color: #ad9479;
+  font-size: 12px;
+  width: 40%;
+  font-weight: bold;
+}
+
+/****** Galeria*******/
+.album-fotos {
+  margin: 0 auto;
+  padding: 5px;
+}
+.album-fotos ul {
+  width: 700px;
+  margin: 0 auto;
+}
+.album-fotos li {
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  border: 2px solid rgba(192, 80, 25, 0.5019607843);
+  border-radius: 10px;
+  -webkit-transition: all 0.4s ease-in;
+}
+.album-fotos li span {
+  opacity: 0;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 10px;
+}
+.album-fotos li:hover span {
+  opacity: 1;
+}
+.album-fotos li:hover {
+  background-position: 0% 0%;
+  -webkit-transform: scale(1.5);
+}
+
+/*ul#galeria-foto li {
+  display: block;
+  float: left;
+  margin: 15px;
+  position: relative;
+}*/
+input {
+  width: auto;
+  border: none;
+  background: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #ad9479;
+  color: #ad9479;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+div.continf1 {
+  display: flex;
+  text-align: center;
+  background-color: #f0eae3;
+  font-size: 1.5rem;
+}
+
+/* ***** Media Querie*****/
+@media (max-width: 800px) {
+  .menu {
+    flex-flow: column;
+    min-width: 100%;
+    transition: all 0.4s;
+    text-align: center;
+  }
+  .container-grid-acomodacoes {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+  }
+  .container-grid-acomodacoes p {
+    padding: 0;
+  }
+  h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .container-grid-acomodacoes1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .separador {
+    display: none;
+  }
+  .album-fotos li {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ad9479;
+    -webkit-transition: all 0.4s ease-in;
+  }
+  .album-fotos li span {
+    opacity: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 5px;
+    padding: 5px;
+    font-size: 0.2rem;
+  }
+  fieldset {
+    width: auto;
+    float: right;
+  }
+  h1 {
+    font-size: 20px;
+    text-align: justify;
+  }
+}
+
+/*# sourceMappingURL=_style_acomodacoes.css.map */
