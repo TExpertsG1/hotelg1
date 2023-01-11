@@ -353,6 +353,9 @@ div.copyright {
 
 /* ---------- responsive ----------------------- */
 @media (max-width: 800px) {
+  .mainHeader img {
+    display: none;
+  }
   .menu {
     flex-flow: column;
     min-width: 100%;
@@ -430,6 +433,55 @@ div.copyright {
   }
   section #sobre div {
     text-align: center;
+  }
+  .div-contatos {
+    padding: 0px;
+  }
+  .contatos {
+    width: 100%;
+    border-bottom-width: 1px;
+    border-bottom-color: #82694E;
+    border-bottom-style: solid;
+    font-size: large;
+  }
+  select.contatos {
+    color: rgba(107, 94, 94, 0.8235294118);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+  }
+  #message {
+    padding-bottom: 6rem;
+  }
+  .buttonContatos {
+    margin: 1rem 0;
+    font-size: 1rem;
+    border: none;
+    background-color: #82694e;
+    color: #ffffff;
+    padding: 0.6rem 2rem;
+    cursor: none;
+    border-radius: none;
+    transition: none;
+  }
+  .buttonContatos:hover {
+    background-color: none;
+  }
+  .buttonContatos:focus {
+    box-shadow: none;
+  }
+  div.informacoes {
+    padding: 0% 0% 0% 0%;
+    text-align: center;
+  }
+  div.redes-sociais {
+    padding-left: 0;
+  }
+  /* -- COPYRIGHT -- */
+  div.copyright {
+    font-size: large;
+  }
+  .navPos {
+    display: none;
   }
 }
 
