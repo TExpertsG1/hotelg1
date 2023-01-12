@@ -25,14 +25,14 @@
           <div>
             <div class="userBar">
               <a>Olá Usuário</a>
-              <a>Sair</a>p
+              <a>Sair</a>
             </div>
             <span class="mainHeader">
               <a href="index.html"> <img height="100%" src="./images/logo_1800.png" /></a>
               <nav class="navbar menu">
                 <a href="index.html">Home</a>
                 <a href="pages/acomodacoes.html">Acomodações</a>
-                <a href="pages/nossosservicos.html">Nossos Serviços</a>
+                <a href="pages/sobre.html">Nosso Hotel</a>
                 <a href="pages/reservas.html">Reservas</a>
                 <a href="#contato">Contato</a>
               </nav>
@@ -61,7 +61,7 @@
                 Carmen la Cigarrera, Lord Byron, Bécquer…
               </p>
               <div>
-                <button>Saiba mais</button>
+                <a href="page/sobre.html#nossaHistoria"> <button>Saiba mais</button></a>
               </div>
             </div>
           </div>
@@ -126,9 +126,7 @@
                   aliquid quas sint id non aut. Lorem ipsum dolor sit amet consectetur, adipisicing
                   elit.
                 </p>
-                <a class="saibaMais" href="pages/nossosservicos.html#recreacaoInfantil"
-                  >Saiba mais</a
-                >
+                <a class="saibaMais" href="pages/sobre.html#recreacaoInfantil">Saiba mais</a>
               </div>
               <div class="container-servicos2">
                 <div class="divIcon">
@@ -141,7 +139,7 @@
                   aliquid quas sint id non aut. Lorem ipsum dolor sit amet consectetur, adipisicing
                   elit.
                 </p>
-                <a class="saibaMais" href="pages/nossosservicos.html#tour">Saiba mais</a>
+                <a class="saibaMais" href="pages/sobre.html#tour">Saiba mais</a>
               </div>
               <div class="container-servicos2">
                 <div class="divIcon">
@@ -154,7 +152,7 @@
                   aliquid quas sint id non aut. Lorem ipsum dolor sit amet consectetur, adipisicing
                   elit.
                 </p>
-                <a class="saibaMais" href="pages/nossosservicos.html/#miniMuseu">Saiba mais</a>
+                <a class="saibaMais" href="pages/sobre.html/#miniMuseu">Saiba mais</a>
               </div>
             </div>
           </article>
@@ -175,7 +173,7 @@
                 manhã...
               </p>
               <div>
-               <a href="pages/nossosservicos.html#gastronomia"> <button>Saiba mais</button></a>
+                <a href="pages/sobre.html#gastronomia"> <button>Saiba mais</button></a>
               </div>
             </div>
             <div id="containergastro01">
@@ -189,47 +187,63 @@
       <div class="principal">
         <div class="continf">
           <div class="div-contatos">
-            <form class="form-contatos">
-              <h2 id="contato">Contato</h2>
-              <label for="name"></label>
-              <input class="contatos" type="text" id="name" name="name" placeholder="Nome" /><br />
-              <label for="email"></label>
-              <input
-                class="contatos"
-                type="email"
-                id="email"
-                name="Email"
-                placeholder="Email"
-              /><br />
-              <label for="assunto">
-                <select name="assunto" id="assunto" class="contatos">
-                  <option value="Assunto">Assunto</option>
-                  <option value="Elogio">Elogio</option>
-                  <option value="Reclamação">Reclamação</option>
-                  <option value="Reservas">Reservas</option>
-                </select>
-              </label>
-              <br />
-              <input
-                class="contatos"
-                type="message"
-                id="message"
-                name="Mensagem"
-                placeholder="Mensagem"
-              /><br />
-              <input type="button" id="button" value="Enviar" />
+            <form id="reserva" action method="post" enctype="multipart/form-data">
+              <fieldset class="fieldsetFooter">
+                <legend>Envie sua Mensagem</legend>
+                <label for="name"></label>
+                <input
+                  class="contatos"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Nome"
+                /><br />
+                <label for="email"></label>
+                <input
+                  class="contatos"
+                  type="email"
+                  id="email"
+                  name="Email"
+                  placeholder="Email"
+                /><br />
+                <label for="assunto">
+                  <select name="assunto" id="assunto" class="contatos">
+                    <option value="Assunto">Assunto</option>
+                    <option value="Elogio">Elogio</option>
+                    <option value="Reclamação">Reclamação</option>
+                    <option value="Reservas">Reservas</option>
+                  </select>
+                </label>
+                <br />
+                <input
+                  class="contatos"
+                  type="message"
+                  id="message"
+                  name="Mensagem"
+                  placeholder="Mensagem"
+                /><br />
+                <input type="button" id="button" value="Enviar" />
+              </fieldset>
             </form>
           </div>
 
           <div class="informacoes">
-            <p><i class="fa-solid fa-location-dot"></i> Rua T.EXPERT</p>
-            <p><i class="fa-solid fa-phone-volume"></i> (00) 0 0000-0000</p>
-            <p><i class="fa-brands fa-square-whatsapp"></i> (00) 0 0000-0000</p>
-            <p><i class="fa-solid fa-envelope"></i> email@email.com.br</p>
-            <div class="redes-sociais">
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-square-instagram"></i>
-            </div>
+            <h2 id="contato" class="footerContato">Contato</h2>
+            <p class="footerContato">
+              <i class="fa-solid fa-location-dot"></i> Rua T.expert, 250 CEP 00.000-00
+            </p>
+            <p class="footerContato"><i class="fa-solid fa-phone-volume"></i> (00) 0 0000-0000</p>
+            <p class="footerContato">
+              <i class="fa-brands fa-square-whatsapp"></i> (00) 0 0000-0000
+            </p>
+            <p class="footerContato"><i class="fa-solid fa-envelope"></i> email@email.com.br</p>
+            <div></div>
+          </div>
+          <div class="redes-sociais">
+            <h2>Siga-nos</h2>
+            <a href="http://www.facebook.com.br"><i class="fa-brands fa-facebook"></i></a>
+            <a href="http://www.instagram.com"> <i class="fa-brands fa-square-instagram"></i></a>
+            <a href="http://www.twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
           </div>
         </div>
       </div>

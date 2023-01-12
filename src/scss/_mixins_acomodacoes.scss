@@ -41,13 +41,34 @@ $n: 0;
   }
 }
 
+/**........MEDIA QUERIES.........*/
+
 @mixin midiaacomodacoes {
+  
+  /*...HEADER...*/
+
+  .mainHeader {
+    justify-content: center;
+
+    & img {
+      display: none;
+    }
+  }
+
   .menu {
     flex-flow: column;
-    min-width: 100%;
+    min-width: 40%;
     transition: all 0.4s;
     text-align: center;
+    padding: 20px;
   }
+  h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /*...BODY...*/
+
 
   .container-grid-acomodacoes {
     display: flex;
@@ -75,6 +96,10 @@ $n: 0;
     display: none;
   }
 
+  #galeria1 {
+    padding-left: 50px;
+  }
+
   .album-fotos li {
     width: 100px;
     height: 100px;
@@ -93,7 +118,6 @@ $n: 0;
 
   fieldset {
     width: auto;
-    float: right;
   }
 
   h1 {
@@ -101,8 +125,55 @@ $n: 0;
     text-align: justify;
   }
 
+  /*...FOOTER...*/
+
+
+  .container-servicos,
+  .informacoes,
+  section #sobre {
+    display: flex;
+    flex-direction: column;
+    margin: 10 0 5 0;
+  }
+  div.informações {
+    flex-flow: column;
+  }
+
+  img {
+    width: 100%;
+    min-height: auto;
+    object-fit: cover;
+    object-position: bottom;
+  }
+
+  .saibaMais {
+    margin-bottom: 5px;
+  }
+
+  div.informacoes {
+    text-align: left;
+    padding-left: 5px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .informacoes .social {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  section #sobre div {
+    text-align: center;
+  }
   .div-contatos {
     padding: 0px;
+  }
+
+  div.continf {
+    padding: 0;
+    display: initial;
+    background-color: #ede5e3;
+    font-size: 1.5rem;
   }
   .contatos {
     width: 100%;
@@ -112,12 +183,6 @@ $n: 0;
     font-size: large;
     font-size: 15px;
   }
-  div.continf {
-    padding: 0;
-    display: initial;
-    background-color: #ede5e3;
-    font-size: 1.5rem;
-  }
   select.contatos {
     color: rgba(107, 94, 94, 0.8235294118);
     border-bottom-width: 1px;
@@ -125,13 +190,18 @@ $n: 0;
     font-size: 15px;
   }
 
-  div.informacoes {
-    padding: 0% 0% 0% 0%;
-    text-align: center;
+  .divIcon {
+    font-size: 1.2rem;
+
+    & h2 {
+      font-size: 1.5rem;
+    }
   }
-  #button {
-    font-size: 12px;
+
+  .fieldsetFooter {
+    width: 100%;
   }
+
   div.redes-sociais {
     padding-left: 0;
     size: 5px;

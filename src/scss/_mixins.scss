@@ -19,7 +19,7 @@
 @mixin h1 {
   font-size: 3rem;
   font-style: bold;
-  padding: 0vh 0vh 0vh 25vh;
+  padding: 0vh 0vh 0vh 18vh;
   color: #e9cb6b;
 }
 
@@ -40,6 +40,14 @@
   line-height: 1.5rem;
   width: auto;
 }
+@mixin fieldsetFooter {
+  min-width: none;
+  border-radius: 15px;
+  border-color: #ede5e3;
+  font-size: 16px;
+  width: 80%;
+  font-weight: bold;
+}
 
 @mixin button {
   background-color: #ad9479;
@@ -49,7 +57,7 @@
   color: #fff;
   font-size: 15px;
   position: relative;
-  left: 78%;
+  left: 76%;
 }
 
 @mixin container {
@@ -73,19 +81,36 @@
   display: flex;
   grid-template-columns: 45% 55%;
   width: 100%;
-
 }
 
-@mixin midia{
-  .mainHeader img{
-    display: none;
-  }  
-  
+/*.......MIDIA QUERIES.......*/
+
+@mixin midia {
+  /*...HEADER...*/
+
+  .mainHeader {
+    justify-content: center;
+
+    & img {
+      display: none;
+    }
+  }
+
   .menu {
     flex-flow: column;
-    min-width: 100%;
+    min-width: 40%;
     transition: all 0.4s;
     text-align: center;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /*.....BODY....*/
+  .navPos {
+    display: none;
   }
 
   .container-grid p,
@@ -100,7 +125,13 @@
 
   .container-grid div button,
   .container-grid-gastro div button {
-    padding: 0.5rem;
+    background-color: #ad9479;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-size: 10px;
+    position: relative;
+    left: 65%;
   }
 
   .container-grid-gastro img {
@@ -115,13 +146,8 @@
     margin-bottom: 10px;
   }
 
-  .divIcon {
-    font-size: 15px;
-  }
-  .divIcon h2 {
-    font-size: 25px;
-  }
-  h1 {
+  h1,
+  h2 {
     font-size: 20px;
     text-align: center;
   }
@@ -131,6 +157,16 @@
     text-align: justify;
     font-family: "Baskerville";
   }
+  div.gallery {
+    float: none;
+    text-align: center;
+  }
+  #acomodacoesfundo {
+    padding: 20%;
+  }
+
+  /*......FOOTER.......*/
+
   .container-servicos,
   .informacoes,
   section #sobre {
@@ -149,12 +185,6 @@
     object-position: bottom;
   }
 
-  div.gallery {
-    float: none;
-    text-align: center;
-  }
-
-
   .saibaMais {
     margin-bottom: 5px;
   }
@@ -163,6 +193,7 @@
     text-align: left;
     padding-left: 5px;
     border-radius: 5px;
+    text-align: center;
   }
 
   .informacoes .social {
@@ -176,10 +207,8 @@
   .div-contatos {
     padding: 0px;
   }
-   .div-contatos {
-    padding: 0px;
-  }
-    div.continf {
+
+  div.continf {
     padding: 0;
     display: initial;
     background-color: #ede5e3;
@@ -200,26 +229,27 @@
     font-size: 15px;
   }
 
-  div.informacoes {
-    padding: 0% 0% 0% 0%;
-    text-align: center;
+  .divIcon {
+    font-size: 1.2rem;
+
+    & h2 {
+      font-size: 1.5rem;
+    }
   }
-#button {
-  font-size:12px;
-}
+
+  .fieldsetFooter {
+    width: 100%;
+  }
+
   div.redes-sociais {
     padding-left: 0;
     size: 5px;
   }
-  .fa-solid{
+  .fa-solid {
     font-size: 15px;
   }
   /* -- COPYRIGHT -- */
   div.copyright {
     font-size: large;
   }
-  .navPos{
-    display: none;
-  }
 }
-

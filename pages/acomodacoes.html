@@ -23,12 +23,12 @@
               <a>Sair</a>
             </div>
 
-           <span class="mainHeader">
+            <span class="mainHeader">
               <a href="index.html"> <img height="100%" src="../images/logo_1800.png" /></a>
               <nav class="navbar menu">
-                <a href="/root/index.html">Home</a>
+                <a href="../index.html">Home</a>
                 <a href="acomodacoes.html">Acomodações</a>
-                <a href="nossosservicos.html">Nossos Serviços</a>
+                <a href="sobre.html">Nosso Hotel</a>
                 <a href="reservas.html">Reservas</a>
                 <a href="#contato">Contato</a>
               </nav>
@@ -65,12 +65,24 @@
         <div class="container-grid-acomodacoes" id="familia">
           <div id="galeria1">
             <ul class="album-fotos">
-              <li id="card1" class="fotos01 titulo"><span class="card__titulo">Suíte Familia</span></li>
-              <li id="card2" class="fotos02 titulo"><span class="card__titulo">Suíte Família</span></li>
-              <li id="card3" class="fotos03 titulo"><span class="card__titulo">Suíte Família</span></li>
-              <li id="card4" class="fotos04 titulo"><span class="card__titulo">Suíte Família</span></li>
-              <li id="card5" class="fotos05 titulo"><span class="card__titulo">Suíte Família</span></li>
-              <li id="card6" class="fotos06 titulo"><span class="card__titulo">Suíte Família</span></li>
+              <li id="card1" class="fotos01 titulo">
+                <span class="card__titulo">Suíte Familia</span>
+              </li>
+              <li id="card2" class="fotos02 titulo">
+                <span class="card__titulo">Suíte Família</span>
+              </li>
+              <li id="card3" class="fotos03 titulo">
+                <span class="card__titulo">Suíte Família</span>
+              </li>
+              <li id="card4" class="fotos04 titulo">
+                <span class="card__titulo">Suíte Família</span>
+              </li>
+              <li id="card5" class="fotos05 titulo">
+                <span class="card__titulo">Suíte Família</span>
+              </li>
+              <li id="card6" class="fotos06 titulo">
+                <span class="card__titulo">Suíte Família</span>
+              </li>
             </ul>
           </div>
           <div id="suiteFamilia" class="container-grid-acomodacoes">
@@ -221,53 +233,69 @@
       <div class="principal">
         <div class="continf">
           <div class="div-contatos">
-            <form class="form-contatos">
-              <h2 id="contato">Contato</h2>
-              <label for="name"></label>
-              <input class="contatos" type="text" id="name" name="name" placeholder="Nome" /><br />
-              <label for="email"></label>
-              <input
-                class="contatos"
-                type="email"
-                id="email"
-                name="Email"
-                placeholder="Email"
-              /><br />
-              <label for="assunto">
-                <select name="assunto" id="assunto" class="contatos">
-                  <option value="Assunto">Assunto</option>
-                  <option value="Elogio">Elogio</option>
-                  <option value="Reclamação">Reclamação</option>
-                  <option value="Reservas">Reservas</option>
-                </select>
-              </label>
-              <br />
-              <input
-                class="contatos"
-                type="message"
-                id="message"
-                name="Mensagem"
-                placeholder="Mensagem"
-              /><br />
-              <input type="button" id="button" value="Enviar" />
+            <form id="reserva" action method="post" enctype="multipart/form-data">
+              <fieldset class="fieldsetFooter">
+                <legend>Envie sua Mensagem</legend>
+                <label for="name"></label>
+                <input
+                  class="contatos"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Nome"
+                /><br />
+                <label for="email"></label>
+                <input
+                  class="contatos"
+                  type="email"
+                  id="email"
+                  name="Email"
+                  placeholder="Email"
+                /><br />
+                <label for="assunto">
+                  <select name="assunto" id="assunto" class="contatos">
+                    <option value="Assunto">Assunto</option>
+                    <option value="Elogio">Elogio</option>
+                    <option value="Reclamação">Reclamação</option>
+                    <option value="Reservas">Reservas</option>
+                  </select>
+                </label>
+                <br />
+                <input
+                  class="contatos"
+                  type="message"
+                  id="message"
+                  name="Mensagem"
+                  placeholder="Mensagem"
+                /><br />
+                <input type="button" id="button" value="Enviar" />
+              </fieldset>
             </form>
           </div>
 
           <div class="informacoes">
-            <p><i class="fa-solid fa-location-dot"></i> Rua T.EXPERT</p>
-            <p><i class="fa-solid fa-phone-volume"></i> (00) 0 0000-0000</p>
-            <p><i class="fa-brands fa-square-whatsapp"></i> (00) 0 0000-0000</p>
-            <p><i class="fa-solid fa-envelope"></i> email@email.com.br</p>
-            <div class="redes-sociais">
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-square-instagram"></i>
-            </div>
+            <h2 id="contato" class="footerContato">Contato</h2>
+            <p class="footerContato">
+              <i class="fa-solid fa-location-dot"></i> Rua T.expert, 250 CEP 00.000-00
+            </p>
+            <p class="footerContato"><i class="fa-solid fa-phone-volume"></i> (00) 0 0000-0000</p>
+            <p class="footerContato">
+              <i class="fa-brands fa-square-whatsapp"></i> (00) 0 0000-0000
+            </p>
+            <p class="footerContato"><i class="fa-solid fa-envelope"></i> email@email.com.br</p>
+            <div></div>
+          </div>
+          <div class="redes-sociais">
+            <h2>Siga-nos</h2>
+            <a href="http://www.facebook.com.br"><i class="fa-brands fa-facebook"></i></a>
+            <a href="http://www.instagram.com"> <i class="fa-brands fa-square-instagram"></i></a>
+            <a href="http://www.twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
           </div>
         </div>
       </div>
-      <div class="copyright principal">
-        <h5>&copy;2077 - Todos os direitos reservados</h5>
-      </div>
     </footer>
+    <div class="copyright principal">
+      <h5>&copy;2077 - Todos os direitos reservados</h5>
+    </div>
   </body>
 </html>
