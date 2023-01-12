@@ -38,20 +38,18 @@
         </header>
     </div>
     <main>
-        <div class="principal">
-            <div class="reserva">
-                <div>
-                    <h2>Faça sua Reserva</h2>
-                    <div class="divInputReserva">
-                        <span>Do dia </span> <input type="date" /> <span>Até o dia </span>
-                        <input type="date" name="dataReserva" />
-                        <span>Adultos</span>
-                        <input type="number" required min="1" max="4" />
-                        <span>Criança até 12 anos</span>
-                        <input type="number" required min="0" max="5" />
-                    </div>
-                </div>
-            </div>
+        <div class="inputReserva principal">
+            <form id="reserva" action method="post" enctype="multipart/form-data">
+                <fieldset class="reserva">
+                    <legend>Faça sua Reserva</legend>
+                    <span>Do dia </span> <input type="date" /> <span>Até o dia </span>
+                    <input type="date" name="dataReserva" />
+                    <span>Adultos</span>
+                    <input class="spanAdultos" type="number" required min="1" max="4" />
+                    <span>Criança até 12 anos</span>
+                    <input type="number" required min="0" max="5" />
+                </fieldset>
+            </form>
         </div>
         <div class="navPos">
             <ul>
