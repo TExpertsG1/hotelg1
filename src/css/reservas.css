@@ -1,31 +1,39 @@
 @charset "UTF-8";
+* {
+  font-family: "Baskerville";
+  box-sizing: border-box;
+  line-height: 1.5rem;
+}
+
+/*.......MIDIA QUERIES.......*/
 @font-face {
   font-family: Baskerville;
   src: url(../font/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf);
 }
-/*----Default Values----*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-size: 1rem;
-  font-family: "Baskerville", sans-serif, "Times New Roman", Times, serif;
   color: #82694e;
   background-color: #fff3f1;
+  font-family: "Baskerville";
 }
 
 a {
   all: unset;
-  font-size: 0.85rem;
   cursor: pointer;
-  color: #fff3f1;
   transition: background-color 0.6s ease;
 }
 
+.menu a {
+  color: #fff3f1;
+}
+
 h1 {
-  font-size: 2.25rem;
+  font-size: 3rem;
   font-style: bold;
-  line-height: 2.25rem;
-  padding: 0vh 0vh 0vh 25vh;
+  padding: 0vh 0vh 0vh 18vh;
   color: #e9cb6b;
 }
 
@@ -33,31 +41,37 @@ h2 {
   margin: 0;
   font-size: 1.5rem;
   line-height: 5rem;
+  text-align: center;
+  font-family: "Baskerville";
 }
 
 .principal {
   margin: 1px 30px;
 }
 
+.nomeLogo {
+  display: flex;
+  padding-left: 0;
+}
+.nomeLogo h1 {
+  text-align: center;
+}
+
 /*-----Header-------*/
 header {
   display: flex;
-  flex-direction: column;
   background-color: #ede5e3;
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-image: url(../../images/imagemHeader.jpg);
   background-attachment: fixed;
   border-top: 2px solid rgba(192, 80, 25, 0.5019607843);
   border-bottom: 2px solid rgba(192, 80, 25, 0.5019607843);
+  background-image: url("../../images/imagemHeader.jpg");
+  background-attachment: fixed;
 }
 header section {
   width: 100%;
-}
-
-.nomeLogo {
-  position: relative;
 }
 
 .userBar {
@@ -66,7 +80,8 @@ header section {
   justify-content: flex-end;
   height: 1rem;
   padding: 20px 40px 20px 20px;
-  gap: 0.25rem;
+  gap: 0.3rem;
+  color: #fff3f1;
 }
 .userBar a {
   display: flex;
@@ -114,7 +129,7 @@ fieldset {
   border-radius: 15px;
   border-color: #ad9479;
   font-size: 12px;
-  width: 42%;
+  width: 46%;
   line-height: 1.5rem;
   font-weight: bold;
   margin: 1rem 0px 0px 0px;
@@ -214,11 +229,25 @@ input[type=checkbox]:checked {
 
 /*--- FOOTER ---*/
 /* -- CONTINF -- */
+.fieldsetFooter {
+  min-width: none;
+  border-radius: 15px;
+  border-color: #ede5e3;
+  font-size: 16px;
+  width: 80%;
+  font-weight: bold;
+}
+
+div.continf1 {
+  display: flex;
+  text-align: center;
+  background-color: #ede5e3;
+  font-size: 1.5rem;
+}
+
 div.continf {
-  padding: 10px;
   display: grid;
-  grid-template-columns: auto auto;
-  padding: 10px;
+  grid-template-columns: 50% 25% 25%;
   text-align: center;
   background-color: #ede5e3;
   font-size: 1.5rem;
@@ -226,65 +255,62 @@ div.continf {
 
 /*-- CONTATO --*/
 .div-contatos {
-  padding: 40px;
+  padding: 1rem;
+  text-align: center;
 }
 
 .contatos {
-  width: 50%;
+  width: 60%;
   background: none;
   border: none;
   border-width: 2px;
   border-bottom-width: 1px;
-  border-bottom-color: #82694E;
+  border-bottom-color: #82694e;
   border-bottom-style: solid;
   font-size: 1rem;
-}
-
-select.contatos {
-  color: rgba(107, 94, 94, 0.8235294118);
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
 }
 
 #message {
   padding-bottom: 6rem;
 }
 
-.buttonContatos {
-  margin: 1rem 0;
+#button {
   font-size: 1.2rem;
   border: none;
   background-color: #82694e;
   color: #ffffff;
-  padding: 0.6rem 2rem;
+  padding: 8px 24px;
+  margin: 10px;
   cursor: pointer;
-  border-radius: 1rem;
-  transition: background-color 0.3s ease;
-}
-.buttonContatos:hover {
-  background-color: #6b5435;
-}
-.buttonContatos:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px #6b5435;
+  -webkit-border-radius: 10px;
 }
 
 /*-- INFORMAÇÕES --*/
 div.informacoes {
-  padding: 5% 10% 10% 24%;
-  color: #82694E;
+  color: #82694e;
   text-align: left;
+  font-size: 80%;
+}
+
+select {
+  color: #666462;
 }
 
 div.redes-sociais {
-  font-size: 2.3rem;
-  padding-left: 15%;
+  font-size: 2rem;
+}
+
+/* -- DIV MNR -- */
+div.div-mnr {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
 }
 
 /* -- COPYRIGHT -- */
 div.copyright {
   text-align: center;
-  color: #82694E;
+  color: #82694e;
 }
 
 /* ---- NavPos-------*/
@@ -326,6 +352,10 @@ div.navPos ul li a {
     float: none;
   }
   .mainHeader img {
+    display: none;
+  }
+  /* ---- NavPos-------*/
+  .navPos {
     display: none;
   }
   /*------RESERVA-----*/
@@ -451,9 +481,12 @@ div.navPos ul li a {
   .contatos {
     width: 100%;
     border-bottom-width: 1px;
-    border-bottom-color: #82694E;
+    border-bottom-color: #82694e;
     border-bottom-style: solid;
     font-size: large;
+  }
+  .fieldsetFooter {
+    width: 100%;
   }
   select.contatos {
     color: rgba(107, 94, 94, 0.8235294118);
