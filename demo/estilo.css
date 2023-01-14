@@ -31,8 +31,9 @@ a:hover{
 
 header#cabecalho {
     background-color: #EDE5E3;
-    height: 400px;
-    padding: 10px;
+    height: 350px;
+    padding: 0;
+
 }
 
 header#cabecalho h1{
@@ -40,17 +41,20 @@ header#cabecalho h1{
     font-size: 30pt;
     color: #82694E;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
-    padding: 0px;
-    margin-bottom: 0px;
     text-transform: uppercase;
+    position: absolute;
+    top: 120px;
+    margin: 10px 100px;
+
 }
 header#cabecalho h2{
     font-family: Arial, sans-serif;
     font-size: 15pt;
     color: #82694E;
-    padding: 0px;
-    margin-top: 0px;
     text-transform: uppercase;
+    position: absolute;
+    top: 170px;
+    margin: 10px 100px;
 }
 
 /*Formatação do Menu*/
@@ -62,34 +66,53 @@ nav#menu ul{
     list-style: none; /*Retira as bolinha no menu*/
     position: absolute;
     top: 60px;
-    right: 490px;
+    right: 479px;
 }
 /*Menu de forma horizotal*/
-nav#menu li{
+nav#menu li, nav#menu-usuario li{
     display: inline-block; /*Os menus serão exibidos em uma unica linha*/
     background-color: #AD9479; /*Uma cor no fundo do menu*/
     padding: 8px; /*Espaço entre os menus mas dentro*/
     margin: -3px; /*O espaço entre os menus mas fora*/
     transition: background-color 1s;
 }
-nav#menu li:hover{
+nav#menu li:hover, nav#menu-usuario li:hover {
     background-color: #82694E;
 }
 nav#menu h1{
     display: none;
 }
-nav#menu a{
+nav#menu a, nav#menu-usuario a{
     color: #EDE5E3;
     text-decoration: none;
 }
-nav#menu a:hover{
+nav#menu a:hover, nav#menu-usuario a:hover {
     color: #ffffff;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 nav#menu #select {
     font-weight: bold;
     background-color: #82694E;
+}
+
+nav#menu-usuario {
+    display: block;
+    height: 80px;
+}
+
+nav#menu-usuario ul {
+    list-style: none; /*Retira as bolinha no menu*/
+    position: absolute;
+    top: 0;
+    right: 479px;
+}
+
+
+#carouselExampleIndicators {
+    /* position: absolute; */
+    top: 0;
+    margin: 0;
 }
 
 
@@ -133,6 +156,7 @@ section#sobre button {
     text-align: center;
     width: 200px;
     font-weight: bold;
+    border-radius: 20px;
 }
 
 section#sobre img {

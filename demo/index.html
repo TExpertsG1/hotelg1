@@ -17,59 +17,64 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="estilo.css">
+    <!-- <script src="project.js"></script> -->
     <title>Hotel TExperts</title>
 </head>
 
 <body>
     <div id="corpo">
         <header id="cabecalho">
-            <nav id="menu-usuario">
-                <ul>
-                    <li><a href="">Olá Usuário</a></li>
-                    <li><a href="">Sair</a></li>
-                </ul>
-            </nav>
-
-            <img src="" alt="Logo">
-            <nav id="menu">
-                <ul>
-                    <li id="select"><a href="#">Home</a></li>
-                    <li><a href="#">Sobre nós</a></li>
-                    <li><a href="#">Acomodações</a></li>
-                    <li><a href="#">Gastrononia</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
-
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3S"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src=".../800x400?auto=yes&bg=777&fg=555&text=Primeiro Slide"
+                        <img class="d-block w-100" src="1.jpg"
                             alt="Primeiro Slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Segundo Slide"
+                        <img class="d-block w-100" src="2.jpg"
                             alt="Segundo Slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Terceiro Slide"
+                        <img class="d-block w-100" src="3.jpg"
+                            alt="Terceiro Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="4.jpg"
                             alt="Terceiro Slide">
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Anterior</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Próximo</span>
-                </a>
+                </a> -->
+                <!-- <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"> -->
+                    <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                    <!-- <span class="sr-only">Próximo</span> -->
+                <!-- </a> -->
             </div>
+            <nav id="menu-usuario">
+                <ul>
+                    <li><a id="login" href="login.html">Login</a></li>
+                    <li><a id="logOut" href="#">Sair</a></li>
+                </ul>
+            </nav>
+
+            <!-- <img src="" alt="Logo"> -->
+            <nav id="menu">
+                <ul>
+                    <li id="select"><a href="#">Home</a></li>
+                    <li><a href="#sobre">Sobre nós</a></li>
+                    <li><a href="#">Acomodações</a></li>
+                    <li><a href="#">Gastrononia</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
 
             <h1>Frase do slogan</h1>
             <h2>Frase do slogan</h2>
@@ -145,7 +150,7 @@
                 </a>
               </div>
         </section>
-        <section class="contacto">
+        <section id="contacto" class="contacto">
             <div>
                 <h2>Contacto</h2>
                 <input type="text" placeholder="Nome Completo">
@@ -202,6 +207,33 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        const loginElement = document.querySelector("#login");
+        const logOutElement = document.querySelector("#logOut");
+
+        console.log(loginElement);
+
+        function checaUsuario() {
+            const usuario = localStorage.getItem("nome")
+    
+            if(usuario) {
+                loginElement.textContent = "Olá " + usuario;
+                loginElement.setAttribute("href", "http://127.0.0.1:5501/index.html")
+            } else {
+                loginElement.textContent = "Login"
+            }
+        }
+
+        logOutElement.addEventListener("click", () => {
+            localStorage.clear()
+            loginElement.setAttribute("href", "http://127.0.0.1:5501/login.html")
+
+            checaUsuario();
+        })
+        
+        checaUsuario();
+    </script>
 </body>
 
 </html>

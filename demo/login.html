@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login TEX</title>
+    <style>
+        html {
+            height: 100%;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /* background-image: linear-gradient(45deg, #EDE5E3, #82694E); */
+            background-image: url('login.jpg');
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        div {
+            background-color: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 80px;
+            border-radius: 15px;
+            color: #fff;
+        }
+
+        input {
+            padding: 14px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            margin: 5px 0;
+        }
+
+        #login-btn {
+            background-color: dodgerblue;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+
+        #login-btn:hover {
+            background-color: deepskyblue;
+            cursor: pointer;
+        }
+
+        #mensagem {
+            display: none;
+            color: rgb(214, 103, 103);
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form id="form-login">
+        <div>
+            <h4 id="mensagem">Mensagem</h4>
+            <h1>Login</h1>
+            <input type="email" name="email" id="email" placeholder="Digite o teu email" required> <br>
+            <input type="password" name="senha" id="senha" placeholder="Digite a tua senha" required> <br>
+            <input type="submit" id="login-btn" value="Login">
+        </div>
+    </form>
+
+    <script>
+        const formLogin = document.querySelector("#form-login");
+        const mensagem = document.querySelector("#mensagem");
+
+        const usuarios = [
+            {
+                nome: "Quitumba",
+                email: "quitumba@examplo.com",
+                senha: "1234"
+            },
+            {
+                nome: "Michell",
+                email: "michell@examplo.com",
+                senha: "0000"
+            }
+        ];
+
+        
+        formLogin.addEventListener("submit", e => {
+            e.preventDefault();
+
+            const emailInput = document.querySelector("#email");
+            const senhaInput = document.querySelector("#senha");
+
+            let email = emailInput.value
+            let senha = senhaInput.value
+
+            email = email.trim().replace("/'/g", "").replace(/["]/g, '')
+            senha = senha.trim().replace("/'/g", "").replace(/["]/g, '')
+
+            if(validarDadosDoUsuario(email, senha)) {
+                window.location.href = "http://127.0.0.1:5501/index.html";
+                emailInput.value = ""
+                senhaInput.value = ""
+            }
+        })
+
+        function validarDadosDoUsuario(email, senha) {
+
+           const index = usuarios.findIndex(usuario => {
+                return usuario.email === email;
+            });
+
+            if(index >= 0 && usuarios[index].senha === senha) {
+                localStorage.setItem("nome", usuarios[index].nome)
+                return true;
+            }  
+            mensagem.textContent = "Email ou senha incorreta..."
+            mensagem.style.display = "initial";    
+            return false;          
+        }
+
+    </script>
+</body>
+
+</html>
