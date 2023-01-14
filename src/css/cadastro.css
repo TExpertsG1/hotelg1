@@ -1,19 +1,15 @@
-@font-face {
-  font-family: Baskerville;
-  src: url(../font/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf);
+* {
+  font-family: "Baskerville";
+  box-sizing: border-box;
+  line-height: 1.5rem;
 }
 
-/** {
-  font-family: "Baskerville", sans-serif, "Times New Roman", Times, serif;
-}*/
-
 /*----Default Values----*/
-
 body {
   margin: 0;
   padding: 0;
   font-size: 1rem;
-  font-family: "Baskerville", sans-serif, "Times New Roman", Times, serif;
+  font-family: "Baskerville";
   color: #82694e;
   background-color: #fff3f1;
 }
@@ -46,7 +42,7 @@ h3 {
   padding: 0;
   font-size: 1.25rem;
   line-height: 5rem;
-  color: #ad9479
+  color: #ad9479;
 }
 
 .principal {
@@ -54,7 +50,6 @@ h3 {
 }
 
 /*-----Header-------*/
-
 header {
   display: flex;
   flex-direction: column;
@@ -62,7 +57,7 @@ header {
   background-color: #ede5e3;
   justify-content: center;
   align-items: center;
-  width: 100%
+  width: 100%;
 }
 
 header section {
@@ -93,7 +88,7 @@ header section:first-of-type {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 0.25rem
+  gap: 0.25rem;
 }
 
 .navbar a {
@@ -108,14 +103,13 @@ header section:first-of-type {
 }
 
 /*-------- Form -------*/
-
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding:  0 0.5rem;
+  padding: 0 0.5rem;
 }
 
 form {
@@ -141,7 +135,7 @@ form {
   text-align: left;
 }
 
-label { 
+label {
   width: 100%;
   margin-bottom: 0.15rem;
 }
@@ -183,3 +177,5 @@ p {
     max-width: 95%;
   }
 }
+
+/*# sourceMappingURL=casdastro.css.map */
