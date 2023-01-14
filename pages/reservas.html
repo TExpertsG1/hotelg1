@@ -1,204 +1,263 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../src/css/reservas.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <script src="https://kit.fontawesome.com/54d71879ed.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/54d71879ed.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Reservas</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="principal">
-        <header>
-            <section>
-                <div>
-                    <div class="userBar">
-                        <a>Olá Usuário</a>
-                        <a>Sair</a>
-                    </div>
-                    <span class="mainHeader">
-                        <img height="100%" src="../images/logo_1800.png" />
-                        <nav class="navbar menu">
-                            <a href="#nossohotel">O Hotel</a>
-                            <a href="#acomodacoes">Acomodações</a>
-                            <a href="#servicos">Nossos Serviços</a>
-                            <a href="#gastronomia">Gastronomia</a>
-                            <a href="#reservas">Reservas</a>
-                        </nav>
-                    </span>
-                    <div class="nomeLogo">
-                        <h1>Hotel 1800</h1>
-                    </div>
-                </div>
-            </section>
-        </header>
+      <header>
+        <section>
+          <div>
+            <div class="userBar">
+              <a>Olá Usuário</a>
+              <a>Sair</a>
+            </div>
+
+            <span class="mainHeader">
+              <a href="index.html">
+                <img height="100%" src="../images/logo_1800.png"
+              /></a>
+              <nav class="navbar menu">
+                <a href="../index.html">Home</a>
+                <a href="acomodacoes.html">Acomodações</a>
+                <a href="sobre.html">Nosso Hotel</a>
+                <a href="reservas.html">Reservas</a>
+                <a href="#contato">Contato</a>
+              </nav>
+            </span>
+            <div class="nomeLogo">
+              <h1>Hotel 1800</h1>
+            </div>
+          </div>
+        </section>
+      </header>
     </div>
     <main>
-        <div class="principal">
-            <div class="reserva">
-                <div>
-                    <h2>Faça sua Reserva</h2>
-                    <div class="divInputReserva">
-                        <span>Do dia </span> <input type="date" /> <span>Até o dia </span>
-                        <input type="date" name="dataReserva" />
-                        <span>Adultos</span>
-                        <input type="number" required min="1" max="4" />
-                        <span>Criança até 12 anos</span>
-                        <input type="number" required min="0" max="5" />
-                    </div>
-                </div>
+      <div class="inputReserva principal">
+        <form id="reserva" action method="post" enctype="multipart/form-data">
+          <fieldset class="reserva">
+            <legend>Faça sua Reserva</legend>
+            <span>Do dia </span> <input type="date" /> <span>Até o dia </span>
+            <input type="date" name="dataReserva" />
+            <span>Adultos</span>
+            <input class="spanAdultos" type="number" required min="1" max="4" />
+            <span>Criança até 12 anos</span>
+            <input type="number" required min="0" max="5" />
+          </fieldset>
+        </form>
+      </div>
+      <div class="navPos">
+        <ul>
+          <li>
+            <a href="#"><i class="fa-solid fa-calendar-days"></i></a>
+          </li>
+          <li>
+            <a href="#servicos"><i class="fa-solid fa-bell-concierge"></i></a>
+          </li>
+          <li>
+            <a href="#contatos"><i class="fa-solid fa-address-book"></i></a>
+          </li>
+        </ul>
+      </div>
+      <!--QUARTOS-->
+      <h2 class="h2Escolha principal">Escolha um quarto</h2>
+      <div class="divPost principal">
+        <div>
+          <div class="divPostCompleto">
+            <div class="postArea">
+              <img src="../images/acomodacao1.jpg" alt="Suíte Família" />
+              <div class="postQuarto">
+                <h2>Suíte Família</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aperiam pariatur minus, ea totam perferendis magnam placeat
+                  hic unde provident accusantium at voluptatum commodi possimus
+                  est explicabo similique. Repellat, iste veniam dolores enim
+                  eius aliquam ullam nisi eos, asperiores magnam consequuntur,
+                  omnis expedita quas neque autem quibusdam nihil vel fugit
+                  quod!
+                </p>
+                <h4>R$ 150.00</h4>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="checkbox"
+                    class="checkboxSuite"
+                  />
+                  Selecionar Suíte Premium
+                </label>
+              </div>
             </div>
-        </div>
-        <div class="navPos">
-            <ul>
-                <li>
-                    <a href="#"><i class="fa-solid fa-calendar-days"></i></a>
-                </li>
-                <li>
-                    <a href="#servicos"><i class="fa-solid fa-bell-concierge"></i></a>
-                </li>
-                <li>
-                    <a href="#contatos"><i class="fa-solid fa-address-book"></i></a>
-                </li>
-            </ul>
-        </div>
-        <!--QUARTOS-->
-        <h2 class="h2Escolha principal">Escolha um quarto</h2>
-        <div class="divPost principal">
-            <div>
-                <div class="divPostCompleto">
-                    <div class="postArea">
-                        <img src="../images/acomodacao1.jpg" alt="Suíte Família">
-                        <div class="postQuarto">
-                            <h2>Suíte Família</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam pariatur minus,
-                                ea
-                                totam
-                                perferendis magnam placeat hic unde provident accusantium at voluptatum commodi
-                                possimus est
-                                explicabo similique. Repellat, iste veniam dolores enim eius aliquam ullam nisi
-                                eos,
-                                asperiores
-                                magnam consequuntur, omnis expedita quas neque autem quibusdam nihil vel fugit
-                                quod!
-                            </p>
-                            <h4>R$ 150.00</h4>
-                            <label>
-                                <input type="checkbox" name="checkbox" class="checkboxSuite">
-                                Selecionar Suíte Premium
-                            </label>
-                        </div>
-                    </div>
-                    <div class="postArea">
-                        <img src="../images/acomodacao2.jpg" alt="Suíte Master">
-                        <div class="postQuarto">
-                            <h2>Suíte Master</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam pariatur minus,
-                                ea
-                                totam
-                                perferendis magnam placeat hic unde provident accusantium at voluptatum commodi
-                                possimus est
-                                explicabo similique. Repellat, iste veniam dolores enim eius aliquam ullam nisi
-                                eos,
-                                asperiores
-                                magnam consequuntur, omnis expedita quas neque autem quibusdam nihil vel fugit
-                                quod!
-                            </p>
-                            <h4>R$ 250.00</h4>
-                            <label>
-                                <input type="checkbox" name="checkbox" class="checkboxSuite">
-                                Selecionar Suíte Premium
-                            </label>
-                        </div>
-                    </div>
-                    <div class="postArea">
-                        <img src="../images/acomodacao3.jpg" alt="Suíte Premium">
-                        <div class="postQuarto">
-                            <h2>Suíte Premium</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam pariatur minus,
-                                ea
-                                totam
-                                perferendis magnam placeat hic unde provident accusantium at voluptatum commodi
-                                possimus est
-                                explicabo similique. Repellat, iste veniam dolores enim eius aliquam ullam nisi
-                                eos,
-                                asperiores
-                                magnam consequuntur, omnis expedita quas neque autem quibusdam nihil vel fugit
-                                quod!
-                            </p>
-                            <h4>R$ 350.00</h4>
-                            <label>
-                                <input type="checkbox" name="checkbox" class="checkboxSuite">
-                                Selecionar Suíte Premium
-                            </label>
-                        </div>
-                    </div>
-                </div>
+            <div class="postArea">
+              <img src="../images/acomodacao2.jpg" alt="Suíte Master" />
+              <div class="postQuarto">
+                <h2>Suíte Master</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aperiam pariatur minus, ea totam perferendis magnam placeat
+                  hic unde provident accusantium at voluptatum commodi possimus
+                  est explicabo similique. Repellat, iste veniam dolores enim
+                  eius aliquam ullam nisi eos, asperiores magnam consequuntur,
+                  omnis expedita quas neque autem quibusdam nihil vel fugit
+                  quod!
+                </p>
+                <h4>R$ 250.00</h4>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="checkbox"
+                    class="checkboxSuite"
+                  />
+                  Selecionar Suíte Premium
+                </label>
+              </div>
             </div>
+            <div class="postArea">
+              <img src="../images/acomodacao3.jpg" alt="Suíte Premium" />
+              <div class="postQuarto">
+                <h2>Suíte Premium</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aperiam pariatur minus, ea totam perferendis magnam placeat
+                  hic unde provident accusantium at voluptatum commodi possimus
+                  est explicabo similique. Repellat, iste veniam dolores enim
+                  eius aliquam ullam nisi eos, asperiores magnam consequuntur,
+                  omnis expedita quas neque autem quibusdam nihil vel fugit
+                  quod!
+                </p>
+                <h4>R$ 350.00</h4>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="checkbox"
+                    class="checkboxSuite"
+                  />
+                  Selecionar Suíte Premium
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
 
-            <div class="resumoReservaFull">
-                <div class="resumoReserva">
-                    <h2>Resumo da reserva</h2>
-                    <div class="infoReserva">
-                        <h4>Apartamento: XXX</h4>
-                        <h4>Checkin: XXX</h4>
-                        <h4>Checkout: XXX</h4>
-                        <h4>Quantidade de adutlos: XXX</h4>
-                        <h4>Quantidade de crianças: XXX</h4>
-                    </div>
-                    <h3>adicionar mais serviços</h3>
-                    <label>
-                        <input class="buttonReserva" type="button" id="button" value="Enviar">
-                    </label>
-                </div>
+        <div class="resumoReservaFull">
+          <div class="resumoReserva">
+            <h2>Resumo da reserva</h2>
+            <div class="infoReserva">
+              <h4>Apartamento: XXX</h4>
+              <h4>Checkin: XXX</h4>
+              <h4>Checkout: XXX</h4>
+              <h4>Quantidade de adutlos: XXX</h4>
+              <h4>Quantidade de crianças: XXX</h4>
             </div>
+            <h3>adicionar mais serviços</h3>
+            <label>
+              <input
+                class="buttonReserva"
+                type="button"
+                id="button"
+                value="Enviar"
+              />
+            </label>
+          </div>
         </div>
+      </div>
     </main>
     <footer>
-        <div class="principal">
-            <div class="continf">
-                <div class="div-contatos">
-                    <form class="form-contatos">
-                        <h2>Contato</h2>
-                        <label for="name"></label>
-                        <input class="contatos" type="text" id="name" name="name" placeholder="Nome" /><br />
-                        <label for="email"></label>
-                        <input class="contatos" type="email" id="email" name="Email" placeholder="Email" /><br />
-                        <label for="assunto">
-                            <select class="contatos" name="assunto" id="assunto">
-                                <option value="Assunto">Assunto</option>
-                                <option value="Elogio">Elogio</option>
-                                <option value="Reclamação">Reclamação</option>
-                                <option value="Reservas">Reservas</option>
-                            </select>
-                        </label>
-                        <br />
-                        <input class="contatos" type="message" id="message" name="Mensagem"
-                            placeholder="Mensagem" /><br />
-                        <input class="buttonContatos" type="button" id="button" value="Enviar" />
-                    </form>
-                </div>
+      <div class="principal">
+        <div class="continf">
+          <div class="div-contatos">
+            <form
+              id="reserva"
+              action
+              method="post"
+              enctype="multipart/form-data"
+            >
+              <fieldset class="fieldsetFooter">
+                <legend>Envie sua Mensagem</legend>
+                <label for="name"></label>
+                <input
+                  class="contatos"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Nome"
+                /><br />
+                <label for="email"></label>
+                <input
+                  class="contatos"
+                  type="email"
+                  id="email"
+                  name="Email"
+                  placeholder="Email"
+                /><br />
+                <label for="assunto">
+                  <select name="assunto" id="assunto" class="contatos">
+                    <option value="Assunto">Assunto</option>
+                    <option value="Elogio">Elogio</option>
+                    <option value="Reclamação">Reclamação</option>
+                    <option value="Reservas">Reservas</option>
+                  </select>
+                </label>
+                <br />
+                <input
+                  class="contatos"
+                  type="message"
+                  id="message"
+                  name="Mensagem"
+                  placeholder="Mensagem"
+                /><br />
+                <input type="button" id="button" value="Enviar" />
+              </fieldset>
+            </form>
+          </div>
 
-                <div class="informacoes">
-                    <p><i class="fa-solid fa-location-dot"></i> Rua T.EXPERT</p>
-                    <p><i class="fa-solid fa-phone-volume"></i> (00) 0 0000-0000</p>
-                    <p><i class="fa-brands fa-square-whatsapp"></i> (00) 0 0000-0000</p>
-                    <p><i class="fa-solid fa-envelope"></i> email@email.com.br</p>
-                    <div class="redes-sociais">
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-square-instagram"></i>
-                    </div>
-                </div>
-            </div>
+          <div class="informacoes">
+            <h2 id="contato" class="footerContato">Contato</h2>
+            <p class="footerContato">
+              <i class="fa-solid fa-location-dot"></i> Rua T.expert, 250 CEP
+              00.000-00
+            </p>
+            <p class="footerContato">
+              <i class="fa-solid fa-phone-volume"></i> (00) 0 0000-0000
+            </p>
+            <p class="footerContato">
+              <i class="fa-brands fa-square-whatsapp"></i> (00) 0 0000-0000
+            </p>
+            <p class="footerContato">
+              <i class="fa-solid fa-envelope"></i> email@email.com.br
+            </p>
+            <div></div>
+          </div>
+          <div class="redes-sociais">
+            <h2>Siga-nos</h2>
+            <a href="http://www.facebook.com.br"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="http://www.instagram.com">
+              <i class="fa-brands fa-square-instagram"></i
+            ></a>
+            <a href="http://www.twitter.com"
+              ><i class="fa-brands fa-square-twitter"></i
+            ></a>
+          </div>
         </div>
+      </div>
     </footer>
     <div class="copyright principal">
-        <h5>&copy;2077 - Todos os direitos reservados</h5>
+      <h5>&copy;2077 - Todos os direitos reservados</h5>
     </div>
-</body>
-
+  </body>
 </html>
