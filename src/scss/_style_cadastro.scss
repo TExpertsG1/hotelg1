@@ -1,24 +1,21 @@
-* {
-  font-family: "Baskerville";
-  box-sizing: border-box;
-  line-height: 1.5rem;
-}
+@use 'variaveis' as vlog;
 
 /*----Default Values----*/
+
 body {
   margin: 0;
   padding: 0;
   font-size: 1rem;
-  font-family: "Baskerville";
-  color: #82694e;
-  background-color: #fff3f1;
+  font-family: vlog.$fonte;
+  color: vlog.$fontColor;
+  background-color: vlog.$background;
 }
 
 a {
   all: unset;
   font-size: 0.85rem;
   cursor: pointer;
-  color: #fff3f1;
+  color: vlog.$background;
   transition: background-color 0.6s ease;
 }
 
@@ -42,7 +39,7 @@ h3 {
   padding: 0;
   font-size: 1.25rem;
   line-height: 5rem;
-  color: #ad9479;
+  color: vlog.$backgroundNav;
 }
 
 .principal {
@@ -50,6 +47,7 @@ h3 {
 }
 
 /*-----Header-------*/
+
 header {
   display: flex;
   flex-direction: column;
@@ -57,16 +55,18 @@ header {
   background-color: #ede5e3;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100%
 }
 
 header section {
   width: 100%;
 }
 
-header section:first-of-type {
-  min-width: 10%;
-  max-width: 50%;
+header{
+  section:first-of-type {
+    min-width: 10%;
+    max-width: 50%;
+  }
 }
 
 .mainHeader {
@@ -78,38 +78,44 @@ header section:first-of-type {
   padding: 8px 0;
 }
 
-.mainHeader img {
-  max-height: 4rem;
-  max-width: 4rem;
-  border-radius: 4rem;
+.mainHeader {
+  img {
+    max-height: 4rem;
+    max-width: 4rem;
+    border-radius: 4rem;
+  }
 }
 
 .navbar {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 0.25rem;
+  gap: 0.25rem
 }
 
-.navbar a {
-  padding: 0.5rem;
-  background-color: #ad9479;
-  border-radius: 0.5rem;
+.navbar {
+  a {
+    padding: 0.5rem;
+    background-color: vlog.$backgroundNav;
+    border-radius: 0.5rem;
+  }
 }
-
-.navbar a:hover {
-  font-weight: bold;
-  background-color: #82694e;
+.navbar {
+  a:hover {
+    font-weight: bold;
+    background-color: vlog.$fontColor;
+  }
 }
 
 /*-------- Form -------*/
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0 0.5rem;
+  padding:  0 0.5rem;
 }
 
 form {
@@ -135,7 +141,7 @@ form {
   text-align: left;
 }
 
-label {
+label { 
   width: 100%;
   margin-bottom: 0.15rem;
 }
@@ -149,16 +155,16 @@ button {
   width: 100%;
   margin-top: 1rem;
   padding: 0.5rem;
-  background-color: #ad9479;
+  background-color: vlog.$backgroundNav;
   border-radius: 0.5rem;
   font-size: 1rem;
-  color: #fff3f1;
+  color: vlog.$background;
   transition: background-color 0.6s ease;
 }
 
 button:hover {
   font-weight: bold;
-  background-color: #82694e;
+  background-color: vlog.$fontColor;
 }
 
 p {
@@ -173,9 +179,9 @@ p {
 }
 
 @media (max-width: 400px) {
-  header section:first-of-type {
-    max-width: 95%;
+  header{
+    section:first-of-type {
+      max-width: 95%;
+    }
   }
 }
-
-/*# sourceMappingURL=login.css.map */
