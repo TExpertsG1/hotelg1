@@ -24,8 +24,8 @@
         <section>
           <div>
             <div class="userBar">
-              <a>Olá Usuário</a>
-              <a>Sair</a>
+              <a id="login">Olá Usuário</a>
+              <a id="logout">Sair</a>
             </div>
             <span class="mainHeader">
               <a href="index.html"> <img height="100%" src="./images/logo_1800.png" /></a>
@@ -251,5 +251,32 @@
     <div class="copyright principal">
       <h5>&copy;2077 - Todos os direitos reservados</h5>
     </div>
+
+    <script>
+      const loginElement = document.querySelector("#login");
+      const logOutElement = document.querySelector("#logout");
+
+      console.log(loginElement);
+
+      function checaUsuario() {
+          const usuario = localStorage.getItem("nome")
+  
+          if(usuario) {
+              loginElement.textContent = "Olá " + usuario;
+              loginElement.setAttribute("href", "http://127.0.0.1:5501/index.html")
+          } else {
+              loginElement.textContent = "Login"
+          }
+      }
+
+      logOutElement.addEventListener("click", () => {
+          localStorage.clear()
+          loginElement.setAttribute("href", "http://127.0.0.1:5501/pages/login.html")
+
+          checaUsuario();
+      })
+      
+      checaUsuario();
+  </script>
   </body>
 </html>
