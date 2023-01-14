@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 * {
   font-family: "Baskerville";
   box-sizing: border-box;
@@ -10,6 +11,7 @@
   font-family: Baskerville;
   src: url(../font/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf);
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -52,10 +54,12 @@ h2 {
 .nomeLogo {
   display: flex;
   padding-left: 0;
+
   h1 {
     text-align: center;
   }
 }
+
 
 /*-----Header-------*/
 header {
@@ -69,6 +73,7 @@ header {
   border-bottom: 2px solid rgba(192, 80, 25, 0.5019607843);
   background-image: url("../../images/imagemHeader.jpg");
   background-attachment: fixed;
+
   section {
     width: 100%;
   }
@@ -82,6 +87,7 @@ header {
   padding: 20px 40px 20px 20px;
   gap: 0.3rem;
   color: #fff3f1;
+
   a {
     display: flex;
     min-width: 60px;
@@ -90,15 +96,18 @@ header {
     background-color: #ad9479;
     border-radius: 0.5rem;
   }
+
   a:hover {
     font-weight: bold;
     background-color: #82694e;
   }
 }
+
 .mainHeader {
   display: flex;
   align-items: center;
   justify-content: space-around;
+
   img {
     max-height: 8rem;
     max-width: 8rem;
@@ -110,12 +119,14 @@ header {
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 0.3rem;
+
   a {
     padding: 0.5rem;
     background-color: #ad9479;
     border-radius: 0.5rem;
     font-size: 1rem;
   }
+
   a:hover {
     font-weight: bold;
     background-color: #82694e;
@@ -370,6 +381,19 @@ div.navPos {
   .mainHeader {
     img {
       display: none;
+    }
+  }
+
+  .nomeLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
     }
   }
 

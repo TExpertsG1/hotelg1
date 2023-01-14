@@ -354,6 +354,17 @@ div.navPos ul li a {
   .mainHeader img {
     display: none;
   }
+  .nomeLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+  .nomeLogo h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
   /* ---- NavPos-------*/
   .navPos {
     display: none;
