@@ -3,14 +3,14 @@ const logOutElement = document.querySelector("#logout");
 
 console.log(loginElement);
 
-logOutElement.setAttribute("href", "http://127.0.0.1:8080/pages/login.html");
+logOutElement.setAttribute("href", "/pages/login.html");
 
 function checaUsuario() {
     const usuario = localStorage.getItem("nome");
     //const usuario = "Alexandre";
     if(usuario) {
         loginElement.textContent = "Olá " + usuario;
-        loginElement.setAttribute("href", "http://127.0.0.1:8080/index.html");
+        loginElement.setAttribute("href", "../index.html");
 
         /* exibir o botão sair */
         logOutElement.removeAttribute("style");
@@ -19,7 +19,7 @@ function checaUsuario() {
         /* ocultar o botão sair */
         logOutElement.setAttribute("style", "display:none;");
         loginElement.textContent = "Login";
-        loginElement.setAttribute("href", "http://127.0.0.1:8080/pages/login.html");
+        loginElement.setAttribute("href", "/pages/login.html");
     }
     console.log(loginElement);
 }

@@ -55,6 +55,8 @@
     background-attachment: fixed;
     border-top: 2px solid #c0501980;
     border-bottom: 2px solid #c0501980;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   header section {

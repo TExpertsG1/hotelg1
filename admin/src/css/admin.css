@@ -101,7 +101,7 @@ body {
 
 #interface .navegation {
     background: #EDE5E3;
-    padding: 80px 60px;
+    padding: 80px 80px 80px 60px;
     box-shadow: 1px 1px 10px rgba(122, 120, 120, 0.8);    
 }
 
@@ -392,6 +392,12 @@ table thead th {
     padding: 10px;
     font-size: 1em;
     font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: #AD9479;
+    text-align: left;
+    color: #fff;
 }
 
 table tbody tr td {
@@ -452,7 +458,7 @@ table tbody tr td button:hover, table tbody tr td button:focus {
         grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     }
 
-     table tbody tr td {
+    table tbody tr td {
         display: block;
         text-align: right;
     }
