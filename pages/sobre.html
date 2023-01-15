@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="../src/css/reset.css" />
     <link rel="stylesheet" href="../src/css/sobre.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!---------- FAVICONS ---------->
+    <link rel="apple-touch-icon" sizes="180x180" href="http://127.0.0.1:8080/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="http://127.0.0.1:8080/images/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="http://127.0.0.1:8080/images/favicon//android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://127.0.0.1:8080/images/favicon//favicon-16x16.png">
+    <link rel="manifest" href="http://127.0.0.1:8080/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="http://127.0.0.1:8080/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="Hotel 1800">
+    <meta name="application-name" content="Hotel 1800">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="http://127.0.0.1:8080/images/favicon/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!---------- end FAVICONS ---------->
     <script src="https://kit.fontawesome.com/54d71879ed.js" crossorigin="anonymous"></script>
     <title>Home</title>
   </head>
@@ -16,8 +29,8 @@
         <section>
           <div>
             <div class="userBar">
-              <a>Olá Usuário</a>
-              <a>Sair</a>
+              <a id="login">Login</a>
+              <a id="logout">Sair</a>
             </div>
             <span class="mainHeader">
               <img height="100%" src="../images/logo_1800.png" />
@@ -170,5 +183,6 @@
     <div class="copyright principal">
       <h5>&copy;2077 - Todos os direitos reservados</h5>
     </div>
+    <script src="http://127.0.0.1:8080/src/js/check_user.js"></script>
 </body>
 </html>
