@@ -69,7 +69,8 @@ header {
   border-top: 2px solid rgba(192, 80, 25, 0.5019607843);
   border-bottom: 2px solid rgba(192, 80, 25, 0.5019607843);
   background-image: url("../../images/imagemHeader.jpg");
-  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 header section {
   width: 100%;
@@ -257,7 +258,7 @@ a {
   align-items: center;
   justify-content: flex-end;
   color: #82694e;
-  padding: 0px 0px 0px 80px;
+  padding: 0px 0px 0px 60px;
   font-size: 1.5rem;
 }
 .divIcon h2 {
@@ -502,11 +503,17 @@ div.copyright {
     font-size: 15px;
   }
   .divIcon {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    padding: 0px 0px 0px 40px;
   }
   .divIcon h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
+ 
+ .h1Color {
+  padding-left: 0px;
+ }
+
   .fieldsetFooter {
     width: 100%;
   }
@@ -521,6 +528,10 @@ div.copyright {
   div.copyright {
     font-size: large;
   }
+}
+
+.h1Color {
+  padding-left: 20px !important;
 }
 
 /*# sourceMappingURL=_style.css.map */
