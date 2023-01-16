@@ -85,7 +85,8 @@
       <div class="divPost principal">
         <div>
           <div class="divPostCompleto">
-            <div class="postArea">
+            <div id="conteudo"></div>
+            <!-- <div class="postArea">
               <img src="../images/acomodacao1.jpg" alt="Suíte Família" />
               <div class="postQuarto">
                 <h2>Suíte Família</h2>
@@ -155,8 +156,8 @@
                   />
                   Selecionar Suíte Premium
                 </label>
-              </div>
-            </div>
+              </div> -->
+            <!-- </div> -->
           </div>
         </div>
 
@@ -164,11 +165,11 @@
           <div class="resumoReserva">
             <h2>Resumo da reserva</h2>
             <div class="infoReserva">
-              <h4>Apartamento: XXX</h4>
-              <h4>Checkin: XXX</h4>
-              <h4>Checkout: XXX</h4>
-              <h4>Quantidade de adutlos: XXX</h4>
-              <h4>Quantidade de crianças: XXX</h4>
+              <h4 class="produto">Apartamento: XXX</h4>
+              <h4 class="checkin">Checkin: XXX</h4>
+              <h4 class="checkout">Checkout: XXX</h4>
+              <h4 class="numeroadulto">Quantidade de pessoa: XXX</h4>
+              <h4 class="valortotal">Valor total: XXX</h4>
             </div>
             <h3>adicionar mais serviços</h3>
             <label>
@@ -268,5 +269,32 @@
       <h5>&copy;2077 - Todos os direitos reservados</h5>
     </div>
     <script src="../src/js/check_user.js"></script>
+    <script>
+        const conteudoElement = document.getElementById("conteudo");
+        const infoReservaElement = document.getElementsByClassName("infoReserva");
+        const produto = JSON.parse(localStorage.getItem("produto"));
+
+        console.log(conteudoElement);
+
+        function carregarReserva() {
+  
+          conteudoElement.innerHTML = `
+          <div class="postArea">
+              <img src="../${produto.urlImagem}" alt="${produto.nome}" />
+              <div class="postQuarto">
+                <h2>${produto.nome}</h2>
+                <p>${produto.descricao}</p>
+                <h4>R$ ${produto.preco}</h4>
+              </div>
+            </div>
+            `;
+
+          
+        }
+
+
+
+        carregarReserva()
+    </script>
   </body>
 </html>

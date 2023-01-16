@@ -23,6 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet" />
+    <script src="src/js/index.js"></script>
     <title>Home</title>
   </head>
   <body>
@@ -93,25 +94,7 @@
         <div class="galeria">
           <div id="acomodacoes">
             <h2>Nossas Acomodações</h2>
-            <div class="gallery">
-              <a href="./pages/acomodacoes.html#suiteFamilia">
-                <img src="./images/acomodacao1.jpg" alt="Suíte Familia"
-              /></a>
-              <br />
-              <div class="desc">Suite Família</div>
-            </div>
-            <div class="gallery">
-              <a href="./pages/acomodacoes.html#suiteMaster">
-                <img src="./images/acomodacao2.jpg" alt="Suíte Master"
-              /></a>
-              <div class="desc">Suíte Master</div>
-            </div>
-            <div class="gallery">
-              <a href="./pages/acomodacoes.html#suitePremium"
-                ><img src="./images/acomodacao3.jpg" alt="Suíte Premium"
-              /></a>
-              <div class="desc">Suíte Premium</div>
-            </div>
+            <div id="produtos"></div>
           </div>
         </div>
       </section>
@@ -260,7 +243,90 @@
     <div class="copyright principal">
       <h5>&copy;2077 - Todos os direitos reservados</h5>
     </div>
+
+    <script>
+      var elementProduto = document.getElementById("produtos");
+      const seleciona = document.getElementsByClassName('.botao');
+      
+      const produto1 = {
+        id: 1,
+        nome: "Suíte Familia",
+        preco: 150,
+        urlImagem: "./images/acomodacao1.jpg",
+        descricao: `Fiel ao estilo dos edifícios tradicionais sevilhanos, todos os nossos quartos Premium são diferentes e únicos. Preservamos várias partes do edifício original – varandas, persianas, tectos em caixotões e muito mais – para proporcionar aos nossos hóspedes uma sensação única.
+        Televisão de ecrã plano
+        Ar Condicionado
+        Lençol 100% algodão egípicio
+        Internet - Gratuíta
+        Mini Bar
+        Café da Manhã na Cama`
+      }
+
+      const produto2 = {
+        id: 2,
+        nome: "Suíte Master",
+        preco: 250,
+        urlImagem: "./images/acomodacao2.jpg",
+        descricao: `Fiel ao estilo dos edifícios tradicionais sevilhanos, todos os nossos quartos Premium são diferentes e únicos. Preservamos várias partes do edifício original – varandas, persianas, tectos em caixotões e muito mais – para proporcionar aos nossos hóspedes uma sensação única.
+        Televisão de ecrã plano
+        Ar Condicionado
+        Lençol 100% algodão egípicio
+        Internet - Gratuíta
+        Mini Bar
+        Café da Manhã na Cama`
+      }
+
+      const produto3 = {
+        id: 3,
+        nome: "Suíte Premium",
+        preco: 350,
+        urlImagem: "./images/acomodacao3.jpg",
+        descricao: `Fiel ao estilo dos edifícios tradicionais sevilhanos, todos os nossos quartos Premium são diferentes e únicos. Preservamos várias partes do edifício original – varandas, persianas, tectos em caixotões e muito mais – para proporcionar aos nossos hóspedes uma sensação única.
+        Televisão de ecrã plano
+        Ar Condicionado
+        Lençol 100% algodão egípicio
+        Internet - Gratuíta
+        Mini Bar
+        Café da Manhã na Cama`
+      }
+
+      const produtos = [produto1, produto2, produto3];
+
+      function mostrarOsProdutos() {
+        let resultado = '';
+        produtos.forEach(produto => {
+            resultado += `
+            <div class="gallery">
+                <a href="pages/reservas.html">
+                    <img src="${produto.urlImagem}" alt="${produto.nome}" id="${produto.id}"/>
+                  <br />
+                  <div class="desc" id="${produto.id}">${produto.nome}</div>
+                </a>
+            </div>
+            `
+        });
+        elementProduto.innerHTML = resultado;
+      }
+
+      function selecionaProduto () {
+        elementProduto.addEventListener("click", (e) => {
+          let produtoId = "" + e.srcElement.id
+
+          produtos.findIndex((produto) => {
+            if(produto.id == produtoId) {
+              localStorage.setItem("produto", JSON.stringify(produto))
+            }
+          })
+          
+        })
+      }
+
+      mostrarOsProdutos();
+      selecionaProduto()
+    </script>
     <! -- verifica se o usuário está ou não logado -->
-    <script src="./src/js/check_user.js"></script>
+    <script src="./src/js/check_user.js">
+      
+    </script>
   </body>
 </html>
