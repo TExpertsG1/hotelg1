@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="../src/css/reservas.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script src="https://kit.fontawesome.com/54d71879ed.js" crossorigin="anonymous"></script>
+    <script src="../src/js/reservas.js" defer></script>
     <title>Reservas</title>
   </head>
 
@@ -58,12 +59,12 @@
         <form id="reserva" action method="post" enctype="multipart/form-data">
           <fieldset class="reserva">
             <legend>Faça sua Reserva</legend>
-            <span>Do dia </span> <input type="date" /> <span>Até o dia </span>
-            <input type="date" name="dataReserva" />
+            <span>Do dia </span> <input name="checkIn" id="checkIn" type="date" /> <span>Até o dia </span>
+            <input type="date" name="checkOut" id="checkOut" />
             <span>Adultos</span>
-            <input class="spanAdultos" type="number" required min="1" max="4" />
+            <input id="qtdAdultos" name="qtdAdultos" class="spanAdultos qtdAdultos" type="number" required min="1" max="4" />
             <span>Criança até 12 anos</span>
-            <input type="number" required min="0" max="5" />
+            <input id="qtdCrianca" name="qtdCrianca" type="number" required min="0" max="5" />
           </fieldset>
         </form>
       </div>
@@ -84,8 +85,8 @@
       <h2 class="h2Escolha principal">Escolha um quarto</h2>
       <div class="divPost principal">
         <div>
-          <div class="divPostCompleto">
-            <div class="postArea">
+          <div class="divPostCompleto" id="divSuites">
+            <!-- <div class="postArea" id="divSuite">
               <img src="../images/acomodacao1.jpg" alt="Suíte Família" />
               <div class="postQuarto">
                 <h2>Suíte Família</h2>
@@ -156,7 +157,7 @@
                   Selecionar Suíte Premium
                 </label>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
 
@@ -165,10 +166,12 @@
             <h2>Resumo da reserva</h2>
             <div class="infoReserva">
               <h4>Apartamento: XXX</h4>
-              <h4>Checkin: XXX</h4>
-              <h4>Checkout: XXX</h4>
-              <h4>Quantidade de adutlos: XXX</h4>
+              <h4>Check-in: XXX</h4>
+              <h4>Check-out: XXX</h4>
+              <h4>Diárias: XXX</h4>
+              <h4>Quantidade de adultos: XXX</h4>
               <h4>Quantidade de crianças: XXX</h4>
+              <h4>Total: R$ </h4>
             </div>
             <h3>adicionar mais serviços</h3>
             <label>
