@@ -58,6 +58,14 @@ h2 {
 }
 
 /*-----Header-------*/
+#modal {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 9999;
+}
+
 header {
   display: flex;
   background-color: #ede5e3;
@@ -343,18 +351,13 @@ div.navPos ul li a {
 /* ---RESPONSIVE--- */
 @media (max-width: 800px) {
   .menu {
-    flex-flow: column;
-    min-width: 40%;
+    margin-top: 5px;
+    margin-bottom: 10px;
     transition: all 0.4s;
-    text-align: center;
-    padding: 20px;
   }
   .menu a {
     width: 100%;
     float: none;
-  }
-  .mainHeader {
-    justify-content: center;
   }
   .mainHeader img {
     display: none;

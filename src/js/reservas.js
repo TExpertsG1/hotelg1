@@ -33,25 +33,29 @@ const resumoReservaItens = {
 
 let suite = document.getElementById('divSuites');
 
+let reservaItens = document.getElementById('resumoReservaId');
+
+let checkInInfoLocal, checkOutInfoLocal, qtdAdultosInfoLocal, qtdCriancaInfoLocal, suitesSelecionadasLocal, totalLocal, diasDeDiaria, pessoasHospedadas;
+
 function createSuite() {
   let resumo = ''
-  suites.forEach((element) => {
+  suites.forEach((suite) => {
     resumo += `<div class="postArea" id="divSuite">
-    <img src="${element.images}" alt="${element.name}" />
+    <img src="${suite.images}" alt="${suite.name}" />
     <div class="postQuarto">
-      <h2>${element.name}</h2>
+      <h2>${suite.name}</h2>
       <p>
-      ${element.description}
+      ${suite.description}
       </p>
-      <h4>R$ ${element.price.toFixed(2)}</h4>
+      <h4>R$ ${suite.price.toFixed(2)}</h4>
       <label>
         <input
-          id="checkbox${element.id}"
+          id="checkbox${suite.id}"
           type="checkbox"
-          name="checkbox${element.id}"
+          name="checkbox${suite.id}"
           class="checkboxSuite"
         />
-        Selecionar ${element.name}
+        Selecionar ${suite.name}
       </label>
     </div>
   </div>`
@@ -59,86 +63,66 @@ function createSuite() {
   suite.innerHTML = resumo;
 };
 
-suites.forEach((item) => {
-  let teste = document.querySelectorAll(`#checkbox${item.id}`)
-  teste.forEach((input) => {
-    input.addEventListener('change', (e) => {
-      console.log(e.target.value)
-      if(e.target.value) {
-        resumoReservaItens.suitesSelecionadas.push(item.name.nextSibling.textContent);
-        resumoReservaItens.total += item.price;
-      } else {
-        resumoReservaItens.suitesSelecionadas.splice(indexOf(item.name.nextSibling.textContent), 1);
-        resumoReservaItens.total -= item.price;
-      }
-      localStorage.setItem("suitesSelecionada", resumoReservaItens.suitesSelecionadas.join(", "));
-      localStorage.setItem("total", resumoReservaItens.total)
-    })
-  })
-})
-
 createSuite();
 
-let checkInComp = document.getElementById('checkIn');
-checkInComp.addEventListener('change', (e) => {
-  localStorage.setItem('checkIn', e.target.value);
-})
-
-let checkOutComp = document.getElementById('checkOut');
-checkOutComp.addEventListener('change', (e) => {
-  localStorage.setItem('checkOut', e.target.value);
-})
-
-let qtdAdultosComp = document.getElementById('qtdAdultos');
-qtdAdultosComp.addEventListener('change', (e) => {
-  localStorage.setItem('qtdAdultos', e.target.value);
-})
-
-let qtdCriancaComp = document.getElementById('qtdCrianca');
-qtdCriancaComp.addEventListener('change', (e) => {
-  localStorage.setItem('qtdCrianca', e.target.value);
-})
-
-// if (item.checked) {
-//       tipoDeQuarto.push(item.nextSibling.textContent.trim());
-//       valor += parseInt(item.value);
-//     } else {
-//       tipoDeQuarto.splice(
-//         tipoDeQuarto.indexOf(item.nextSibling.textContent.trim()),
-//         1
-//       );
-//       valor -= parseInt(item.value);
-//     }
-//     localStorage.setItem("tipoDeQuarto", tipoDeQuarto.join(", "));
-//     localStorage.setItem("valor", valor);
-          
+suites.forEach((suite) => {
+  let teste = document.getElementById(`checkbox${suite.id}`)
+  teste.setAttribute('value', false);
+  if (teste) {
+    teste.addEventListener('change', () => {
+      createResumoReserva();
+      if(teste.checked){
+        teste.setAttribute('value', true);
+        resumoReservaItens.suitesSelecionadas.push(suite.name);
+        resumoReservaItens.total += suite.price * pessoasHospedadas * diasDeDiaria ;
+      } else {
+        teste.setAttribute('value', false);
+           resumoReservaItens.suitesSelecionadas.splice(resumoReservaItens.suitesSelecionadas.indexOf(suite.name), 1);
+        resumoReservaItens.total -= suite.price * pessoasHospedadas * diasDeDiaria ;
+      }
+        localStorage.setItem("suitesSelecionadas", resumoReservaItens.suitesSelecionadas);
+        localStorage.setItem("total", resumoReservaItens.total)
+        createResumoReserva();
+      })
+  }
+  })
 
 
+Object.keys(resumoReservaItens).forEach((item) => {
+  if (document.getElementById(item)){
+    document.getElementById(item).setAttribute('value',localStorage.getItem(item) ? localStorage.getItem(item) : '')
+    document.getElementById(item).addEventListener('change', (e) => {
+      localStorage.setItem(item, e.target.value);
+      createResumoReserva();
+    })
+  }
+} )
+
+function createResumoReserva() {
+  checkInInfoLocal = localStorage.getItem("checkIn");
+  checkOutInfoLocal = localStorage.getItem("checkOut");
+  qtdAdultosInfoLocal = localStorage.getItem("qtdAdultos");
+  qtdCriancaInfoLocal = localStorage.getItem("qtdCrianca");
+  suitesSelecionadasLocal = localStorage.getItem("suitesSelecionadas");
+  totalLocal = parseInt(localStorage.getItem("total"));
+  diasDeDiaria = Date.parse(checkOutInfoLocal) - Date.parse(checkInInfoLocal);
+  diasDeDiaria = diasDeDiaria/(1000 * 3600 * 24) -1;
+  diasDeDiaria === 0 ? diasDeDiaria = 1 : diasDeDiaria;
+  pessoasHospedadas = parseInt(qtdAdultosInfoLocal) + parseInt(qtdCriancaInfoLocal)*0.5;
 
 
-// for (let itens in resumoReservaItens) {
-//   let itensSelecionados = document.querySelectorAll(`.${itens}`);
-//   if (itensSelecionados.length > 0) {
-//     itensSelecionados.forEach((item) => {
-//       item.addEventListener("change", function () {
-//         if (itens === "checkboxSuite") {
-//           if (item.checked) {
-//             tipoDeQuarto.push(item.nextSibling.textContent.trim());
-//             valor += parseInt(item.value);
-//           } else {
-//             tipoDeQuarto.splice(
-//               tipoDeQuarto.indexOf(item.nextSibling.textContent.trim()),
-//               1
-//             );
-//             valor -= parseInt(item.value);
-//           }
-//           localStorage.setItem("tipoDeQuarto", tipoDeQuarto.join(", "));
-//           localStorage.setItem("valor", valor);
-//         } else {
-//           localStorage.setItem(itens, item.value);
-//         }
-//         updateHTML();
-//       });
-//     });
-//   }
-// }
+  let resumo = ''
+
+  resumo += `
+  <h4>Apartamentos: ${suitesSelecionadasLocal ? suitesSelecionadasLocal : ''}</h4>
+  <h4>Check-in: ${checkInInfoLocal ? checkInInfoLocal : ''}</h4>
+  <h4>Check-out: ${checkOutInfoLocal ? checkOutInfoLocal : ''}</h4>
+  <h4>Diárias: ${diasDeDiaria ? diasDeDiaria : ''} dias</h4>
+  <h4>Quantidade de adultos: ${qtdAdultosInfoLocal ? qtdAdultosInfoLocal : ''}</h4>
+  <h4>Quantidade de crianças: ${qtdCriancaInfoLocal ? qtdCriancaInfoLocal : ''}</h4>
+  <h4>Total: R$ ${totalLocal.toFixed(2) ? totalLocal.toFixed(2) : ''}</h4>`
+  
+  reservaItens.innerHTML = resumo;
+}
+
+createResumoReserva();
