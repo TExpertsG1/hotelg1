@@ -125,4 +125,55 @@ function createResumoReserva() {
   reservaItens.innerHTML = resumo;
 }
 
+
 createResumoReserva();
+
+
+let modal = document.getElementById('modal')
+
+function createModal() {
+  checkInInfoLocal = localStorage.getItem("checkIn");
+  checkOutInfoLocal = localStorage.getItem("checkOut");
+  qtdAdultosInfoLocal = localStorage.getItem("qtdAdultos");
+  qtdCriancaInfoLocal = localStorage.getItem("qtdCrianca");
+  suitesSelecionadasLocal = localStorage.getItem("suitesSelecionadas");
+  totalLocal = parseInt(localStorage.getItem("total"));
+  diasDeDiaria = Date.parse(checkOutInfoLocal) - Date.parse(checkInInfoLocal);
+  diasDeDiaria = diasDeDiaria/(1000 * 3600 * 24) -1;
+  diasDeDiaria === 0 ? diasDeDiaria = 1 : diasDeDiaria;
+  pessoasHospedadas = parseInt(qtdAdultosInfoLocal) + parseInt(qtdCriancaInfoLocal)*0.5;
+
+  let resumo = ''
+
+  resumo += `
+  <button id="closeButton">
+    <div id="closeButtonIcon">X</div>
+  </button>
+  <h4>Apartamentos: ${suitesSelecionadasLocal ? suitesSelecionadasLocal : ''}</h4>
+  <h4>Check-in: ${checkInInfoLocal ? checkInInfoLocal : ''}</h4>
+  <h4>Check-out: ${checkOutInfoLocal ? checkOutInfoLocal : ''}</h4>
+  <h4>Diárias: ${diasDeDiaria ? diasDeDiaria : ''} dias</h4>
+  <h4>Quantidade de adultos: ${qtdAdultosInfoLocal ? qtdAdultosInfoLocal : ''}</h4>
+  <h4>Quantidade de crianças: ${qtdCriancaInfoLocal ? qtdCriancaInfoLocal : ''}</h4>
+  <h4>Total: R$ ${totalLocal.toFixed(2) ? totalLocal.toFixed(2) : ''}</h4>
+  <div id="confirmButton">
+    <button id="confirmButtonIcon" class="buttonReserva">Confirmar</button>
+  </div>`
+  
+  modal.innerHTML = resumo;
+
+  let closeButton = document.getElementById('closeButtonIcon')
+  closeButton.addEventListener('click', () => {modal.style.display = 'none';})
+
+  let confirmButton = document.getElementById('confirmButtonIcon')
+
+  confirmButton.addEventListener('click', () => {modal.style.display = 'none';
+  alert('Você concluiu sua reserva!')})
+}
+
+let buttonReserva = document.getElementById('buttonReservaId')
+
+buttonReserva.addEventListener('click', () => {
+  modal.style.display = 'block';
+  createModal()
+})
