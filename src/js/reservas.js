@@ -163,17 +163,25 @@ function createModal() {
   modal.innerHTML = resumo;
 
   let closeButton = document.getElementById('closeButtonIcon')
-  closeButton.addEventListener('click', () => {modal.style.display = 'none';})
+  closeButton.addEventListener('click', () => {
+    modal.style.display = 'none';
+    darkBox.style.display = 'none';
+  })
 
   let confirmButton = document.getElementById('confirmButtonIcon')
 
-  confirmButton.addEventListener('click', () => {modal.style.display = 'none';
-  alert('Você concluiu sua reserva!')})
+  confirmButton.addEventListener('click', () => {
+    modal.style.display = 'none';
+    alert('Você concluiu sua reserva!')
+    darkBox.style.display = "none";
+  })
 }
 
 let buttonReserva = document.getElementById('buttonReservaId')
+let darkBox = document.querySelector(".darkBox");
 
 buttonReserva.addEventListener('click', () => {
   modal.style.display = 'block';
+  darkBox.style.display = "block";
   createModal()
 })
