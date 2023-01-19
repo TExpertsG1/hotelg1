@@ -7,7 +7,7 @@
 
 /*.....teste Acomodações......*/
 #card1 {
-  background-image: url(/root/images/acomodacoes/suiteFamilia01.jpg);
+  background-image: url(../../images/acomodacoes/suiteFamilia01.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -20,7 +20,7 @@
 }
 
 #card2 {
-  background-image: url(/root/images/acomodacoes/suiteFamilia02.jpg);
+  background-image: url(../../images/acomodacoes/suiteFamilia02.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -33,7 +33,7 @@
 }
 
 #card3 {
-  background-image: url(/root/images/acomodacoes/suiteFamilia03.jpg);
+  background-image: url(../../images/acomodacoes/suiteFamilia03.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -46,7 +46,7 @@
 }
 
 #card4 {
-  background-image: url(/root/images/acomodacoes/suiteFamilia04.jpg);
+  background-image: url(../../images/acomodacoes/suiteFamilia04.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -59,7 +59,7 @@
 }
 
 #card5 {
-  background-image: url(/root/images/acomodacoes/suiteFamilia05.jpg);
+  background-image: url(../../images/acomodacoes/suiteFamilia05.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -72,7 +72,7 @@
 }
 
 #card6 {
-  background-image: url(/root/images/acomodacoes/suiteFamilia06.jpg);
+  background-image: url(../../images/acomodacoes/suiteFamilia06.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -85,7 +85,7 @@
 }
 
 #card7 {
-  background-image: url(/root/images/acomodacoes/suiteMaster01.jpg);
+  background-image: url(../../images/acomodacoes/suiteMaster01.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -98,7 +98,7 @@
 }
 
 #card8 {
-  background-image: url(/root/images/acomodacoes/suiteMaster02.jpg);
+  background-image: url(../../images/acomodacoes/suiteMaster02.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -111,7 +111,7 @@
 }
 
 #card9 {
-  background-image: url(/root/images/acomodacoes/suiteMaster03.jpg);
+  background-image: url(../../images/acomodacoes/suiteMaster03.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -124,7 +124,7 @@
 }
 
 #card10 {
-  background-image: url(/root/images/acomodacoes/suiteMaster04.jpg);
+  background-image: url(../../images/acomodacoes/suiteMaster04.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -137,7 +137,7 @@
 }
 
 #card11 {
-  background-image: url(/root/images/acomodacoes/suiteMaster05.jpg);
+  background-image: url(../../images/acomodacoes/suiteMaster05.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -150,7 +150,7 @@
 }
 
 #card12 {
-  background-image: url(/root/images/acomodacoes/suiteMaster06.jpg);
+  background-image: url(../../images/acomodacoes/suiteMaster06.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -163,7 +163,7 @@
 }
 
 #card13 {
-  background-image: url(/root/images/acomodacoes/suitePremium01.jpg);
+  background-image: url(../../images/acomodacoes/suitePremium01.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -176,7 +176,7 @@
 }
 
 #card14 {
-  background-image: url(/root/images/acomodacoes/suitePremium02.jpg);
+  background-image: url(../../images/acomodacoes/suitePremium02.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -189,7 +189,7 @@
 }
 
 #card15 {
-  background-image: url(/root/images/acomodacoes/suitePremium03.jpg);
+  background-image: url(../../images/acomodacoes/suitePremium03.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -202,7 +202,7 @@
 }
 
 #card16 {
-  background-image: url(/root/images/acomodacoes/suitePremium04.jpg);
+  background-image: url(../../images/acomodacoes/suitePremium04.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -215,7 +215,7 @@
 }
 
 #card17 {
-  background-image: url(/root/images/acomodacoes/suitePremium05.jpg);
+  background-image: url(../../images/acomodacoes/suitePremium05.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -228,7 +228,7 @@
 }
 
 #card18 {
-  background-image: url(/root/images/acomodacoes/suitePremium06.jpg);
+  background-image: url(../../images/acomodacoes/suitePremium06.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
   /*& h2::before {
@@ -240,6 +240,7 @@
   }*/
 }
 
+/**........MEDIA QUERIES.........*/
 .album-fotos {
   list-style: none;
 }
@@ -301,7 +302,6 @@ fieldset {
 /****** Galeria*******/
 .album-fotos {
   margin: 0 auto;
-  padding: 5px;
 }
 .album-fotos ul {
   width: 700px;
@@ -357,12 +357,25 @@ div.continf1 {
 
 /* ***** Media Querie*****/
 @media (max-width: 800px) {
-  .menu a {
+  /*...HEADER...*/
+  .mainHeader {
+    justify-content: center;
+  }
+  .mainHeader img {
+    display: none;
+  }
+  .menu {
     flex-flow: column;
-    min-width: 100%;
+    min-width: 40%;
     transition: all 0.4s;
     text-align: center;
+    padding: 20px;
   }
+  h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  /*...BODY...*/
   .container-grid-acomodacoes {
     display: flex;
     flex-wrap: wrap-reverse;
@@ -371,31 +384,29 @@ div.continf1 {
   .container-grid-acomodacoes p {
     padding: 0;
   }
+  h2 {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 20px;
+    text-align: center;
+  }
   .container-grid-acomodacoes1 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
   }
-  div #galeria1 #album-fotos {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
   .separador {
-    width: 20%;
-    padding: 0px 0px 0px 140px;
+    display: none;
+  }
+  #galeria1 {
+    padding-left: 50px;
   }
   .album-fotos li {
     width: 100px;
     height: 100px;
-    border: 5px solid #ad9479;
-    background: #fff;
-    border-radius: 15px;
+    border: 1px solid #ad9479;
     -webkit-transition: all 0.4s ease-in;
-    background-position: 50% 50%;
-    background-size: 350px 250px;
   }
   .album-fotos li span {
     opacity: 0;
@@ -405,68 +416,87 @@ div.continf1 {
     padding: 5px;
     font-size: 0.2rem;
   }
-  .menu a {
-    width: 100%;
-    float: none;
-    text-align: center;
-  }
   fieldset {
     width: auto;
-    float: left;
   }
-  .mainHeader {
-    width: 50%;
-    padding: 20px 100px 10px;
-    align-items: center;
-    font-size: 10px;
+  h1 {
+    font-size: 20px;
   }
-  .nomeLogo h1 {
-    width: 50%;
-    padding-left: 30%;
-  }
-  /* Medium devices (landscape tablets, 768px and up) */
-  .container-grid-acomodacoes {
+  /*...FOOTER...*/
+  .container-servicos,
+  .informacoes,
+  section #sobre {
     display: flex;
-    flex-wrap: wrap-reverse;
-    flex-direction: row-reverse;
+    flex-direction: column;
+    margin: 10 0 5 0;
   }
-  .container-grid-acomodacoes1 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  div #galeria1 .album-fotos {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-  }
-  .separador {
-    width: 20%;
-    padding: 0px 0px 0px 140px;
-  }
-  .album-fotos li {
-    width: 100px;
-    height: 100px;
-    border: 1px solid #ad9479;
-  }
-  .menu a {
-    width: 100%;
-    float: none;
-    text-align: center;
-  }
-  .menu {
+  div.informações {
     flex-flow: column;
-    min-width: 100%;
-    transition: all 0.4s;
+  }
+  img {
+    width: 100%;
+    min-height: auto;
+    object-fit: cover;
+    object-position: bottom;
+  }
+  .saibaMais {
+    margin-bottom: 5px;
+  }
+  div.informacoes {
+    text-align: left;
+    padding-left: 5px;
+    border-radius: 5px;
     text-align: center;
   }
-  /* Large devices (laptops/desktops, 992px and up) */
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-}
-@media only screen and (max-width: 800px) and (min-width: 992px) {
-  .example {
-    background: orange;
+  .informacoes .social {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  section #sobre div {
+    text-align: center;
+  }
+  .div-contatos {
+    padding: 0px;
+  }
+  div.continf {
+    padding: 0;
+    display: initial;
+    background-color: #ede5e3;
+    font-size: 1.5rem;
+  }
+  .contatos {
+    width: 100%;
+    border-bottom-width: 1px;
+    border-bottom-color: #82694e;
+    border-bottom-style: solid;
+    font-size: large;
+    font-size: 15px;
+  }
+  select.contatos {
+    color: rgba(107, 94, 94, 0.8235294118);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    font-size: 15px;
+  }
+  .divIcon {
+    font-size: 1.2rem;
+  }
+  .divIcon h2 {
+    font-size: 1.5rem;
+  }
+  .fieldsetFooter {
+    width: 100%;
+  }
+  div.redes-sociais {
+    padding-left: 0;
+    size: 5px;
+  }
+  .fa-solid {
+    font-size: 15px;
+  }
+  /* -- COPYRIGHT -- */
+  div.copyright {
+    font-size: large;
   }
 }
 

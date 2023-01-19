@@ -5,58 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!---------- FAVICONS ---------->
-    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon//favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon//android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon//favicon-16x16.png">
-    <link rel="manifest" href="../images/favicon/site.webmanifest">
-    <link rel="mask-icon" href="../images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="apple-mobile-web-app-title" content="Hotel 1800">
-    <meta name="application-name" content="Hotel 1800">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-TileImage" content="../images/favicon/mstile-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon//favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../images/favicon//android-chrome-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon//favicon-16x16.png" />
+    <link rel="manifest" href="../images/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="../images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="apple-mobile-web-app-title" content="Hotel 1800" />
+    <meta name="application-name" content="Hotel 1800" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-TileImage" content="../images/favicon/mstile-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
     <!---------- end FAVICONS ---------->
     <link rel="stylesheet" href="../src/css/reservas.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="https://kit.fontawesome.com/54d71879ed.js" crossorigin="anonymous"></script>
     <script src="../src/js/reservas.js" defer></script>
     <title>Reservas</title>
   </head>
 
-  <body>
-    <div class="principal">
+  <body class="principal">
+    <div>
       <div id="modal"></div>
       <div class="darkBox"></div>
-
-      <header>
-        <section>
-          <div>
-            <div class="userBar">
-              <a id="login">Login</a>
-              <a id="logout">Sair</a>
-            </div>
-          </div>
-
-            <span class="mainHeader">
-              <a href="index.html">
-                <img height="100%" src="../images/logo_1800.png"
-              /></a>
-              <nav class="navbar menu">
-                <a href="../index.html">Início</a>
-                <a href="./sobre.html">Nosso Hotel</a>
-                <a href="./acomodacoes.html">Acomodações</a>
-                <a href="./reservas.html">Reservas</a>
-                <a href="#contato">Contato</a>
-              </nav>
-            </span>
-            <div class="nomeLogo">
-              <h1>Hotel 1800</h1>
-            </div>
-          </div>
-        </section>
-      </header>
     </div>
+    <header>
+      <section>
+        <div>
+          <div class="userBar">
+            <a id="login">Login</a>
+            <a id="logout">Sair</a>
+          </div>
+        </div>
+
+        <span class="mainHeader">
+          <a href="index.html"> <img height="100%" src="../images/logo_1800.png" /></a>
+          <nav class="navbar menu">
+            <a href="../index.html">Início</a>
+            <a href="./sobre.html">Nosso Hotel</a>
+            <a href="./acomodacoes.html">Acomodações</a>
+            <a href="./reservas.html">Reservas</a>
+            <a href="#contato">Contato</a>
+          </nav>
+        </span>
+        <div class="nomeLogo">
+          <h1>Hotel 1800</h1>
+        </div>
+      </section>
+    </header>
+
     <main>
       <div class="inputReserva principal">
         <form id="reserva" action method="post" enctype="multipart/form-data">
@@ -67,46 +72,42 @@
             <span>Até o dia </span>
             <input type="date" name="checkOut" id="checkOut" />
             <span>Adultos</span>
-            <input id="qtdAdultos" name="qtdAdultos" class="spanAdultos qtdAdultos" type="number" required min="1" max="4" />
+            <input
+              id="qtdAdultos"
+              name="qtdAdultos"
+              class="spanAdultos qtdAdultos"
+              type="number"
+              required
+              min="1"
+              max="4"
+            />
             <span>Criança até 12 anos</span>
-            <input id="qtdCrianca" name="qtdCrianca" type="number" required min="0" max="5" value="0"/>
+            <input
+              id="qtdCrianca"
+              name="qtdCrianca"
+              type="number"
+              required
+              min="0"
+              max="5"
+              value="0"
+            />
           </fieldset>
         </form>
-      </div>
-      <div class="navPos">
-        <ul>
-          <li>
-            <a href="#"><i class="fa-solid fa-calendar-days"></i></a>
-          </li>
-          <li>
-            <a href="#servicos"><i class="fa-solid fa-bell-concierge"></i></a>
-          </li>
-          <li>
-            <a href="#contatos"><i class="fa-solid fa-address-book"></i></a>
-          </li>
-        </ul>
       </div>
       <!--QUARTOS-->
       <h2 class="h2Escolha principal">Escolha um quarto</h2>
       <div class="divPost principal">
         <div>
-          <div class="divPostCompleto" id="divSuites">
-          </div>
+          <div class="divPostCompleto" id="divSuites"></div>
         </div>
 
         <div class="resumoReservaFull">
           <div class="resumoReserva">
-            <h2>Resumo da reserva</h2>
-            <div id="resumoReservaId" class="infoReserva">
-            </div>
-<!--             <h3>adicionar mais serviços</h3> -->
+            <h2>Resumo da Reserva</h2>
+            <div id="resumoReservaId" class="infoReserva"></div>
+            <!--             <h3>adicionar mais serviços</h3> -->
             <label>
-              <input
-                class="buttonReserva"
-                type="button"
-                id="buttonReservaId"
-                value="Enviar"
-              />
+              <input class="buttonReserva" type="button" id="buttonReservaId" value="Enviar" />
             </label>
           </div>
         </div>
@@ -116,12 +117,7 @@
       <div class="principal">
         <div class="continf">
           <div class="div-contatos">
-            <form
-              id="reserva"
-              action
-              method="post"
-              enctype="multipart/form-data"
-            >
+            <form id="reserva" action method="post" enctype="multipart/form-data">
               <fieldset class="fieldsetFooter">
                 <legend>Envie sua Mensagem</legend>
                 <label for="name"></label>
@@ -164,31 +160,20 @@
           <div class="informacoes">
             <h2 id="contato" class="footerContato">Contato</h2>
             <p class="footerContato">
-              <i class="fa-solid fa-location-dot"></i> Rua T.expert, 250 CEP
-              00.000-00
+              <i class="fa-solid fa-location-dot"></i> Rua T.expert, 250 CEP 00.000-00
             </p>
-            <p class="footerContato">
-              <i class="fa-solid fa-phone-volume"></i> (00) 0 0000-0000
-            </p>
+            <p class="footerContato"><i class="fa-solid fa-phone-volume"></i> (00) 0 0000-0000</p>
             <p class="footerContato">
               <i class="fa-brands fa-square-whatsapp"></i> (00) 0 0000-0000
             </p>
-            <p class="footerContato">
-              <i class="fa-solid fa-envelope"></i> email@email.com.br
-            </p>
+            <p class="footerContato"><i class="fa-solid fa-envelope"></i> hotel1800@hotel1800.com.br</p>
             <div></div>
           </div>
           <div class="redes-sociais">
             <h2>Siga-nos</h2>
-            <a href="http://www.facebook.com.br"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-            <a href="http://www.instagram.com">
-              <i class="fa-brands fa-square-instagram"></i
-            ></a>
-            <a href="http://www.twitter.com"
-              ><i class="fa-brands fa-square-twitter"></i
-            ></a>
+            <a href="http://www.facebook.com.br"><i class="fa-brands fa-facebook"></i></a>
+            <a href="http://www.instagram.com"> <i class="fa-brands fa-square-instagram"></i></a>
+            <a href="http://www.twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
           </div>
         </div>
       </div>

@@ -22,8 +22,8 @@ a {
   transition: background-color 0.6s ease;
 }
 
-.menu a{
-    color: v.$background;
+.menu a {
+  color: v.$background;
 }
 
 h1 {
@@ -40,10 +40,6 @@ h2 {
 .nomeLogo {
   display: flex;
   padding-left: 0;
-
-}
-.nomeLogo h1{
-  text-align: center
 }
 
 /*-----Header-------*/
@@ -150,7 +146,7 @@ header {
   background-color: v.$backgroundServicos;
   display: flex;
   justify-content: center;
-  padding-bottom: 10px;
+  padding: 10px;
 }
 
 div.gallery {
@@ -195,7 +191,6 @@ a {
   animation-duration: 4s;
 }
 
-
 .container-servicos2 {
   padding: 20px 20px 20px 20px;
 }
@@ -225,20 +220,20 @@ a {
 }*/
 
 .divIcon {
-  display: inline-flex;
+  display:flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content:center;
   color: v.$fontColor;
-  padding: 0px 0px 0px 80px;
+  padding: 0;
   font-size: 1.5rem;
 
   & h2 {
-    width: 100%;
-    text-align: justify;
+    text-align: center;
     font-size: v.$fontTexto;
     padding: 5px;
   }
 }
+
 .textos {
   text-align: justify;
 }
@@ -321,7 +316,6 @@ div.continf {
 
 /*-- INFORMAÇÕES --*/
 div.informacoes {
-
   color: v.$fontColor;
   text-align: left;
   font-size: 80%;
@@ -333,7 +327,6 @@ select {
 
 div.redes-sociais {
   font-size: 2rem;
-
 }
 
 /* -- DIV MNR -- */
@@ -352,6 +345,6 @@ div.copyright {
 }
 
 /* ---------- responsive ----------------------- */
-@media (max-width: 800px){
-  @include mx.midia;  
+@media (max-width: 800px) {
+  @include mx.midia;
 }

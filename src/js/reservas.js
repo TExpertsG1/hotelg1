@@ -2,21 +2,21 @@ let suites = [
   {
     id: 1,
     name: "Suite Família",
-    description: 'descrição 1',
+    description: 'Televisão, Ar condicionado, Lençol 100% Algodão egípicio, Internet Gratuíta, Mini Bar, Café da Manhã na Cama, etc',
     price: 150,
     images: '../../images/acomodacao1.jpg',
   },
   {
     id: 2,
     name: "Suite Master",
-    description: 'descrição 2',
+    description: 'Banheira com chiveiro, Máquina de Café com capsulas, Sala de Estar, Flores Naturais,Internet gratuíta, Roupão de Banho, entre outros',
     price: 250,
     images: '../../images/acomodacao2.jpg',
   },
   {
     id: 3,
     name: "Suite Premium",
-    description: 'descrição 3',
+    description: 'Jacuzzi no Terraço, Cadeiras e mesas no pátio, Banheira, Ar Condicionado, Lençóis 100% algodão egípcio, entre outros',
     price: 350,
     images: '../../images/acomodacao3.jpg',
   }
@@ -172,7 +172,7 @@ function createModal() {
 
   confirmButton.addEventListener('click', () => {
     modal.style.display = 'none';
-    alert('Você concluiu sua reserva!')
+    alert('Você concluiu sua reserva! Enviaremos um email de Confirmação')
     darkBox.style.display = "none";
   })
 }

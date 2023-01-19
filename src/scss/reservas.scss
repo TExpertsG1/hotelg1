@@ -6,7 +6,6 @@
   line-height: 1.5rem;
 }
 
-/*.......MIDIA QUERIES.......*/
 @font-face {
   font-family: Baskerville;
   src: url(../font/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf);
@@ -35,7 +34,7 @@ a {
 h1 {
   font-size: 3rem;
   font-style: bold;
-  padding: 0vh 0vh 0vh 18vh;
+  padding: 0vh 0vh 0vh 24vh;
   color: #e9cb6b;
 }
 
@@ -60,7 +59,6 @@ h2 {
   }
 }
 
-
 /*-----Header-------*/
 #modal {
   display: none;
@@ -75,40 +73,40 @@ h2 {
   padding: 20px;
 
   #closeButton {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #ad9479;
-  border: 3px solid #6b5435;
-  position: absolute;
-  top: -20px;
-  right: -20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ad9479;
+    border: 3px solid #6b5435;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   #closeButtonIcon {
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  cursor:pointer;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
   }
 
   #confirmButton {
-  position: relative;
+    position: relative;
   }
 
   #confirmButtonIcon {
-  bottom: -50px;
-  left: 50%;
-  transform: translateX(-50%);
-  position: absolute;
-  top: -20px;
-  right: -20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -118,8 +116,8 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.7);
-  display:none;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
   z-index: 999;
 }
 
@@ -134,11 +132,12 @@ header {
   border-bottom: 2px solid rgba(192, 80, 25, 0.5019607843);
   background-image: url("../../images/imagemHeader.jpg");
   background-attachment: fixed;
-
-  section {
-    width: 100%;
-  }
 }
+
+header section {
+  width: 100%;
+}
+
 
 .userBar {
   display: flex;
@@ -148,31 +147,29 @@ header {
   padding: 20px 40px 20px 20px;
   gap: 0.3rem;
   color: #fff3f1;
+}
+.userBar a {
+  display: flex;
+  min-width: 60px;
+  padding: 0.5rem;
+  justify-content: center;
+  background-color: #ad9479;
+  border-radius: 0.5rem;
+}
 
-  a {
-    display: flex;
-    min-width: 60px;
-    padding: 0.5rem;
-    justify-content: center;
-    background-color: #ad9479;
-    border-radius: 0.5rem;
-  }
-
-  a:hover {
-    font-weight: bold;
-    background-color: #82694e;
-  }
+.userBar a:hover {
+  font-weight: bold;
+  background-color: #82694e;
 }
 
 .mainHeader {
   display: flex;
   align-items: center;
   justify-content: space-around;
-
-  img {
-    max-height: 8rem;
-    max-width: 8rem;
-  }
+}
+.mainHeader img {
+  max-height: 8rem;
+  max-width: 8rem;
 }
 
 .navbar {
@@ -180,18 +177,16 @@ header {
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 0.3rem;
-
-  a {
-    padding: 0.5rem;
-    background-color: #ad9479;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-  }
-
-  a:hover {
-    font-weight: bold;
-    background-color: #82694e;
-  }
+}
+.navbar a {
+  padding: 0.5rem;
+  background-color: #ad9479;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+.navbar a:hover {
+  font-weight: bold;
+  background-color: #82694e;
 }
 
 /*------RESERVA-----*/
@@ -270,10 +265,11 @@ input[type="checkbox"] {
 
 .resumoReserva {
   border: #6b5435 2px solid;
-  background: #ede5e3;
+  background-image: url('../../images/acomodacao4.jpg');
   width: 80%;
   position: sticky;
   top: 2%;
+  opacity: 0.8;
 
   h3 {
     font-size: medium;
@@ -283,8 +279,9 @@ input[type="checkbox"] {
 
 .infoReserva {
   border: #6b5435 1px solid;
-  background: #fff3f1;
+  background-color: rgba(0,0,0,0.9);
   margin: 0 12% 0 12%;
+  color: #faefe3;
 }
 
 .buttonReserva {
@@ -394,74 +391,35 @@ div.copyright {
   color: #82694e;
 }
 
-/* ---- NavPos-------*/
-
-div.navPos {
-  background-color: #82694e;
-  width: 60px;
-  height: 130px;
-  position: fixed;
-  right: 30px;
-  top: 10vh;
-  padding: 0 0vw 0 0vw;
-  border-radius: 25px 25px 25px 25px;
-  font-weight: bold;
-  z-index: 1;
-
-  ul {
-    padding: 0 0 0 15px;
-    list-style: none;
-
-    li {
-      margin: 0 0 0 0;
-      text-align: left;
-      padding: 10px 0 0 9px;
-
-      a {
-        font-size: 0.9em;
-        color: #fff;
-      }
-    }
-  }
-}
 
 /* ---RESPONSIVE--- */
 
 @media (max-width: 800px) {
-  .menu {
-    a {
-      width: 100%;
-      float: none;
-    }
-
-    margin-top: 5px;
-    margin-bottom: 10px;
-    transition: all 0.4s;
-  }
-
   .mainHeader {
-    img {
+    justify-content: center;
+
+    & img {
       display: none;
     }
   }
 
+  .menu {
+    flex-flow: column;
+    min-width: 40%;
+    transition: all 0.4s;
+    text-align: center;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 20px;
+    text-align: center;
+  }
   .nomeLogo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-
-    h1 {
-      text-align: center;
-      font-size: 2rem;
-    }
+    display: block;
   }
 
-  /* ---- NavPos-------*/
-
-  .navPos {
-    display: none;
+  .nomeLogo h1 {
+    padding: 0;
   }
 
   /*------RESERVA-----*/
@@ -558,7 +516,7 @@ div.navPos {
 
   .resumoReserva {
     border: #6b5435 2px solid;
-    background: #ede5e3;
+   
     width: 90%;
     position: initial;
     top: initial;
@@ -571,7 +529,7 @@ div.navPos {
 
   .infoReserva {
     border: #6b5435 1px solid;
-    background: #fff3f1;
+   
     margin: 0 12% 0 12%;
   }
 
