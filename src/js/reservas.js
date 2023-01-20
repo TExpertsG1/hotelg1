@@ -1,25 +1,28 @@
 let suites = [
   {
     id: 1,
-    name: "Suite Família",
-    description: 'Televisão, Ar condicionado, Lençol 100% Algodão egípicio, Internet Gratuíta, Mini Bar, Café da Manhã na Cama, etc',
+    name: "Suíte Família",
+    description:
+      "Televisão, Ar condicionado, Lençol 100% Algodão egípicio, Internet Gratuíta, Mini Bar, Café da Manhã na Cama, etc",
     price: 150,
-    images: '../../images/acomodacao1.jpg',
+    images: "../../images/acomodacao1.jpg",
   },
   {
     id: 2,
-    name: "Suite Master",
-    description: 'Banheira com chiveiro, Máquina de Café com capsulas, Sala de Estar, Flores Naturais,Internet gratuíta, Roupão de Banho, entre outros',
+    name: "Suíte Master",
+    description:
+      "Banheira com chiveiro, Máquina de Café com capsulas, Sala de Estar, Flores Naturais,Internet gratuíta, Roupão de Banho, entre outros",
     price: 250,
-    images: '../../images/acomodacao2.jpg',
+    images: "../../images/acomodacao2.jpg",
   },
   {
     id: 3,
     name: "Suite Premium",
-    description: 'Jacuzzi no Terraço, Cadeiras e mesas no pátio, Banheira, Ar Condicionado, Lençóis 100% algodão egípcio, entre outros',
+    description:
+      "Jacuzzi no Terraço, Cadeiras e mesas no pátio, Banheira, Ar Condicionado, Lençóis 100% algodão egípcio, entre outros",
     price: 350,
-    images: '../../images/acomodacao3.jpg',
-  }
+    images: "../../images/acomodacao3.jpg",
+  },
 ];
 
 const resumoReservaItens = {
@@ -49,16 +52,19 @@ function createSuite() {
       </p>
       <h4>R$ ${suite.price.toFixed(2)}</h4>
       <label>
+       Selecionar ${suite.name}
         <input
-          id="checkbox${suite.id}"
-          type="checkbox"
+        
+          id="select${suite.id}"
+          type="number"
           name="checkbox${suite.id}"
           class="checkboxSuite"
+       
         />
-        Selecionar ${suite.name}
+       
       </label>
     </div>
-  </div>`
+  </div>`;
   });
   suite.innerHTML = resumo;
 };
@@ -66,7 +72,7 @@ function createSuite() {
 createSuite();
 
 suites.forEach((suite) => {
-  let teste = document.getElementById(`checkbox${suite.id}`)
+  let teste = document.getElementById(`select${suite.id}`)
   teste.setAttribute('value', false);
   if (teste) {
     teste.addEventListener('change', () => {
