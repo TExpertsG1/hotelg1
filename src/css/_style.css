@@ -5,10 +5,15 @@
   line-height: 1.5rem;
 }
 
+/*.......MIDIA QUERIES.......*/
 @font-face {
   font-family: Baskerville;
   src: url(../font/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf);
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #82694e;
   background-color: #fff3f1;
@@ -18,14 +23,17 @@ body {
 a {
   all: unset;
   cursor: pointer;
-  color: #fff3f1;
   transition: background-color 0.6s ease;
+}
+
+.menu a {
+  color: #fff3f1;
 }
 
 h1 {
   font-size: 3rem;
   font-style: bold;
-  padding: 0vh 0vh 0vh 25vh;
+  padding: 0vh 0vh 0vh 24vh;
   color: #e9cb6b;
 }
 
@@ -43,7 +51,7 @@ h2 {
 
 .nomeLogo {
   display: flex;
-  float: left;
+  padding-left: 0;
 }
 
 /*-----Header-------*/
@@ -70,6 +78,7 @@ header section {
   height: 1rem;
   padding: 20px 40px 20px 20px;
   gap: 0.3rem;
+  color: #fff3f1;
 }
 .userBar a {
   display: flex;
@@ -126,11 +135,10 @@ header section {
 }
 .container-grid p,
 .container-grid-gastro p {
-  padding: 2rem 10rem 2.5rem 10rem;
+  padding: 2rem 10rem 0.5rem 10rem;
   font-family: "Baskerville", sans-serif;
   text-align: justify;
   font-size: medium;
-  padding-bottom: 1.5rem;
   line-height: 1.5rem;
   width: auto;
 }
@@ -143,7 +151,7 @@ header section {
   color: #fff;
   font-size: 15px;
   position: relative;
-  left: 78%;
+  left: 76%;
 }
 .container-grid button:hover,
 .container-grid-gastro button:hover {
@@ -165,7 +173,7 @@ header section {
   background-color: #ede5e3;
   display: flex;
   justify-content: center;
-  padding-bottom: 10px;
+  padding: 10px;
 }
 
 div.gallery {
@@ -188,7 +196,7 @@ div.gallery img:hover {
   background-attachment: fixed;
   border-top: 2px solid rgba(192, 80, 25, 0.5019607843);
   border-bottom: 2px solid rgba(192, 80, 25, 0.5019607843);
-  padding: 200px;
+  padding: 10%;
   display: block;
   filter: grayscale(40%);
   background-position: 150px;
@@ -206,6 +214,10 @@ div.desc {
   display: flex;
   grid-template-columns: 45% 55%;
   width: 100%;
+}
+
+a {
+  animation-duration: 4s;
 }
 
 .container-servicos2 {
@@ -236,21 +248,21 @@ div.desc {
   grid-template-columns: 35% 65%;
 }*/
 .divIcon {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   color: #82694e;
-  padding: 0px 0px 0px 80px;
+  padding: 0;
   font-size: 1.5rem;
 }
 .divIcon h2 {
-  width: 100%;
-  text-align: justify;
+  text-align: center;
   font-size: 1.5rem;
+  padding: 5px;
 }
 
 .textos {
-  text-align: jus;
+  text-align: justify;
 }
 
 div.navPos {
@@ -272,18 +284,28 @@ div.navPos ul {
 div.navPos ul li {
   margin: 0 0 0 0;
   text-align: left;
-  padding: 10px 0 0 9px;
+  padding: 5px 0 0 9px;
 }
 div.navPos ul li a {
   font-size: 0.9em;
   color: #fff;
 }
 
+
 /*--- FOOTER ---*/
 /* -- CONTINF -- */
+.fieldsetFooter {
+  min-width: none;
+  border-radius: 15px;
+  border-color: #ede5e3;
+  font-size: 16px;
+  width: 80%;
+  font-weight: bold;
+}
+
 div.continf {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 50% 25% 25%;
   text-align: center;
   background-color: #ede5e3;
   font-size: 1.5rem;
@@ -323,7 +345,6 @@ div.continf {
 
 /*-- INFORMAÇÕES --*/
 div.informacoes {
-  padding: 13% 10% 10% 24%;
   color: #82694e;
   text-align: left;
   font-size: 80%;
@@ -334,8 +355,7 @@ select {
 }
 
 div.redes-sociais {
-  font-size: 2.3rem;
-  padding-left: 15%;
+  font-size: 2rem;
 }
 
 /* -- DIV MNR -- */
@@ -353,14 +373,33 @@ div.copyright {
 
 /* ---------- responsive ----------------------- */
 @media (max-width: 800px) {
+  /*...HEADER...*/
+  .mainHeader {
+    justify-content: center;
+  }
   .mainHeader img {
     display: none;
   }
   .menu {
     flex-flow: column;
-    min-width: 100%;
+    min-width: 40%;
     transition: all 0.4s;
     text-align: center;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .nomeLogo {
+    display: block;
+  }
+  .nomeLogo h1 {
+    padding: 0;
+  }
+  /*.....BODY....*/
+  .navPos {
+    display: none;
   }
   .container-grid p,
   .container-grid-gastro p {
@@ -372,7 +411,13 @@ div.copyright {
   }
   .container-grid div button,
   .container-grid-gastro div button {
-    padding: 0.5rem;
+    background-color: #ad9479;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-size: 10px;
+    position: relative;
+    left: 65%;
   }
   .container-grid-gastro img {
     display: none;
@@ -384,13 +429,8 @@ div.copyright {
     padding: 5px;
     margin-bottom: 10px;
   }
-  .divIcon {
-    font-size: 15px;
-  }
-  .divIcon h2 {
-    font-size: 25px;
-  }
-  h1 {
+  h1,
+  h2 {
     font-size: 20px;
     text-align: center;
   }
@@ -399,6 +439,20 @@ div.copyright {
     text-align: justify;
     font-family: "Baskerville";
   }
+  div.gallery {
+    float: none;
+    text-align: center;
+  }
+  #acomodacoesfundo {
+    padding: 20%;
+  }
+  .divIcon {
+    font-size: 1.2rem;
+  }
+  .divIcon h2 {
+    font-size: 1.5rem;
+  }
+  /*......FOOTER.......*/
   .container-servicos,
   .informacoes,
   section #sobre {
@@ -415,10 +469,6 @@ div.copyright {
     object-fit: cover;
     object-position: bottom;
   }
-  div.gallery {
-    float: none;
-    text-align: center;
-  }
   .saibaMais {
     margin-bottom: 5px;
   }
@@ -426,6 +476,7 @@ div.copyright {
     text-align: left;
     padding-left: 5px;
     border-radius: 5px;
+    text-align: center;
   }
   .informacoes .social {
     text-align: center;
@@ -433,9 +484,6 @@ div.copyright {
   }
   section #sobre div {
     text-align: center;
-  }
-  .div-contatos {
-    padding: 0px;
   }
   .div-contatos {
     padding: 0px;
@@ -460,12 +508,8 @@ div.copyright {
     border-bottom-style: solid;
     font-size: 15px;
   }
-  div.informacoes {
-    padding: 0% 0% 0% 0%;
-    text-align: center;
-  }
-  #button {
-    font-size: 12px;
+  .fieldsetFooter {
+    width: 100%;
   }
   div.redes-sociais {
     padding-left: 0;
@@ -477,9 +521,6 @@ div.copyright {
   /* -- COPYRIGHT -- */
   div.copyright {
     font-size: large;
-  }
-  .navPos {
-    display: none;
   }
 }
 

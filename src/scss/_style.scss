@@ -6,6 +6,9 @@
   font-family: Baskerville;
   src: url(../font/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf);
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   color: v.$fontColor;
@@ -16,8 +19,11 @@ body {
 a {
   all: unset;
   cursor: pointer;
-  color: v.$background;
   transition: background-color 0.6s ease;
+}
+
+.menu a {
+  color: v.$background;
 }
 
 h1 {
@@ -33,7 +39,7 @@ h2 {
 }
 .nomeLogo {
   display: flex;
-  float: left;
+  padding-left: 0;
 }
 
 /*-----Header-------*/
@@ -55,6 +61,7 @@ header {
   height: 1rem;
   padding: 20px 40px 20px 20px;
   gap: 0.3rem;
+  color: v.$background;
 
   & a {
     display: flex;
@@ -139,7 +146,7 @@ header {
   background-color: v.$backgroundServicos;
   display: flex;
   justify-content: center;
-  padding-bottom: 10px;
+  padding: 10px;
 }
 
 div.gallery {
@@ -164,7 +171,7 @@ div.gallery {
   background-attachment: fixed;
   border-top: v.$border;
   border-bottom: v.$border;
-  padding: 200px;
+  padding: 10%;
   display: block;
   filter: grayscale(40%);
   background-position: 150px;
@@ -179,6 +186,9 @@ div.desc {
 
 .container-servicos {
   @include mx.container;
+}
+a {
+  animation-duration: 4s;
 }
 
 .container-servicos2 {
@@ -210,21 +220,22 @@ div.desc {
 }*/
 
 .divIcon {
-  display: inline-flex;
+  display:flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content:center;
   color: v.$fontColor;
-  padding: 0px 0px 0px 80px;
+  padding: 0;
   font-size: 1.5rem;
 
   & h2 {
-    width: 100%;
-    text-align: justify;
+    text-align: center;
     font-size: v.$fontTexto;
+    padding: 5px;
   }
 }
+
 .textos {
-  text-align: jus;
+  text-align: justify;
 }
 
 div.navPos {
@@ -247,7 +258,7 @@ div.navPos {
   & ul li {
     margin: 0 0 0 0;
     text-align: left;
-    padding: 10px 0 0 9px;
+    padding: 5px 0 0 9px;
   }
 
   & ul li a {
@@ -257,9 +268,14 @@ div.navPos {
 }
 /*--- FOOTER ---*/
 /* -- CONTINF -- */
+
+.fieldsetFooter {
+  @include mx.fieldsetFooter;
+}
+
 div.continf {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 50% 25% 25%;
   text-align: center;
   background-color: v.$backgroundServicos;
   font-size: 1.5rem;
@@ -300,7 +316,6 @@ div.continf {
 
 /*-- INFORMAÇÕES --*/
 div.informacoes {
-  padding: 13% 10% 10% 24%;
   color: v.$fontColor;
   text-align: left;
   font-size: 80%;
@@ -311,8 +326,7 @@ select {
 }
 
 div.redes-sociais {
-  font-size: 2.3rem;
-  padding-left: 15%;
+  font-size: 2rem;
 }
 
 /* -- DIV MNR -- */
@@ -331,6 +345,6 @@ div.copyright {
 }
 
 /* ---------- responsive ----------------------- */
-@media (max-width: 800px){
-  @include mx.midia;  
+@media (max-width: 800px) {
+  @include mx.midia;
 }
