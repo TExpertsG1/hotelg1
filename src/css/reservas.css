@@ -18,6 +18,7 @@ body {
   color: #82694e;
   background-color: #fff3f1;
   font-family: "Baskerville";
+}
 
 a {
   all: unset;
@@ -27,6 +28,7 @@ a {
 
 .menu a {
   color: #fff3f1;
+}
 
 h1 {
   font-size: 3rem;
