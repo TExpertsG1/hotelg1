@@ -5,7 +5,6 @@
   line-height: 1.5rem;
 }
 
-/*.......MIDIA QUERIES.......*/
 @font-face {
   font-family: Baskerville;
   src: url(../font/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf);
@@ -33,7 +32,7 @@ a {
 h1 {
   font-size: 3rem;
   font-style: bold;
-  padding: 0vh 0vh 0vh 18vh;
+  padding: 0vh 0vh 0vh 24vh;
   color: #e9cb6b;
 }
 
@@ -127,6 +126,7 @@ header {
   background-image: url("../../images/imagemHeader.jpg");
   background-attachment: fixed;
 }
+
 header section {
   width: 100%;
 }
@@ -140,6 +140,7 @@ header section {
   gap: 0.3rem;
   color: #fff3f1;
 }
+
 .userBar a {
   display: flex;
   min-width: 60px;
@@ -148,6 +149,7 @@ header section {
   background-color: #ad9479;
   border-radius: 0.5rem;
 }
+
 .userBar a:hover {
   font-weight: bold;
   background-color: #82694e;
@@ -158,6 +160,7 @@ header section {
   align-items: center;
   justify-content: space-around;
 }
+
 .mainHeader img {
   max-height: 8rem;
   max-width: 8rem;
@@ -169,12 +172,14 @@ header section {
   justify-content: flex-end;
   gap: 0.3rem;
 }
+
 .navbar a {
   padding: 0.5rem;
   background-color: #ad9479;
   border-radius: 0.5rem;
   font-size: 1rem;
 }
+
 .navbar a:hover {
   font-weight: bold;
   background-color: #82694e;
@@ -249,10 +254,11 @@ input[type=checkbox]:checked {
 
 .resumoReserva {
   border: #6b5435 2px solid;
-  background: #ede5e3;
+  background-image: url("../../images/acomodacao4.jpg");
   width: 80%;
   position: sticky;
   top: 2%;
+  opacity: 0.8;
 }
 .resumoReserva h3 {
   font-size: medium;
@@ -261,8 +267,9 @@ input[type=checkbox]:checked {
 
 .infoReserva {
   border: #6b5435 1px solid;
-  background: #fff3f1;
+  background-color: rgba(0, 0, 0, 0.9);
   margin: 0 12% 0 12%;
+  color: #faefe3;
 }
 
 .buttonReserva {
@@ -370,61 +377,30 @@ div.copyright {
   color: #82694e;
 }
 
-/* ---- NavPos-------*/
-div.navPos {
-  background-color: #82694e;
-  width: 60px;
-  height: 130px;
-  position: fixed;
-  right: 30px;
-  top: 10vh;
-  padding: 0 0vw 0 0vw;
-  border-radius: 25px 25px 25px 25px;
-  font-weight: bold;
-  z-index: 1;
-}
-div.navPos ul {
-  padding: 0 0 0 15px;
-  list-style: none;
-}
-div.navPos ul li {
-  margin: 0 0 0 0;
-  text-align: left;
-  padding: 10px 0 0 9px;
-}
-div.navPos ul li a {
-  font-size: 0.9em;
-  color: #fff;
-}
-
 /* ---RESPONSIVE--- */
 @media (max-width: 800px) {
-  .menu {
-    margin-top: 5px;
-    margin-bottom: 10px;
-    transition: all 0.4s;
-  }
-  .menu a {
-    width: 100%;
-    float: none;
+  .mainHeader {
+    justify-content: center;
   }
   .mainHeader img {
     display: none;
   }
+  .menu {
+    flex-flow: column;
+    min-width: 40%;
+    transition: all 0.4s;
+    text-align: center;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 20px;
+    text-align: center;
+  }
   .nomeLogo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
+    display: block;
   }
   .nomeLogo h1 {
-    text-align: center;
-    font-size: 2rem;
-  }
-  /* ---- NavPos-------*/
-  .navPos {
-    display: none;
+    padding: 0;
   }
   /*------RESERVA-----*/
   /* FAÇA SUA RESERVA */
@@ -503,7 +479,6 @@ div.navPos ul li a {
   }
   .resumoReserva {
     border: #6b5435 2px solid;
-    background: #ede5e3;
     width: 90%;
     position: initial;
     top: initial;
@@ -514,7 +489,6 @@ div.navPos ul li a {
   }
   .infoReserva {
     border: #6b5435 1px solid;
-    background: #fff3f1;
     margin: 0 12% 0 12%;
   }
   .buttonReserva {

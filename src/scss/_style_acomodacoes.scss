@@ -60,7 +60,6 @@ fieldset {
 .album-fotos {
   @extend %list-none;
   margin: 0 auto;
-  padding: 5px;
 
   & ul {
     width: 700px;

@@ -19,7 +19,7 @@
 @mixin h1 {
   font-size: 3rem;
   font-style: bold;
-  padding: 0vh 0vh 0vh 18vh;
+  padding: 0vh 0vh 0vh 24vh;
   color: #e9cb6b;
 }
 
@@ -32,11 +32,10 @@
 }
 
 @mixin p {
-  padding: 2rem 10rem 2.5rem 10rem;
+  padding: 2rem 10rem 0.5rem 10rem;
   font-family: "Baskerville", sans-serif;
   text-align: justify;
   font-size: medium;
-  padding-bottom: 1.5rem;
   line-height: 1.5rem;
   width: auto;
 }
@@ -107,6 +106,13 @@
     font-size: 20px;
     text-align: center;
   }
+  .nomeLogo {
+    display: block;
+  }
+
+  .nomeLogo h1 {
+    padding: 0;
+  }
 
   /*.....BODY....*/
   .navPos {
@@ -163,6 +169,14 @@
   }
   #acomodacoesfundo {
     padding: 20%;
+  }
+
+  .divIcon {
+    font-size: 1.2rem;
+
+    & h2 {
+      font-size: 1.5rem;
+    }
   }
 
   /*......FOOTER.......*/
@@ -227,14 +241,6 @@
     border-bottom-width: 1px;
     border-bottom-style: solid;
     font-size: 15px;
-  }
-
-  .divIcon {
-    font-size: 1.2rem;
-
-    & h2 {
-      font-size: 1.5rem;
-    }
   }
 
   .fieldsetFooter {

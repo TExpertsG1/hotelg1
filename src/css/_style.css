@@ -33,7 +33,7 @@ a {
 h1 {
   font-size: 3rem;
   font-style: bold;
-  padding: 0vh 0vh 0vh 18vh;
+  padding: 0vh 0vh 0vh 24vh;
   color: #e9cb6b;
 }
 
@@ -54,10 +54,6 @@ h2 {
   padding-left: 0;
 }
 
-.nomeLogo h1 {
-  text-align: center;
-}
-
 /*-----Header-------*/
 header {
   display: flex;
@@ -69,8 +65,7 @@ header {
   border-top: 2px solid rgba(192, 80, 25, 0.5019607843);
   border-bottom: 2px solid rgba(192, 80, 25, 0.5019607843);
   background-image: url("../../images/imagemHeader.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-attachment: fixed;
 }
 header section {
   width: 100%;
@@ -140,11 +135,10 @@ header section {
 }
 .container-grid p,
 .container-grid-gastro p {
-  padding: 2rem 10rem 2.5rem 10rem;
+  padding: 2rem 10rem 0.5rem 10rem;
   font-family: "Baskerville", sans-serif;
   text-align: justify;
   font-size: medium;
-  padding-bottom: 1.5rem;
   line-height: 1.5rem;
   width: auto;
 }
@@ -179,7 +173,7 @@ header section {
   background-color: #ede5e3;
   display: flex;
   justify-content: center;
-  padding-bottom: 10px;
+  padding: 10px;
 }
 
 div.gallery {
@@ -254,16 +248,15 @@ a {
   grid-template-columns: 35% 65%;
 }*/
 .divIcon {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   color: #82694e;
-  padding: 0px 0px 0px 60px;
+  padding: 0;
   font-size: 1.5rem;
 }
 .divIcon h2 {
-  width: 100%;
-  text-align: justify;
+  text-align: center;
   font-size: 1.5rem;
   padding: 5px;
 }
@@ -297,6 +290,7 @@ div.navPos ul li a {
   font-size: 0.9em;
   color: #fff;
 }
+
 
 /*--- FOOTER ---*/
 /* -- CONTINF -- */
@@ -397,6 +391,12 @@ div.copyright {
     font-size: 20px;
     text-align: center;
   }
+  .nomeLogo {
+    display: block;
+  }
+  .nomeLogo h1 {
+    padding: 0;
+  }
   /*.....BODY....*/
   .navPos {
     display: none;
@@ -445,6 +445,12 @@ div.copyright {
   }
   #acomodacoesfundo {
     padding: 20%;
+  }
+  .divIcon {
+    font-size: 1.2rem;
+  }
+  .divIcon h2 {
+    font-size: 1.5rem;
   }
   /*......FOOTER.......*/
   .container-servicos,
@@ -502,18 +508,6 @@ div.copyright {
     border-bottom-style: solid;
     font-size: 15px;
   }
-  .divIcon {
-    font-size: 1rem;
-    padding: 0px 0px 0px 40px;
-  }
-  .divIcon h2 {
-    font-size: 1rem;
-  }
- 
- .h1Color {
-  padding-left: 0px;
- }
-
   .fieldsetFooter {
     width: 100%;
   }
@@ -528,10 +522,6 @@ div.copyright {
   div.copyright {
     font-size: large;
   }
-}
-
-.h1Color {
-  padding-left: 20px !important;
 }
 
 /*# sourceMappingURL=_style.css.map */

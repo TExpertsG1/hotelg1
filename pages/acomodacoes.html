@@ -4,21 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../src/css/style.css" />
-    <link rel="stylesheet" href="../src/css/acomodacoes.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../src/css/_style.css" />
+    <link rel="stylesheet" href="../src/css/style_acomodacoes.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!---------- FAVICONS ---------->
-    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon//favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon//android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon//favicon-16x16.png">
-    <link rel="manifest" href="../images/favicon/site.webmanifest">
-    <link rel="mask-icon" href="../images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="apple-mobile-web-app-title" content="Hotel 1800">
-    <meta name="application-name" content="Hotel 1800">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-TileImage" content="../images/favicon/mstile-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon//favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../images/favicon//android-chrome-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon//favicon-16x16.png" />
+    <link rel="manifest" href="../images/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="../images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="apple-mobile-web-app-title" content="Hotel 1800" />
+    <meta name="application-name" content="Hotel 1800" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-TileImage" content="../images/favicon/mstile-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
     <!---------- end FAVICONS ---------->
     <script src="https://kit.fontawesome.com/54d71879ed.js" crossorigin="anonymous"></script>
     <title>Acomodações</title>
@@ -32,21 +40,20 @@
               <a id="login">Login</a>
               <a id="logout">Sair</a>
             </div>
-            </div>
+          </div>
 
-            <span class="mainHeader">
-              <a href="../index.html"> <img height="100%" src="../images/logo_1800.png" /></a>
-              <nav class="navbar menu">
-                <a href="../index.html">Início</a>
-                <a href="./sobre.html">Nosso Hotel</a>
-                <a href="./acomodacoes.html">Acomodações</a>
-                <a href="./reservas.html">Reservas</a>
-                <a href="#contato">Contato</a>
-              </nav>
-            </span>
-            <div class="nomeLogo">
-              <h1>Hotel 1800</h1>
-            </div>
+          <span class="mainHeader">
+            <a href="../index.html"> <img height="100%" src="../images/logo_1800.png" /></a>
+            <nav class="navbar menu">
+              <a href="../index.html">Início</a>
+              <a href="./sobre.html">Nosso Hotel</a>
+              <a href="./acomodacoes.html">Acomodações</a>
+              <a href="./reservas.html">Reservas</a>
+              <a href="#contato">Contato</a>
+            </nav>
+          </span>
+          <div class="nomeLogo">
+            <h1>Hotel 1800</h1>
           </div>
         </section>
       </header>
@@ -113,23 +120,10 @@
                 <li>Mini Bar</li>
                 <li>Café da Manhã na Cama</li>
               </ul>
-              <form id="reserva-familia" action method="post" enctype="multipart/form-data">
-                <fieldset>
-                  <legend>Faça sua Reserva</legend>
-                  <div>
-                    <span>Do dia </span> <input type="date" /> <span>Até o dia </span>
-                    <input type="date" name="dataReserva" />
-                    <br />
-                    <span>Adultos</span>
-                    <input type="number" required min="1" max="4" />
-                    <span>Criança até 12 anos</span>
-                    <input type="number" required min="0" max="5" />
-                  </div>
-                  <div>
-                    <button id="">Reservar</button>
-                  </div>
-                </fieldset>
-              </form>
+
+              <div id="reserva-familia">
+               <a href="reservas.html#suiteFamilia"> <button id="button">Reservar</button></a>
+              </div>
             </div>
           </div>
         </div>
@@ -157,23 +151,10 @@
                 <li>Internet-Gratuíta</li>
                 <li>Roupão de Banho</li>
               </ul>
-              <form id="reserva-master" action method="post" enctype="multipart/form-data">
-                <fieldset>
-                  <legend>Faça sua Reserva</legend>
-                  <div>
-                    <span>Do dia </span> <input type="date" /> <span>Até o dia </span>
-                    <input type="date" name="dataReserva" />
-                    <br />
-                    <span>Adultos</span>
-                    <input type="number" required min="1" max="4" />
-                    <span>Criança até 12 anos</span>
-                    <input type="number" required min="0" max="5" />
-                  </div>
-                  <div>
-                    <button id="">Reservar</button>
-                  </div>
-                </fieldset>
-              </form>
+
+              <div id="reserva-master">
+                <a href="reservas.html#suiteMaster"><button id="button">Reservar</button></a>
+              </div>
             </div>
             <div id="galeria1">
               <ul class="album-fotos">
@@ -219,26 +200,13 @@
               <li>Ar condicionado</li>
               <li>Lençois 100% algodão egípcio</li>
             </ul>
-            <form id="reserva-premium" action method="post" enctype="multipart/form-data">
-              <fieldset>
-                <legend>Faça sua Reserva</legend>
-                <div class="">
-                  <span>Do dia </span> <input type="date" /> <span>Até o dia </span>
-                  <input type="date" name="dataReserva" />
-                  <br />
-                  <span>Adultos</span>
-                  <input type="number" required min="1" max="4" />
-                  <span>Criança até 12 anos</span>
-                  <input type="number" required min="0" max="5" />
-                </div>
-                <div>
-                  <button id="">Reservar</button>
-                </div>
-              </fieldset>
-            </form>
+
+            <div id="reserva-premium">
+             <a href="reservas.html#suitePremium"><button id="button">Reservar</button></a>
+            </div>
           </div>
         </div>
-      </section>      
+      </section>
     </main>
     <footer>
       <div class="principal">
@@ -293,7 +261,7 @@
             <p class="footerContato">
               <i class="fa-brands fa-square-whatsapp"></i> (00) 0 0000-0000
             </p>
-            <p class="footerContato"><i class="fa-solid fa-envelope"></i> email@email.com.br</p>
+            <p class="footerContato"><i class="fa-solid fa-envelope"></i> hotel1800@hotel1800.com.br</p>
             <div></div>
           </div>
           <div class="redes-sociais">
