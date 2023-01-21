@@ -52,16 +52,13 @@ function createSuite() {
       </p>
       <h4>R$ ${suite.price.toFixed(2)}</h4>
       <label>
-       Selecionar ${suite.name}
         <input
-        
-          id="select${suite.id}"
-          type="number"
+          id="checkbox${suite.id}"
+          type="checkbox"
           name="checkbox${suite.id}"
           class="checkboxSuite"
-       
         />
-       
+        Selecionar ${suite.name}
       </label>
     </div>
   </div>`;
@@ -72,7 +69,7 @@ function createSuite() {
 createSuite();
 
 suites.forEach((suite) => {
-  let teste = document.getElementById(`select${suite.id}`)
+  let teste = document.getElementById(`checkbox${suite.id}`)
   teste.setAttribute('value', false);
   if (teste) {
     teste.addEventListener('change', () => {
@@ -80,18 +77,18 @@ suites.forEach((suite) => {
       if(teste.checked){
         teste.setAttribute('value', true);
         resumoReservaItens.suitesSelecionadas.push(suite.name);
-        resumoReservaItens.total += suite.price * pessoasHospedadas * diasDeDiaria ;
+        resumoReservaItens.total += parseInt(suite.price * pessoasHospedadas * diasDeDiaria);
       } else {
         teste.setAttribute('value', false);
            resumoReservaItens.suitesSelecionadas.splice(resumoReservaItens.suitesSelecionadas.indexOf(suite.name), 1);
-        resumoReservaItens.total -= suite.price * pessoasHospedadas * diasDeDiaria ;
+        resumoReservaItens.total -= parseInt(suite.price * pessoasHospedadas * diasDeDiaria);
       }
         localStorage.setItem("suitesSelecionadas", resumoReservaItens.suitesSelecionadas);
         localStorage.setItem("total", resumoReservaItens.total)
         createResumoReserva();
       })
   }
-  })
+})
 
 
 Object.keys(resumoReservaItens).forEach((item) => {
