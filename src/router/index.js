@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AcomodacoesPage from '../pages/acomodacoes/AcomodacoesPage.vue'
+import ReservasPages from '../pages/reservas/ReservasPages.vue'
 
 const routes = [
   {
@@ -21,6 +22,10 @@ const routes = [
     name: 'acomodacoes',
     component: AcomodacoesPage
   },
+    path: '/reservas',
+    name: 'reservas',
+    component: ReservasPages
+  }
 ]
 
 const router = createRouter({
