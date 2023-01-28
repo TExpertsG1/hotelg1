@@ -31,10 +31,13 @@ export default {
     components: {
         Button_1,
     },
-    
 };
 </script>
 <style scoped>
+h4 {
+    color: #3f362d;
+}
+
 .fullDiv {
     position: sticky;
     top: 2%;
@@ -69,7 +72,14 @@ export default {
 }
 
 .button {
+    background-color: #fff3f1;
+    color: #3f362d;
     margin: -10px 0 20px 0;
+}
+
+.button:hover {
+    color: #fff3f1;
+    background-color: #82694e;
 }
 
 .resultsDiv {

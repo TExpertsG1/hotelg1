@@ -58,6 +58,10 @@ export default {
 };
 </script>
 <style scoped>
+p, h2, h3 {
+    color: #3f362d;
+}
+
 .postArea {
     border: 1px solid #ad9479;
     display: flex;
