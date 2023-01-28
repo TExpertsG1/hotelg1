@@ -6,20 +6,7 @@
             <div><ProdutosReserva class="ab" /></div>
             <div class="resumoReserva"><ResumoReserva /></div>
         </div>
-        <div class="Algo">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            iusto, maxime eveniet laboriosam eos beatae molestias? Quidem
-            distinctio earum ratione vel assumenda commodi veniam sequi
-            aspernatur explicabo animi? Velit, corporis iste accusantium in
-            tenetur, laudantium, maiores molestiae autem similique eligendi
-            eaque deserunt? Numquam atque ex voluptatum, delectus beatae fuga
-            corporis dolorem ad quasi quis odio. Vero deserunt dolorem qui dicta
-            hic iste minima fugiat ad. Dolore, qui. Ipsa nobis impedit
-            dignissimos maiores odio perferendis commodi veritatis repellat
-            possimus expedita id, excepturi adipisci! Eos sint voluptas minus
-            rem. Cumque facere nostrum quia rerum eveniet maiores labore iste
-            velit magnam? Exercitationem, assumenda.
-        </div>
+        <StandardFooter />
     </div>
 </template>
 
@@ -28,6 +15,7 @@ import StandardHeader from "../../components/StandardHeader.vue";
 import FacaSuaReserva from "../../components/FacaSuaReserva.vue";
 import ProdutosReserva from "../../components/ProdutosReserva.vue";
 import ResumoReserva from "../../components/ResumoReserva.vue";
+import StandardFooter from "../../components/StandardFooter.vue";
 
 export default {
     name: "ReservasPage",
@@ -37,6 +25,7 @@ export default {
         FacaSuaReserva,
         ProdutosReserva,
         ResumoReserva,
+        StandardFooter,
     },
 };
 </script>
