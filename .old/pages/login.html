@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../src/css/reset.css" />
+  <link rel="stylesheet" href="../src/css/login.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!---------- FAVICONS ---------->
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon//android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon//favicon-16x16.png">
+  <link rel="manifest" href="../images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="../images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="apple-mobile-web-app-title" content="Hotel 1800">
+  <meta name="application-name" content="Hotel 1800">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="../images/favicon/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!---------- end FAVICONS ---------->
+  <script src="https://kit.fontawesome.com/54d71879ed.js" crossorigin="anonymous"></script>
+  <title>Login</title>
+</head>
+<body>
+  <header>
+    <section>        
+      <span class="mainHeader">
+        <img height="100%" src="../images/nossoServico.jpg" />
+        <nav class="navbar menu">  
+          <a href="../index.html">Voltar para o Hotel</a>
+        </nav>
+      </span>
+    </section>
+  </header>
+  <main>
+    <div>
+      <form id="form-login">
+        <h1 class="mainText">Faça seu login</h1>
+        <span class="inputContainer">
+          <label>Email</label>
+          <input type="email" name="email" id="email" required>
+        </span>
+        <span class="inputContainer">
+          <label>Senha</label>
+          <input type="password" name="password" id="senha" required>
+        </span>
+        <button type="submit">Fazer login</button>
+      </form>
+      <hr/>
+      <p>
+        Ao fazer login ou criar uma conta, você concorda com nossos
+        <p>
+          <a class="formLinks">Termos e Condições</a> e <a class="formLinks">Declaração de Privacidade</a>
+        </p>
+      </p>
+      <hr/>
+      <p>Não tem uma conta? Crie sua conta <a href="./cadastro.html" class="formLinks">aqui</a></p>
+      <hr/>
+      <p>
+        Todos os direitos reservados.
+      </p>
+      <p>
+        Direitos autorais (2023) - Nossohotel.com®
+      </p>
+    </div>
+
+    <script>
+        
+const formLogin = document.querySelector("#form-login");
+        const mensagem = document.querySelector("#mensagem");
+
+        const usuarios = [
+            {
+                nome: "Quitumba",
+                email: "quitumba@examplo.com",
+                senha: "1234"
+            },
+            {
+                nome: "Bruno TEX",
+                email: "bruno@examplo.com",
+                senha: "0000"
+            }
+        ];
+
+        
+        formLogin.addEventListener("submit", e => {
+            e.preventDefault();
+
+            const emailInput = document.querySelector("#email");
+            const senhaInput = document.querySelector("#senha");
+
+            let email = emailInput.value
+            let senha = senhaInput.value
+
+            email = email.trim().replace("/'/g", "").replace(/["]/g, '')
+            senha = senha.trim().replace("/'/g", "").replace(/["]/g, '')
+
+            if(validarDadosDoUsuario(email, senha)) {
+                window.location.href = "../index.html";
+                emailInput.value = ""
+                senhaInput.value = ""
+            }
+        })
+
+        function validarDadosDoUsuario(email, senha) {
+
+           const index = usuarios.findIndex(usuario => {
+                return usuario.email === email;
+            });
+
+            if(index >= 0 && usuarios[index].senha === senha) {
+                localStorage.setItem("nome", usuarios[index].nome)
+                return true;
+            }  
+            mensagem.textContent = "Email ou senha incorreta..."
+            mensagem.style.display = "initial";    
+            return false;          
+        }
+
+    </script>
+  </main>
+</body>
+</html>
