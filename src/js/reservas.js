@@ -34,14 +34,21 @@ const resumoReservaItens = {
   total: 0,
 };
 
-let suite = document.getElementById('divSuites');
+let suite = document.getElementById("divSuites");
 
-let reservaItens = document.getElementById('resumoReservaId');
+let reservaItens = document.getElementById("resumoReservaId");
 
-let checkInInfoLocal, checkOutInfoLocal, qtdAdultosInfoLocal, qtdCriancaInfoLocal, suitesSelecionadasLocal, totalLocal, diasDeDiaria, pessoasHospedadas;
+let checkInInfoLocal,
+  checkOutInfoLocal,
+  qtdAdultosInfoLocal,
+  qtdCriancaInfoLocal,
+  suitesSelecionadasLocal,
+  totalLocal,
+  diasDeDiaria,
+  pessoasHospedadas;
 
 function createSuite() {
-  let resumo = ''
+  let resumo = "";
   suites.forEach((suite) => {
     resumo += `<div class="postArea" id="divSuite">
     <img src="${suite.images}" alt="${suite.name}" />
@@ -64,42 +71,56 @@ function createSuite() {
   </div>`;
   });
   suite.innerHTML = resumo;
-};
+}
 
 createSuite();
 
 suites.forEach((suite) => {
-  let teste = document.getElementById(`checkbox${suite.id}`)
-  teste.setAttribute('value', false);
+  let teste = document.getElementById(`checkbox${suite.id}`);
+  teste.setAttribute("value", false);
   if (teste) {
-    teste.addEventListener('change', () => {
+    teste.addEventListener("change", () => {
       createResumoReserva();
-      if(teste.checked){
-        teste.setAttribute('value', true);
+      if (teste.checked) {
+        teste.setAttribute("value", true);
         resumoReservaItens.suitesSelecionadas.push(suite.name);
-        resumoReservaItens.total += parseInt(suite.price * pessoasHospedadas * diasDeDiaria);
+        resumoReservaItens.total += parseInt(
+          suite.price * pessoasHospedadas * diasDeDiaria
+        );
       } else {
-        teste.setAttribute('value', false);
-           resumoReservaItens.suitesSelecionadas.splice(resumoReservaItens.suitesSelecionadas.indexOf(suite.name), 1);
-        resumoReservaItens.total -= parseInt(suite.price * pessoasHospedadas * diasDeDiaria);
+        teste.setAttribute("value", false);
+        resumoReservaItens.suitesSelecionadas.splice(
+          resumoReservaItens.suitesSelecionadas.indexOf(suite.name),
+          1
+        );
+        resumoReservaItens.total -= parseInt(
+          suite.price * pessoasHospedadas * diasDeDiaria
+        );
       }
-        localStorage.setItem("suitesSelecionadas", resumoReservaItens.suitesSelecionadas);
-        localStorage.setItem("total", resumoReservaItens.total)
-        createResumoReserva();
-      })
+      localStorage.setItem(
+        "suitesSelecionadas",
+        resumoReservaItens.suitesSelecionadas
+      );
+      localStorage.setItem("total", resumoReservaItens.total);
+      createResumoReserva();
+    });
   }
-})
-
+});
 
 Object.keys(resumoReservaItens).forEach((item) => {
-  if (document.getElementById(item)){
-    document.getElementById(item).setAttribute('value',localStorage.getItem(item) ? localStorage.getItem(item) : '')
-    document.getElementById(item).addEventListener('change', (e) => {
+  if (document.getElementById(item)) {
+    document
+      .getElementById(item)
+      .setAttribute(
+        "value",
+        localStorage.getItem(item) ? localStorage.getItem(item) : ""
+      );
+    document.getElementById(item).addEventListener("change", (e) => {
       localStorage.setItem(item, e.target.value);
       createResumoReserva();
-    })
+    });
   }
-} )
+});
 
 function createResumoReserva() {
   checkInInfoLocal = localStorage.getItem("checkIn");
@@ -109,30 +130,34 @@ function createResumoReserva() {
   suitesSelecionadasLocal = localStorage.getItem("suitesSelecionadas");
   totalLocal = parseInt(localStorage.getItem("total"));
   diasDeDiaria = Date.parse(checkOutInfoLocal) - Date.parse(checkInInfoLocal);
-  diasDeDiaria = diasDeDiaria/(1000 * 3600 * 24) -1;
-  diasDeDiaria === 0 ? diasDeDiaria = 1 : diasDeDiaria;
-  pessoasHospedadas = parseInt(qtdAdultosInfoLocal) + parseInt(qtdCriancaInfoLocal)*0.5;
+  diasDeDiaria = diasDeDiaria / (1000 * 3600 * 24) - 1;
+  diasDeDiaria === 0 ? (diasDeDiaria = 1) : diasDeDiaria;
+  pessoasHospedadas =
+    parseInt(qtdAdultosInfoLocal) + parseInt(qtdCriancaInfoLocal) * 0.5;
 
-
-  let resumo = ''
+  let resumo = "";
 
   resumo += `
-  <h4>Apartamentos: ${suitesSelecionadasLocal ? suitesSelecionadasLocal : ''}</h4>
-  <h4>Check-in: ${checkInInfoLocal ? checkInInfoLocal : ''}</h4>
-  <h4>Check-out: ${checkOutInfoLocal ? checkOutInfoLocal : ''}</h4>
-  <h4>Diárias: ${diasDeDiaria ? diasDeDiaria : ''} dias</h4>
-  <h4>Quantidade de adultos: ${qtdAdultosInfoLocal ? qtdAdultosInfoLocal : ''}</h4>
-  <h4>Quantidade de crianças: ${qtdCriancaInfoLocal ? qtdCriancaInfoLocal : ''}</h4>
-  <h4>Total: R$ ${totalLocal.toFixed(2) ? totalLocal.toFixed(2) : ''}</h4>`
-  
+  <h4>Apartamentos: ${
+    suitesSelecionadasLocal ? suitesSelecionadasLocal : ""
+  }</h4>
+  <h4>Check-in: ${checkInInfoLocal ? checkInInfoLocal : ""}</h4>
+  <h4>Check-out: ${checkOutInfoLocal ? checkOutInfoLocal : ""}</h4>
+  <h4>Diárias: ${diasDeDiaria ? diasDeDiaria : ""} dias</h4>
+  <h4>Quantidade de adultos: ${
+    qtdAdultosInfoLocal ? qtdAdultosInfoLocal : ""
+  }</h4>
+  <h4>Quantidade de crianças: ${
+    qtdCriancaInfoLocal ? qtdCriancaInfoLocal : ""
+  }</h4>
+  <h4>Total: R$ ${totalLocal.toFixed(2) ? totalLocal.toFixed(2) : ""}</h4>`;
+
   reservaItens.innerHTML = resumo;
 }
 
-
 createResumoReserva();
 
-
-let modal = document.getElementById('modal')
+let modal = document.getElementById("modal");
 
 function createModal() {
   checkInInfoLocal = localStorage.getItem("checkIn");
@@ -142,49 +167,56 @@ function createModal() {
   suitesSelecionadasLocal = localStorage.getItem("suitesSelecionadas");
   totalLocal = parseInt(localStorage.getItem("total"));
   diasDeDiaria = Date.parse(checkOutInfoLocal) - Date.parse(checkInInfoLocal);
-  diasDeDiaria = diasDeDiaria/(1000 * 3600 * 24) -1;
-  diasDeDiaria === 0 ? diasDeDiaria = 1 : diasDeDiaria;
-  pessoasHospedadas = parseInt(qtdAdultosInfoLocal) + parseInt(qtdCriancaInfoLocal)*0.5;
+  diasDeDiaria = diasDeDiaria / (1000 * 3600 * 24) - 1;
+  diasDeDiaria === 0 ? (diasDeDiaria = 1) : diasDeDiaria;
+  pessoasHospedadas =
+    parseInt(qtdAdultosInfoLocal) + parseInt(qtdCriancaInfoLocal) * 0.5;
 
-  let resumo = ''
+  let resumo = "";
 
   resumo += `
   <button id="closeButton">
     <div id="closeButtonIcon">X</div>
   </button>
-  <h4>Apartamentos: ${suitesSelecionadasLocal ? suitesSelecionadasLocal : ''}</h4>
-  <h4>Check-in: ${checkInInfoLocal ? checkInInfoLocal : ''}</h4>
-  <h4>Check-out: ${checkOutInfoLocal ? checkOutInfoLocal : ''}</h4>
-  <h4>Diárias: ${diasDeDiaria ? diasDeDiaria : ''} dias</h4>
-  <h4>Quantidade de adultos: ${qtdAdultosInfoLocal ? qtdAdultosInfoLocal : ''}</h4>
-  <h4>Quantidade de crianças: ${qtdCriancaInfoLocal ? qtdCriancaInfoLocal : ''}</h4>
-  <h4>Total: R$ ${totalLocal.toFixed(2) ? totalLocal.toFixed(2) : ''}</h4>
+  <h4>Apartamentos: ${
+    suitesSelecionadasLocal ? suitesSelecionadasLocal : ""
+  }</h4>
+  <h4>Check-in: ${checkInInfoLocal ? checkInInfoLocal : ""}</h4>
+  <h4>Check-out: ${checkOutInfoLocal ? checkOutInfoLocal : ""}</h4>
+  <h4>Diárias: ${diasDeDiaria ? diasDeDiaria : ""} dias</h4>
+  <h4>Quantidade de adultos: ${
+    qtdAdultosInfoLocal ? qtdAdultosInfoLocal : ""
+  }</h4>
+  <h4>Quantidade de crianças: ${
+    qtdCriancaInfoLocal ? qtdCriancaInfoLocal : ""
+  }</h4>
+  <h4>Total: R$ ${totalLocal.toFixed(2) ? totalLocal.toFixed(2) : ""}</h4>
   <div id="confirmButton">
     <button id="confirmButtonIcon" class="buttonReserva">Confirmar</button>
-  </div>`
-  
+  </div>`;
+
   modal.innerHTML = resumo;
 
-  let closeButton = document.getElementById('closeButtonIcon')
-  closeButton.addEventListener('click', () => {
-    modal.style.display = 'none';
-    darkBox.style.display = 'none';
-  })
-
-  let confirmButton = document.getElementById('confirmButtonIcon')
-
-  confirmButton.addEventListener('click', () => {
-    modal.style.display = 'none';
-    alert('Você concluiu sua reserva! Enviaremos um email de Confirmação')
+  let closeButton = document.getElementById("closeButtonIcon");
+  closeButton.addEventListener("click", () => {
+    modal.style.display = "none";
     darkBox.style.display = "none";
-  })
+  });
+
+  let confirmButton = document.getElementById("confirmButtonIcon");
+
+  confirmButton.addEventListener("click", () => {
+    modal.style.display = "none";
+    alert("Você concluiu sua reserva! Enviaremos um email de Confirmação");
+    darkBox.style.display = "none";
+  });
 }
 
-let buttonReserva = document.getElementById('buttonReservaId')
+let buttonReserva = document.getElementById("buttonReservaId");
 let darkBox = document.querySelector(".darkBox");
 
-buttonReserva.addEventListener('click', () => {
-  modal.style.display = 'block';
+buttonReserva.addEventListener("click", () => {
+  modal.style.display = "block";
   darkBox.style.display = "block";
-  createModal()
-})
+  createModal();
+});
