@@ -13,19 +13,19 @@ export default {
 </script>
 <style scoped>
 .button {
-    margin: 1rem 0;
-    font-size: 1.2rem;
     border: none;
-    background-color: #ad9479;
-    color: #ffffff;
-    padding: 0.6rem 2rem;
-    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 0.4rem 1rem;
     border-radius: 1rem;
+    margin: -10px 0 20px 0;
+    background-color: #fff3f1;
+    color: #3f362d;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .button:hover {
-    font-weight: bold;
+    color: #fff3f1;
     background-color: #82694e;
 }
 </style>

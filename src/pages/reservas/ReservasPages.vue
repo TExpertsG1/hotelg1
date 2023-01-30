@@ -3,7 +3,7 @@
         <StandardHeader />
         <FacaSuaReserva />
         <div class="produtos">
-            <div><ProdutosReserva class="ab" /></div>
+            <div><ProdutosReserva /></div>
             <div class="resumoReserva"><ResumoReserva /></div>
         </div>
         <StandardFooter />
@@ -89,8 +89,8 @@ h2 {
 
 .produtos {
     display: grid;
-    margin: 0 0 0 2.5rem;
-    grid-template-columns: 75% 25%;
+    margin: 0 0 0 8%;
+    grid-template-columns: 70% 22%;
 }
 
 .Algo {

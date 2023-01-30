@@ -11,7 +11,7 @@
                     <select
                         :v-model="'inputValue' + suite.id"
                         :id="'select' + suite.id"
-                        :name="'select' + suite.id"
+                        :name="'select' + suite.name"
                         class="selectSuite"
                     >
                         <option value="0">0</option>
@@ -24,14 +24,15 @@
                 <br />
                 <button
                     @click="
-                        exibirServicosAdicionais = !exibirServicosAdicionais
+                        suite.exibirServicosAdicionais =
+                            !suite.exibirServicosAdicionais
                     "
                 >
                     Mais Serviços
                 </button>
             </div>
         </div>
-        <div class="servicosAdicionais" v-if="exibirServicosAdicionais">
+        <div class="servicosAdicionais" v-if="suite.exibirServicosAdicionais">
             <h2>Serviços adicionais</h2>
             <ul>
                 <li
@@ -40,8 +41,9 @@
                     :key="servico.id"
                 >
                     <select
+                        :v-for="'select' + servico"
                         :id="'select' + servico.id"
-                        :name="'select' + servico.id"
+                        :name="'select' + servico.name"
                         class="selectServicosAdicionais"
                     >
                         <option value="0">0</option>
@@ -73,8 +75,10 @@
     </div>
 </template>
 <script>
+
 export default {
     name: "ProdutosReservas",
+    props: ["suite"],
     data() {
         return {
             suites: [
@@ -85,6 +89,7 @@ export default {
                         "Nossas suítes possuem conforto e luxo, com itens como televisão, ar condicionado, lençóis 100% algodão egípcio, internet gratuita, mini bar e café da manhã na cama. Desfrute de todos esses itens e muito mais em sua estadia conosco.",
                     price: 150,
                     images: "/images/acomodacao1.jpg",
+                    exibirServicosAdicionais: false,
                 },
                 {
                     id: 2,
@@ -93,6 +98,7 @@ export default {
                         "Os quartos do hotel oferecem uma variedade de comodidades, incluindo uma banheira com chuveiro, uma máquina de café com cápsulas, uma sala de estar, flores naturais, internet gratuita, roupão de banho e muito mais. Cada detalhe foi cuidadosamente planejado para garantir o conforto e o bem-estar dos hóspedes.",
                     price: 250,
                     images: "/images/acomodacao2.jpg",
+                    exibirServicosAdicionais: false,
                 },
                 {
                     id: 3,
@@ -101,6 +107,7 @@ export default {
                         "O Terraço com Jacuzzi é o destaque do hotel, oferecendo uma vista deslumbrante e um ambiente relaxante para os hóspedes. Além disso, o pátio conta com cadeiras e mesas para desfrutar do ar livre. As suítes possuem banheira e ar condicionado para maior conforto, além de lençóis 100% algodão egípcio. Estes detalhes tornam a estadia ainda mais agradável e luxuosa.",
                     price: 350,
                     images: "/images/acomodacao3.jpg",
+                    exibirServicosAdicionais: false,
                 },
             ],
             servicosAdicionais: [
@@ -172,8 +179,19 @@ export default {
                     price: 150,
                 },
             ],
-            exibirServicosAdicionais: false,
+            inputValue1: [],
         };
+    },
+    watch: {
+        inputValue1(valor) {
+            localStorage.setItem("inputValue1", valor);
+        },
+    },
+    mounted() {
+        const storedValue = localStorage.getItem("inputValue1");
+        if (storedValue) {
+            this.inputValue1 = Number(storedValue);
+        }
     },
 };
 </script>
@@ -202,7 +220,8 @@ h3 {
 }
 
 .postProduto img {
-    max-width: 30%;
+    max-width: 35%;
+    max-height: 30%;
     border-radius: 15px;
     margin: 10px;
 }

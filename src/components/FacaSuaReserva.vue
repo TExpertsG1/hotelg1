@@ -4,11 +4,11 @@
             <fieldset class="reserva">
                 <legend>Faça sua Reserva</legend>
                 <span>Do dia</span>
-                <input type="date" />
+                <input type="date" v-model="checkIn" />
                 <span>Até o dia </span>
-                <input type="date" />
+                <input type="date" v-model="checkOut" />
                 <span>Adultos</span>
-                <select id="qtdAdultos" name="qtdAdultos">
+                <select v-model="qtdAdulto" name="qtdAdultos">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -16,7 +16,7 @@
                     <option value="4">4</option>
                 </select>
                 <span>Criança até 12 anos</span>
-                <select id="qtdCrianca" name="qtdCrianca">
+                <select v-model="qtdCrianca" name="qtdCrianca">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -30,6 +30,35 @@
 <script>
 export default {
     name: "FacaSuaReserva",
+    data() {
+        return {
+            checkIn: "",
+            checkOut: "",
+            diaria: "",
+            qtdAdulto: "",
+            qtdCrianca: "",
+        };
+    },    watch: {
+        checkIn(valor) {
+            localStorage.setItem("checkIn", valor);
+        },
+        checkOut(valor) {
+            localStorage.setItem("checkOut", valor);
+        },
+        qtdAdulto(valor) {
+            localStorage.setItem("qtdAdulto", valor);
+        },
+        qtdCrianca(valor) {
+            localStorage.setItem("qtdCrianca", valor);
+        },
+    },
+    mounted() {
+        this.checkIn = localStorage.getItem("checkIn");
+        this.checkOut = localStorage.getItem("checkOut");
+        this.qtdAdulto = localStorage.getItem("qtdAdulto");
+        this.qtdCrianca = localStorage.getItem("qtdCrianca");
+    },
+
 };
 </script>
 

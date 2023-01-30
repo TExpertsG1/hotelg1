@@ -3,7 +3,7 @@
         <div class="titleDiv">
             <h2 class="totalTitle">Total</h2>
             <h2 class="valorTitle">R$ 1200</h2>
-            <Button_1 class="button" />
+            <ModalReserva/>
         </div>
         <div class="resultsDiv">
             <h4>Check-in: {{ checkIn }}</h4>
@@ -15,7 +15,7 @@
     </div>
 </template>
 <script>
-import Button_1 from "./Button_1.vue";
+import ModalReserva from "./ModalReserva.vue";
 
 export default {
     name: "ResumoReserva",
@@ -29,7 +29,7 @@ export default {
         };
     },
     components: {
-        Button_1,
+        ModalReserva,
     },
 };
 </script>
@@ -41,13 +41,7 @@ h4 {
 .fullDiv {
     position: sticky;
     top: 2%;
-    margin: 1rem 2.5rem 0 15px;
-}
-
-.infoReserva {
-    border: 1px solid #6f5f4e;
-    border-radius: 15px;
-    margin: 1rem 2.5rem 0 15px;
+    margin: 1rem 0 0 15px;
 }
 
 .titleDiv {
@@ -75,11 +69,6 @@ h4 {
     background-color: #fff3f1;
     color: #3f362d;
     margin: -10px 0 20px 0;
-}
-
-.button:hover {
-    color: #fff3f1;
-    background-color: #82694e;
 }
 
 .resultsDiv {
