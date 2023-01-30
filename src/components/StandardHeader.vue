@@ -59,7 +59,6 @@ header section {
     gap: 0.3rem;
     color: #fff3f1;
 }
-
 .userBar a {
     display: flex;
     min-width: 60px;
@@ -68,7 +67,6 @@ header section {
     background-color: #ad9479;
     border-radius: 0.5rem;
 }
-
 .userBar a:hover {
     font-weight: bold;
     background-color: #82694e;
@@ -79,7 +77,6 @@ header section {
     align-items: center;
     justify-content: space-around;
 }
-
 .mainHeader img {
     max-height: 8rem;
     max-width: 8rem;
@@ -91,14 +88,12 @@ header section {
     justify-content: flex-end;
     gap: 0.3rem;
 }
-
 .navbar a {
     padding: 0.5rem;
     background-color: #ad9479;
     border-radius: 0.5rem;
     font-size: 1rem;
 }
-
 .navbar a:hover {
     font-weight: bold;
     background-color: #82694e;
