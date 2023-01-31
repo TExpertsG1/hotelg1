@@ -38,7 +38,8 @@ export default {
             qtdAdulto: "",
             qtdCrianca: "",
         };
-    },    watch: {
+    },
+    watch: {
         checkIn(valor) {
             localStorage.setItem("checkIn", valor);
         },
@@ -58,7 +59,6 @@ export default {
         this.qtdAdulto = localStorage.getItem("qtdAdulto");
         this.qtdCrianca = localStorage.getItem("qtdCrianca");
     },
-
 };
 </script>
 

@@ -9,10 +9,9 @@
                 <label>
                     <p class="qntQuartoTxt">Quantidade de quartos</p>
                     <select
-                        :v-model="'inputValue' + suite.id"
-                        :id="'select' + suite.id"
-                        :name="'select' + suite.name"
                         class="selectSuite"
+                        @change="change(suite.id)"
+                        :v-model="'select' + suite.id"
                     >
                         <option value="0">0</option>
                         <option value="1">1</option>
@@ -41,7 +40,6 @@
                     :key="servico.id"
                 >
                     <select
-                        :v-for="'select' + servico"
                         :id="'select' + servico.id"
                         :name="'select' + servico.name"
                         class="selectServicosAdicionais"
@@ -75,10 +73,8 @@
     </div>
 </template>
 <script>
-
 export default {
     name: "ProdutosReservas",
-    props: ["suite"],
     data() {
         return {
             suites: [
@@ -179,19 +175,49 @@ export default {
                     price: 150,
                 },
             ],
-            inputValue1: [],
+            select1: localStorage.getItem("select1") || "",
+            select2: localStorage.getItem("select2") || "",
+            select3: localStorage.getItem("select3") || "",
         };
     },
+    /*     watch: {
+        select1(valor) {
+            localStorage.setItem("select1", valor);
+        },
+        select2(valor) {
+            localStorage.setItem("select2", valor);
+        },
+        select3(valor) {
+            localStorage.setItem("select3", valor);
+        },
+    }, */
     watch: {
-        inputValue1(valor) {
-            localStorage.setItem("inputValue1", valor);
+        select1: {
+            handler(val) {
+                localStorage.setItem("select1", val);
+                console.log("aaaaaaaaa")
+            },
+            deep: true,
+        },
+        select2: {
+            handler(val) {
+                localStorage.setItem("select2", val);
+            },
+            deep: true,
+        },
+        select3: {
+            handler(val) {
+                localStorage.setItem("select3", val);
+            },
+            deep: true,
         },
     },
-    mounted() {
-        const storedValue = localStorage.getItem("inputValue1");
-        if (storedValue) {
-            this.inputValue1 = Number(storedValue);
-        }
+    methods: {
+        change(id) {
+            const select = `select${id}`;
+            localStorage.setItem(select, this[select]);
+            console.log(this.select1);
+        },
     },
 };
 </script>

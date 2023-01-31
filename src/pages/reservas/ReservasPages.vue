@@ -19,7 +19,6 @@ import StandardFooter from "../../components/StandardFooter.vue";
 
 export default {
     name: "ReservasPage",
-    data() {},
     components: {
         StandardHeader,
         FacaSuaReserva,
