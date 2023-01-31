@@ -31,7 +31,8 @@ export default {
 
 .nossa-historia{
     text-align: justify;
-    font-size: 36px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .texto-apresentacao p{
