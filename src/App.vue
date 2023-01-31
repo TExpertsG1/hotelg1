@@ -2,7 +2,8 @@
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/acomodacoes">Acomodações</router-link> |
-    <router-link to="/reservas">Reservas</router-link>
+    <router-link to="/reservas">Reservas</router-link> |
+    <router-link to="/sobre">Nossa História</router-link>
   </nav>
   <router-view/>
 </template>

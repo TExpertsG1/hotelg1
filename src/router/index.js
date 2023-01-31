@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import AcomodacoesPage from "../pages/acomodacoes/AcomodacoesPage.vue";
 import ReservasPages from "../pages/reservas/ReservasPages.vue";
+import SobrePage from "../pages/sobre/SobrePage.vue";
 
 const routes = [
     {
@@ -28,6 +29,11 @@ const routes = [
         name: "reservas",
         component: ReservasPages,
     },
+    {
+        path: "/sobre",
+        name: "sobre",
+        component: SobrePage,
+    }
 ];
 
 const router = createRouter({
