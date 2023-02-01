@@ -3,24 +3,15 @@
     <div class="galeria">
       <div id="acomodacoes">
         <h2>Nossas Acomodações</h2>
-        <div class="gallery">
-          <a href="#familia">
-            <img src="../../public/images/acomodacao1.jpg" alt="Suíte Familia"
-          /></a>
+        <div class="gallery" v-for="(suite, i) in todasSuites" :key="i">
+          <a :href="`#${suite.href}`">
+            <img
+              :src="require(`../../public/images/acomodacao${suite.id}.jpg`)"
+              :alt="suite.nomeSuite"
+            />
+          </a>
           <br />
-          <div class="desc">Suite Família</div>
-        </div>
-        <div class="gallery">
-          <a href="#master"
-            ><img src="../../public/images/acomodacao2.jpg" alt="Suíte Master"
-          /></a>
-          <div class="desc">Suíte Master</div>
-        </div>
-        <div class="gallery">
-          <a href="#premium">
-            <img src="../../public/images/acomodacao3.jpg" alt="Suíte Premium"
-          /></a>
-          <div class="desc">Suíte Premium</div>
+          <div class="desc">{{ suite.nomeSuite }}</div>
         </div>
       </div>
     </div>
@@ -30,6 +21,9 @@
 <script>
 export default {
   name: "AcomodacoesResumo",
+  props: {
+    todasSuites: Array,
+  },
 };
 </script>
 

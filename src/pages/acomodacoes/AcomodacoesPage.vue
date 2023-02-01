@@ -3,7 +3,7 @@
     <StandardHeader />
   </div>
   <main>
-    <AcomodacoesResumo />
+    <AcomodacoesResumo :todasSuites="suites" />
 
     <SuiteContainer
       v-for="(suite, i) in suites"
@@ -12,6 +12,7 @@
       :descricaoSuite="suite.descricaoSuite"
       :caracteristicasSuite="suite.caracteristicasSuite"
       :galeriaSuite="suite.galeriaSuite"
+      :href="suite.href"
     />
   </main>
   <StandardFooter />
@@ -37,6 +38,7 @@ const suites = [
       "Mini Bar",
       "Café da Manhã na Cama",
     ],
+    href: "familia",
     galeriaSuite: ["card1", "card2", "card3", "card4", "card5", "card6"],
   },
   {
@@ -52,6 +54,7 @@ const suites = [
       "Mini Bar",
       "Café da Manhã na Cama",
     ],
+    href: "master",
     galeriaSuite: ["card7", "card8", "card9", "card10", "card11", "card12"],
   },
   {
@@ -67,6 +70,7 @@ const suites = [
       "Mini Bar",
       "Café da Manhã na Cama",
     ],
+    href: "premium",
     galeriaSuite: ["card13", "card14", "card15", "card16", "card17", "card18"],
   },
 ];

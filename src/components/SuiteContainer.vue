@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section :id="href">
     <div id="galeria1">
       <ul class="albumFotos">
         <li v-for="(element, i) in galeriaSuite" :key="i" :id="element">
@@ -31,6 +31,7 @@ export default {
     descricaoSuite: String,
     caracteristicasSuite: Array,
     galeriaSuite: Array,
+    href: String,
   },
 };
 </script>
