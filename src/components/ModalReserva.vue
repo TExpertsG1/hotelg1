@@ -32,7 +32,7 @@ export default {
     name: "ModalReserva",
     data() {
         return {
-            mostrarModal: true,
+            mostrarModal: false,
             tituloModal: "Resumo da Reserva",
             checkIn: localStorage.getItem("checkIn"),
             checkOut: localStorage.getItem("checkOut"),
