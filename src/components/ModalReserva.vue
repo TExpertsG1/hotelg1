@@ -1,16 +1,23 @@
 <template>
     <div>
-        <Button_1 @click="mostrarModal = true"/>
+        <Button_1 @change="update" @click="mostrarModal = true" />
         <div v-if="mostrarModal" class="modal">
-            <div class="conteudo-modal">
-                <header class="cabecalho-modal">
+            <div class="conteudoModal">
+                <header class="headerModal">
                     <h3>{{ tituloModal }}</h3>
-                    <button @click="mostrarModal = false">Fechar</button>
+                    <button class="fecharButton" @click="mostrarModal = false">
+                        X
+                    </button>
                 </header>
-                <section class="corpo-modal">
-                    <slot></slot>
+                <section class="corpoModal">
+                    <slot>
+                        Check-in: {{ checkIn }} <br />
+                        Check-out: {{ checkOut }} <br />
+                        Quantidade de adultos: {{ qtdAdulto }} <br />
+                        Quantidade de crianças: {{ qtdCrianca }}
+                    </slot>
                 </section>
-                <footer class="rodape-modal">
+                <footer class="footerModal">
                     <slot name="footer"></slot>
                 </footer>
             </div>
@@ -26,21 +33,49 @@ export default {
     data() {
         return {
             mostrarModal: false,
+            tituloModal: "Resumo da Reserva",
+            checkIn: localStorage.getItem("checkIn"),
+            checkOut: localStorage.getItem("checkOut"),
+            qtdAdulto: localStorage.getItem("qtdAdulto"),
+            qtdCrianca: localStorage.getItem("qtdCrianca"),
         };
     },
-    props: {
-        tituloModal: {
-            type: String,
-            required: true,
+    watch: {
+        checkIn(valor) {
+            this.checkIn = valor;
+        },
+        checkOut(valor) {
+            this.checkOut = valor;
+        },
+        qtdAdulto(valor) {
+            this.qtdAdulto = valor;
+        },
+        qtdCrianca(valor) {
+            this.qtdCrianca = valor;
+        },
+    },
+    mounted() {
+        this.update();
+    },
+    methods: {
+        update() {
+            this.checkIn = localStorage.getItem("checkIn");
+            this.checkOut = localStorage.getItem("checkOut");
+            this.qtdAdulto = localStorage.getItem("qtdAdulto");
+            this.qtdCrianca = localStorage.getItem("qtdCrianca");
         },
     },
     components: {
         Button_1,
-    }
+    },
 };
 </script>
 
 <style scoped>
+* {
+    border: 1px solid blue;
+}
+
 .modal {
     position: fixed;
     top: 0;
@@ -54,7 +89,7 @@ export default {
     z-index: 9999;
 }
 
-.conteudo-modal {
+.conteudoModal {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -65,7 +100,7 @@ export default {
     flex-direction: column;
 }
 
-.cabecalho-modal {
+.headerModal {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,17 +108,34 @@ export default {
     margin-bottom: 10px;
 }
 
-.cabecalho-modal h3 {
+.headerModal h3 {
     margin: 0;
 }
 
-.corpo-modal {
+.corpoModal {
     flex: 1;
     margin-bottom: 10px;
 }
 
-.rodape-modal {
+.footerModal {
     display: flex;
     justify-content: flex-end;
+}
+
+.fecharButton {
+    margin: 0 0 20px 0;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #3f362d;
+    color: #fff3f1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.fecharButton:hover {
+    background-color: #716152;
 }
 </style>

@@ -9,9 +9,9 @@
                 <label>
                     <p class="qntQuartoTxt">Quantidade de quartos</p>
                     <select
+                        @change="saveSuite(suite.select, suite.id)"
+                        v-model="suite.select"
                         class="selectSuite"
-                        @change="change(suite.id)"
-                        :v-model="'select' + suite.id"
                     >
                         <option value="0">0</option>
                         <option value="1">1</option>
@@ -40,8 +40,10 @@
                     :key="servico.id"
                 >
                     <select
-                        :id="'select' + servico.id"
-                        :name="'select' + servico.name"
+                        @change="
+                            saveServicoAdicionais(servico.select, servico.id)
+                        "
+                        v-model="servico.select"
                         class="selectServicosAdicionais"
                     >
                         <option value="0">0</option>
@@ -80,6 +82,7 @@ export default {
             suites: [
                 {
                     id: 1,
+                    select: "select1",
                     name: "Suíte Família",
                     description:
                         "Nossas suítes possuem conforto e luxo, com itens como televisão, ar condicionado, lençóis 100% algodão egípcio, internet gratuita, mini bar e café da manhã na cama. Desfrute de todos esses itens e muito mais em sua estadia conosco.",
@@ -89,6 +92,7 @@ export default {
                 },
                 {
                     id: 2,
+                    select: "select2",
                     name: "Suíte Master",
                     description:
                         "Os quartos do hotel oferecem uma variedade de comodidades, incluindo uma banheira com chuveiro, uma máquina de café com cápsulas, uma sala de estar, flores naturais, internet gratuita, roupão de banho e muito mais. Cada detalhe foi cuidadosamente planejado para garantir o conforto e o bem-estar dos hóspedes.",
@@ -98,6 +102,7 @@ export default {
                 },
                 {
                     id: 3,
+                    select: "select3",
                     name: "Suite Premium",
                     description:
                         "O Terraço com Jacuzzi é o destaque do hotel, oferecendo uma vista deslumbrante e um ambiente relaxante para os hóspedes. Além disso, o pátio conta com cadeiras e mesas para desfrutar do ar livre. As suítes possuem banheira e ar condicionado para maior conforto, além de lençóis 100% algodão egípcio. Estes detalhes tornam a estadia ainda mais agradável e luxuosa.",
@@ -109,12 +114,14 @@ export default {
             servicosAdicionais: [
                 {
                     id: 1,
+                    select: "selectServico1",
                     name: "Café da manhã extra",
                     description: "Um café da manhã extra para acompanhante",
                     price: 25,
                 },
                 {
                     id: 2,
+                    select: "selectServico2",
                     name: "Massagem relaxante",
                     description:
                         "Uma hora de massagem relaxante para renovar as energias",
@@ -122,6 +129,7 @@ export default {
                 },
                 {
                     id: 3,
+                    select: "selectServico3",
                     name: "Jantar especial",
                     description:
                         "Um jantar especial preparado por nossa equipe de culinária",
@@ -129,31 +137,36 @@ export default {
                 },
                 {
                     id: 4,
+                    select: "selectServico4",
                     name: "Academia",
                     description: "Acesso à academia do hotel",
                     price: 35,
                 },
                 {
-                    id: 6,
+                    id: 5,
+                    select: "selectServico5",
                     name: "Serviço de lavanderia",
                     description: "Serviço de lavanderia para roupas pessoais",
                     price: 50,
                 },
                 {
-                    id: 8,
+                    id: 6,
+                    select: "selectServico6",
                     name: "Aluguel de carros",
                     description: "Aluguel de carros disponível no hotel",
                     price: 120,
                 },
                 {
-                    id: 9,
+                    id: 7,
+                    select: "selectServico7",
                     name: "Babá/serviço de creche",
                     description:
                         "Serviço de babá ou creche disponível no hotel",
                     price: 75,
                 },
                 {
-                    id: 11,
+                    id: 8,
+                    select: "selectServico8",
                     name: "Bebidas ilimitadas no bar",
                     description:
                         "Bebidas ilimitadas disponíveis no bar do hotel",
@@ -162,7 +175,7 @@ export default {
             ],
             servicosAdicionaisCheckBox: [
                 {
-                    id: 7,
+                    id: 9,
                     name: "Room service",
                     description:
                         "Serviço de comida e bebida diretamente no quarto",
@@ -175,49 +188,63 @@ export default {
                     price: 150,
                 },
             ],
-            select1: localStorage.getItem("select1") || "",
-            select2: localStorage.getItem("select2") || "",
-            select3: localStorage.getItem("select3") || "",
+            quantidadeSuite1: "",
+            quantidadeSuite2: "",
+            quantidadeSuite3: "",
+            servicosAdicionaisSuite1: [],
+            servicosAdicionaisSuite2: [],
+            servicosAdicionaisSuite3: [],
         };
     },
-    /*     watch: {
-        select1(valor) {
-            localStorage.setItem("select1", valor);
+    methods: {
+        saveSuite(value, id) {
+            switch (id) {
+                case 1:
+                    this.quantidadeSuite1 = value;
+                    break;
+                case 2:
+                    this.quantidadeSuite2 = value;
+                    break;
+                case 3:
+                    this.quantidadeSuite3 = value;
+                    break;
+                default:
+                    break;
+            }
         },
-        select2(valor) {
-            localStorage.setItem("select2", valor);
-        },
-        select3(valor) {
-            localStorage.setItem("select3", valor);
-        },
-    }, */
-    watch: {
-        select1: {
-            handler(val) {
-                localStorage.setItem("select1", val);
-                console.log("aaaaaaaaa")
-            },
-            deep: true,
-        },
-        select2: {
-            handler(val) {
-                localStorage.setItem("select2", val);
-            },
-            deep: true,
-        },
-        select3: {
-            handler(val) {
-                localStorage.setItem("select3", val);
-            },
-            deep: true,
+        saveServicoAdicionais(servico, id) {
+            switch (id) {
+                case 1:
+                    this.servicosAdicionaisSuite1.push(servico);
+                    localStorage.setItem(
+                        "servicosAdicionaisSuite1",
+                        this.servicosAdicionaisSuite1
+                    );
+                    break;
+            }
         },
     },
-    methods: {
-        change(id) {
-            const select = `select${id}`;
-            localStorage.setItem(select, this[select]);
-            console.log(this.select1);
+    watch: {
+        quantidadeSuite1(value) {
+            localStorage.setItem("quantidadeSuite1", value);
         },
+        quantidadeSuite2(value) {
+            localStorage.setItem("quantidadeSuite2", value);
+        },
+        quantidadeSuite3(value) {
+            localStorage.setItem("quantidadeSuite3", value);
+        },
+        servicosAdicionaisSuite1(value) {
+            localStorage.setItem("servicosAdicionaisSuite1", value);
+        },
+    },
+    created() {
+        this.quantidadeSuite1 = localStorage.getItem("quantidadeSuite1");
+        this.quantidadeSuite2 = localStorage.getItem("quantidadeSuite2");
+        this.quantidadeSuite3 = localStorage.getItem("quantidadeSuite3");
+        this.servicosAdicionaisSuite1 = localStorage.getItem(
+            "servicosAdicionaisSuite1"
+        );
     },
 };
 </script>
@@ -246,8 +273,8 @@ h3 {
 }
 
 .postProduto img {
-    max-width: 35%;
-    max-height: 30%;
+    max-width: 40%;
+    min-height: 40%;
     border-radius: 15px;
     margin: 10px;
 }
