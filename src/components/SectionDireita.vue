@@ -1,16 +1,22 @@
 <template>
     <section class="secao-direita">
         <div class="texto">
-            <h2>Bem Estar</h2>
-            <p>Nossa piscina, localizada no terraço, oferece vistas panorâmicas de uma área rica em história, incluindo vistas do Real Alcázar, do Hospital de los Venerables, da Catedral e da Giralda. Um lugar aconchegante para relaxar com vistas de tirar o fôlego que você não pode perder Faça uma pausa em um de nossos solários e desfrute de um chá, café ou uma bebida em paz.</p>
+            <h2>{{ tituloSectionD }}</h2>
+            <p>{{ textoSectionD }}</p>
         </div>
-        <div><img class="imagem-secao" src="../../public/images/sevilla-a-los-pies-de-la-giralda-1.jpg" alt="Imagem da Cidade"></div>
+        <div><img class="imagem-secao" :src="imageSectionD" :alt="altImageSectionD"/></div>
     </section>
 </template>
 
 <script>
 export default {
     name:'SectionDireita',
+    props:[
+        "tituloSectionD",
+        "imageSectionD",
+        "altImageSectionD",
+        "textoSectionD",
+    ]
 }
 </script>
 

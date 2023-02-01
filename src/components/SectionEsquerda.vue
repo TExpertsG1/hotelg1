@@ -1,12 +1,12 @@
 <template>
     <section class="secao-esquerda">
             <div>
-                <img class="imagem-secao" src="../../public/images/Romantica.jpg" alt="Imagem de flores">
+                <img class="imagem-secao" :src="imageSectionL" :alt="altImageSectionL">
             </div>
             <div class="texto">
-                <h2>Experiência Romântica</h2>
-                <p>Se você está pensando em comemorar sua lua de mel, aniversário ou noite de núpcias, queremos fazer parte da celebração. Você vai precisar de flores, champanhe, chocolates e muito amor, e na Casa 1800 temos de tudo, deixe-nos ajudá-lo.</p>
-                <p>Dispomos de 33 quartos decorados com bom gosto e elegância, onde poderá relaxar nos seus lençóis de algodão egípcio e deliciar-se com o seu aroma a flores frescas, pátios centrais da Andaluzia iluminados com os mais belos lustres, um terraço com vistas deslumbrantes onde poderá tirar muitas fotografias daquele momento especial.</p>
+                <h2>{{ tituloSectionL }}</h2>
+                <p>{{ textoSectionL }}</p>
+                <p>{{ textoSectionL2 }}</p>
             </div>
         </section>
 </template>
@@ -14,6 +14,13 @@
 <script>
 export default {
     name:'SectionEsquerda',
+    props: [
+        "tituloSectionL",
+        "imageSectionL",
+        "altImageSectionL",
+        "textoSectionL",
+        "textoSectionL2"
+    ]
 }
 </script>
 
