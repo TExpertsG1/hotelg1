@@ -75,9 +75,9 @@ export default {
 </script>
 
 <style scoped>
-* {
+/* * {
     border: 1px solid blue;
-}
+} */
 
 .modal {
     position: fixed;
