@@ -4,7 +4,7 @@
         <div v-if="mostrarModal" class="modal">
             <div class="conteudoModal">
                 <header class="headerModal">
-                    <h3>{{ tituloModal }}</h3>
+                    <h3 class="titulo">{{ tituloModal }}</h3>
                     <button class="fecharButton" @click="mostrarModal = false">
                         X
                     </button>
@@ -18,7 +18,7 @@
                     </slot>
                 </section>
                 <footer class="footerModal">
-                    <slot name="footer"></slot>
+                    <Button_1 class="confirmar" />
                 </footer>
             </div>
         </div>
@@ -32,12 +32,15 @@ export default {
     name: "ModalReserva",
     data() {
         return {
-            mostrarModal: false,
+            mostrarModal: true,
             tituloModal: "Resumo da Reserva",
             checkIn: localStorage.getItem("checkIn"),
             checkOut: localStorage.getItem("checkOut"),
             qtdAdulto: localStorage.getItem("qtdAdulto"),
             qtdCrianca: localStorage.getItem("qtdCrianca"),
+            servicosAdicionaisSuite1: [],
+            servicosAdicionaisSuite2: [],
+            servicosAdicionaisSuite3: [],
         };
     },
     watch: {
@@ -89,6 +92,12 @@ export default {
     z-index: 9999;
 }
 
+.headerModal h3 {
+    padding: 0 0 0 35px;
+    text-align: center;
+    width: 100%;
+}
+
 .conteudoModal {
     background-color: white;
     padding: 20px;
@@ -119,7 +128,7 @@ export default {
 
 .footerModal {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .fecharButton {
@@ -137,5 +146,17 @@ export default {
 
 .fecharButton:hover {
     background-color: #716152;
+}
+
+.confirmar {
+    margin: 0;
+    text-align: center;
+    width: 30%;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #3f362d;
+    color: #fff3f1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 </style>
