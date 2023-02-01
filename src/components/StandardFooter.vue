@@ -1,8 +1,8 @@
 <template>
   <footer>
-    <div class="principal">
+    <div>
       <div class="continf">
-        <div class="div-contatos">
+        <div class="div-contatos" id="contato">
           <form
             @submit="checkForm"
             novalidate="true"
@@ -87,7 +87,6 @@
           <p class="footerContato">
             <a href=""> <i class="fa-solid fa-envelope"></i>{{ email }}</a>
           </p>
-          <div></div>
         </div>
         <div class="redes-sociais">
           <h2>Siga-nos</h2>
@@ -159,96 +158,3 @@ export default {
   },
 };
 </script>
-<style scoped>
-/*--- FOOTER ---*/
-
-.fieldsetFooter {
-  min-width: none;
-  border-radius: 15px;
-  border-color: #ede5e3;
-  font-size: 16px;
-  width: 80%;
-  font-weight: bold;
-}
-
-div.continf1 {
-  display: flex;
-  text-align: center;
-  background-color: #ede5e3;
-  font-size: 1.5rem;
-}
-
-div.continf {
-  display: grid;
-  grid-template-columns: 50% 25% 25%;
-  text-align: center;
-  background-color: #ede5e3;
-  font-size: 1.5rem;
-}
-
-/*-- CONTATO --*/
-.div-contatos {
-  padding: 1rem;
-  text-align: center;
-}
-
-.contatos {
-  width: 60%;
-  background: none;
-  border: none;
-  border-width: 2px;
-  border-bottom-width: 1px;
-  border-bottom-color: #82694e;
-  border-bottom-style: solid;
-  font-size: 1rem;
-}
-input {
-  background: none;
-}
-
-#message {
-  padding-bottom: 6rem;
-}
-
-#button {
-  font-size: 1.2rem;
-  border: none;
-  background-color: #82694e;
-  color: #ffffff;
-  padding: 8px 24px;
-  margin: 10px;
-  cursor: pointer;
-  -webkit-border-radius: 10px;
-}
-
-/*-- INFORMAÇÕES --*/
-div.informacoes {
-  color: #82694e;
-  text-align: left;
-  font-size: 80%;
-}
-a {
-  padding: 2px;
-}
-
-select {
-  color: #666462;
-}
-
-div.redes-sociais {
-  font-size: 2rem;
-}
-
-/* -- DIV MNR -- */
-div.div-mnr {
-  display: grid;
-  grid-template-columns: auto auto;
-  padding: 10px;
-}
-
-/* -- COPYRIGHT -- */
-div.copyright {
-  text-align: center;
-  color: #82694e;
-}
-</style>

@@ -1,25 +1,25 @@
 <template>
-  <div class="principal">
+  <div>
     <StandardHeader />
   </div>
   <main>
-    <section class="principal">
+    <section>
       <div class="galeria">
         <div id="acomodacoes">
           <h2>Nossas Acomodações</h2>
-          <div class="gallery">
-            <!-- <a href="#familia"> <img src="../images/acomodacao1.jpg" alt="Suíte Familia" /></a> -->
+          <!-- <div class="gallery">
+            <a href="#familia"> <img src="../images/acomodacao1.jpg" alt="Suíte Familia" /></a>
             <br />
-            <div class="desc">Suite Família</div>
+            <div class="desc"></div>
           </div>
           <div class="gallery">
-            <!-- <a href="#master"><img src="../images/acomodacao2.jpg" alt="Suíte Master" /></a> -->
-            <div class="desc">Suíte Master</div>
+            <a href="#master"><img src="../images/acomodacao2.jpg" alt="Suíte Master" /></a>
+            <div class="desc"></div>
           </div>
           <div class="gallery">
-            <!-- <a href="#premium"> <img src="../images/acomodacao3.jpg" alt="Suíte Premium" /></a> -->
-            <div class="desc">Suíte Premium</div>
-          </div>
+            <a href="#premium"> <img src="../images/acomodacao3.jpg" alt="Suíte Premium" /></a>
+            <div class="desc"></div>
+          </div> -->
         </div>
       </div>
     </section>
