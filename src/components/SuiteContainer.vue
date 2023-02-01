@@ -1,113 +1,113 @@
 <template>
-  <section>
-          <div id="galeria1">
-            <ul class="albumFotos">
-              <li v-for="(element, i) in galeriaSuite" :key="i" :id="element">
-                <span>{{ nomeSuite }}</span>
-                </li>
-            </ul>
-          </div>
-          <div id="suiteX" class="suiteInfo"> 
-              <h2>{{ nomeSuite }}</h2>
-              <p>{{ descricaoSuite }}</p>
-              <ul>
-                <li v-for="(element, i) in caracteristicasSuite" :key="i">
-                {{ element }}
-                </li>
-              </ul>
-               <button id="button">Reservar</button>
-          </div>
-      </section>
-      <div class="principal separador">
-        <img src="../../public/images/acomodacoes/separador.png" alt="" />
-      </div>
+  <section :id="href">
+    <div id="galeria1">
+      <ul class="albumFotos">
+        <li v-for="(element, i) in galeriaSuite" :key="i" :id="element">
+          <span>{{ nomeSuite }}</span>
+        </li>
+      </ul>
+    </div>
+    <div id="suiteX" class="suiteInfo">
+      <h2>{{ nomeSuite }}</h2>
+      <p>{{ descricaoSuite }}</p>
+      <ul>
+        <li v-for="(element, i) in caracteristicasSuite" :key="i">
+          {{ element }}
+        </li>
+      </ul>
+      <button id="button">Reservar</button>
+    </div>
+  </section>
+  <div class="principal separador">
+    <img src="../../public/images/acomodacoes/separador.png" alt="" />
+  </div>
 </template>
 
 <script>
-  export default {
-    name: 'SuiteContainer',
-    props: {
-      nomeSuite: String,
-      descricaoSuite: String,
-      caracteristicasSuite: Array,
-      galeriaSuite: Array 
-    }
-  }
+export default {
+  name: "SuiteContainer",
+  props: {
+    nomeSuite: String,
+    descricaoSuite: String,
+    caracteristicasSuite: Array,
+    galeriaSuite: Array,
+    href: String,
+  },
+};
 </script>
 
 <style scoped>
+section {
+  display: flex;
+  box-sizing: border-box;
+  margin: 1px 30px;
+  padding: 5px;
+}
+.albumFotos {
+  list-style: none;
+  margin: 0 auto;
+  padding: 5px;
+  width: 700px;
+}
 
-  section {
-    display: flex;
-    box-sizing: border-box;
-    margin: 1px 30px;
-    padding: 5px;
-  }
-  .albumFotos {
-    list-style: none;
-    margin: 0 auto;
-    padding: 5px;
-    width: 700px;
-  }
+.albumFotos li {
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  border: 2px solid rgba(192, 80, 25, 0.5019607843);
+  border-radius: 10px;
+  transition: all 0.4s ease-in;
+}
 
-  .albumFotos li {
-    float: left;
-    width: 200px;
-    height: 200px;
-    margin: 5px;
-    border: 2px solid rgba(192, 80, 25, 0.5019607843);
-    border-radius: 10px;
-    transition: all 0.4s ease-in;
-  }
+.albumFotos li span {
+  position: relative;
+  top: 8px;
+  opacity: 0;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 10px;
+}
+.albumFotos li:hover span {
+  opacity: 1;
+}
+.albumFotos li:hover {
+  background-position: 0% 0%;
+  transform: scale(1.5);
+}
 
-  .albumFotos li span {
-    position: relative;
-    top: 8px;
-    opacity: 0;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 5px;
-    border-radius: 10px;
-  }
-  .albumFotos li:hover span {
-    opacity: 1;
-  }
-  .albumFotos li:hover {
-    background-position: 0% 0%;
-    transform: scale(1.5);
-  }
+.suiteInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  text-align: justify;
+  width: 100%;
+}
 
-  .suiteInfo {
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-    text-align: justify;
-    width: 100%;
-  }
-  
-  h2 {
-    padding: 2rem 0 0 0;
-    text-align: center;
-    text-decoration: overline;
-  }
+h2 {
+  padding: 2rem 0 0 0;
+  text-align: center;
+  text-decoration: overline;
+}
 
-  p {
-    padding-right: 50px;
-  }
+p {
+  padding-right: 50px;
+}
 
-  button {
-    background-color: #ad9479;
-    border-radius: 10px;
-    border: none;
-    padding: 0.5rem 1rem;
-    color: #fff3f1;
-    font-size: 15px;
-    align-self: center;
-  }
+button {
+  background-color: #ad9479;
+  border-radius: 10px;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #fff3f1;
+  font-size: 15px;
+  align-self: center;
+}
 
-  /* IMAGENS DAS SUITES */
+/* IMAGENS DAS SUITES */
 
-  #card1 {
+#card1 {
   background-image: url(../../public/images/acomodacoes/suiteFamilia01.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
@@ -135,97 +135,83 @@
   background-image: url(../../public/images/acomodacoes/suiteFamilia05.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
-
 }
 
 #card6 {
   background-image: url(../../public/images/acomodacoes/suiteFamilia06.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
-
 }
 
 #card7 {
   background-image: url(../../public/images/acomodacoes/suiteMaster01.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
-
 }
 
 #card8 {
   background-image: url(../../public/images/acomodacoes/suiteMaster02.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
-
 }
 
 #card9 {
   background-image: url(../../public/images/acomodacoes/suiteMaster03.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
-
 }
 
 #card10 {
   background-image: url(../../public/images/acomodacoes/suiteMaster04.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
-
 }
 
 #card11 {
   background-image: url(../../public/images/acomodacoes/suiteMaster05.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
-
 }
 
 #card12 {
   background-image: url(../../public/images/acomodacoes/suiteMaster06.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
-
 }
 
 #card13 {
   background-image: url(../../public/images/acomodacoes/suitePremium01.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
-
 }
 
 #card14 {
   background-image: url(../../public/images/acomodacoes/suitePremium02.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
-
 }
 
 #card15 {
   background-image: url(../../public/images/acomodacoes/suitePremium03.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
-
 }
 
 #card16 {
   background-image: url(../../public/images/acomodacoes/suitePremium04.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
-
 }
 
 #card17 {
   background-image: url(../../public/images/acomodacoes/suitePremium05.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
-
 }
 
 #card18 {
   background-image: url(../../public/images/acomodacoes/suitePremium06.jpg);
   background-position: 10% 100%;
   background-size: 300px 300px;
-
 }
 </style>
