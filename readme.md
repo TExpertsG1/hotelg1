@@ -29,6 +29,7 @@ Neste projeto o aluno aprenderá a desenvolver um sistema WEB de gerenciamento d
 ## Definição do Projeto
 
 ### Área Pública
+
 - Tela Home
 - Tela Contato
 - Tela Reservas
@@ -37,13 +38,14 @@ Neste projeto o aluno aprenderá a desenvolver um sistema WEB de gerenciamento d
 - Tela Login
 - Estrutura DOM
 - Refinamento de Estrutura
-  
+
 ### Área Administrativa
+
 - Login
 - Home
 - Funcionários
 - Hóspedes
-- Reservas 
+- Reservas
 
 ## Técnologias utilizadas
 

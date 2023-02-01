@@ -12,8 +12,8 @@
           </a>
 
           <nav class="navbar menu">
-            <router-link to="/">Inicio</router-link>
-            <router-link to="/">Nosso Hotel</router-link>
+            <router-link to="/HomeView">Inicio</router-link>
+            <router-link to="/SobrePage">Nosso Hotel</router-link>
             <router-link to="/acomodacoes">Acomodações</router-link>
             <router-link to="/reservas">Reservas</router-link>
             <router-link to="/contato">Contato</router-link>

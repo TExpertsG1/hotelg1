@@ -18,7 +18,7 @@
             Cigarrera, Lord Byron, Bécquer…
           </p>
           <div>
-            <a href="./pages/sobre.html#nossaHistoria">
+            <a href="./../pages/sobre/SobrePage.vue">
               <button>Saiba mais</button></a
             >
           </div>
