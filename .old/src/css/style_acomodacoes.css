@@ -278,12 +278,12 @@
   background-color: #ad9479;
   border-radius: 10px;
   border: none;
-  padding: 0.2rem 1rem 0.2rem;
+  padding: 0.2rem 5rem 0.2rem;
   color: #fff3f1;
   font-size: 15px;
   position: relative;
   left: 40%;
-  top: 0.3rem;
+  top: 1rem;
 }
 .container-grid-acomodacoes button:hover,
 .container-grid-acomodacoes1 button:hover {
@@ -500,4 +500,14 @@ div.continf1 {
   }
 }
 
-/*# sourceMappingURL=style_acomodacoes.css.map */
+form {
+
+  margin-bottom: 20px;
+
+}
+
+button {
+  cursor: pointer;
+}
+
+

@@ -8,7 +8,7 @@
 /*.......MIDIA QUERIES.......*/
 @font-face {
   font-family: Baskerville;
-  src: url(../font/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf);
+  src: url(../../public/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf);
 }
 html {
   scroll-behavior: smooth;
@@ -49,11 +49,6 @@ h2 {
   margin: 1px 30px;
 }
 
-.nomeLogo {
-  display: flex;
-  padding-left: 0;
-}
-
 /*-----Header-------*/
 header {
   display: flex;
@@ -64,60 +59,11 @@ header {
   background-attachment: fixed;
   border-top: 2px solid rgba(192, 80, 25, 0.5019607843);
   border-bottom: 2px solid rgba(192, 80, 25, 0.5019607843);
-  background-image: url("../../images/imagemHeader.jpg");
+  background-image: url("./../../public/images/imagemHeader.jpg");
   background-attachment: fixed;
 }
 header section {
   width: 100%;
-}
-
-.userBar {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  height: 1rem;
-  padding: 20px 40px 20px 20px;
-  gap: 0.3rem;
-  color: #fff3f1;
-}
-.userBar a {
-  display: flex;
-  min-width: 60px;
-  padding: 0.5rem;
-  justify-content: center;
-  background-color: #ad9479;
-  border-radius: 0.5rem;
-}
-.userBar a:hover {
-  font-weight: bold;
-  background-color: #82694e;
-}
-
-.mainHeader {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.mainHeader img {
-  max-height: 8rem;
-  max-width: 8rem;
-}
-
-.navbar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 0.3rem;
-}
-.navbar a {
-  padding: 0.5rem;
-  background-color: #ad9479;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-}
-.navbar a:hover {
-  font-weight: bold;
-  background-color: #82694e;
 }
 
 /****  Sobre Nosso Hotel ****/
@@ -151,7 +97,6 @@ header section {
   color: #fff;
   font-size: 15px;
   position: relative;
-  left: 76%;
 }
 .container-grid button:hover,
 .container-grid-gastro button:hover {
@@ -192,7 +137,7 @@ div.gallery img:hover {
 
 #acomodacoesfundo {
   background-size: cover;
-  background-image: url("../../images/acomodacoes7.jpg");
+  background-image: url("./../../public/images/acomodacoes7.jpg");
   background-attachment: fixed;
   border-top: 2px solid rgba(192, 80, 25, 0.5019607843);
   border-bottom: 2px solid rgba(192, 80, 25, 0.5019607843);
@@ -291,43 +236,6 @@ div.navPos ul li a {
   color: #fff;
 }
 
-
-/*--- FOOTER ---*/
-/* -- CONTINF -- */
-.fieldsetFooter {
-  min-width: none;
-  border-radius: 15px;
-  border-color: #ede5e3;
-  font-size: 16px;
-  width: 80%;
-  font-weight: bold;
-}
-
-div.continf {
-  display: grid;
-  grid-template-columns: 50% 25% 25%;
-  text-align: center;
-  background-color: #ede5e3;
-  font-size: 1.5rem;
-}
-
-/*-- CONTATO --*/
-.div-contatos {
-  padding: 1rem;
-  text-align: center;
-}
-
-.contatos {
-  width: 60%;
-  background: none;
-  border: none;
-  border-width: 2px;
-  border-bottom-width: 1px;
-  border-bottom-color: #82694e;
-  border-bottom-style: solid;
-  font-size: 1rem;
-}
-
 #message {
   padding-bottom: 6rem;
 }
@@ -340,50 +248,21 @@ div.continf {
   padding: 8px 24px;
   margin: 10px;
   cursor: pointer;
-  -webkit-border-radius: 10px;
+  border-radius: 10px;
 }
 
 /*-- INFORMAÇÕES --*/
-div.informacoes {
-  color: #82694e;
-  text-align: left;
-  font-size: 80%;
-}
 
 select {
   color: #666462;
 }
 
-div.redes-sociais {
-  font-size: 2rem;
-}
-
-/* -- DIV MNR -- */
-div.div-mnr {
-  display: grid;
-  grid-template-columns: auto auto;
-  padding: 10px;
-}
-
-/* -- COPYRIGHT -- */
-div.copyright {
-  text-align: center;
-  color: #82694e;
-}
-
 /* ---------- responsive ----------------------- */
 @media (max-width: 800px) {
   /*...HEADER...*/
-  .mainHeader {
-    justify-content: center;
-  }
-  .mainHeader img {
-    display: none;
-  }
-  .menu {
-    flex-flow: column;
-    min-width: 40%;
-    transition: all 0.4s;
+
+  h1 {
+    font-size: 20px;
     text-align: center;
     padding: 20px;
   }
@@ -401,6 +280,10 @@ div.copyright {
   .navPos {
     display: none;
   }
+  /*.....BODY....*/
+  .navPos {
+    display: none;
+  }
   .container-grid p,
   .container-grid-gastro p {
     padding: 0;
@@ -409,7 +292,7 @@ div.copyright {
   .container-grid div img {
     display: none;
   }
-  .container-grid div button,
+
   .container-grid-gastro div button {
     background-color: #ad9479;
     border-radius: 10px;
@@ -417,17 +300,9 @@ div.copyright {
     color: #fff;
     font-size: 10px;
     position: relative;
-    left: 65%;
   }
   .container-grid-gastro img {
     display: none;
-  }
-  .navbar a {
-    padding: 10px;
-  }
-  .userBar a {
-    padding: 5px;
-    margin-bottom: 10px;
   }
   h1,
   h2 {
@@ -452,7 +327,6 @@ div.copyright {
   .divIcon h2 {
     font-size: 1.5rem;
   }
-  /*......FOOTER.......*/
   .container-servicos,
   .informacoes,
   section #sobre {
@@ -472,56 +346,12 @@ div.copyright {
   .saibaMais {
     margin-bottom: 5px;
   }
-  div.informacoes {
-    text-align: left;
-    padding-left: 5px;
-    border-radius: 5px;
-    text-align: center;
-  }
-  .informacoes .social {
-    text-align: center;
-    margin-bottom: 5px;
-  }
+
   section #sobre div {
     text-align: center;
   }
-  .div-contatos {
-    padding: 0px;
-  }
-  div.continf {
-    padding: 0;
-    display: initial;
-    background-color: #ede5e3;
-    font-size: 1.5rem;
-  }
-  .contatos {
-    width: 100%;
-    border-bottom-width: 1px;
-    border-bottom-color: #82694e;
-    border-bottom-style: solid;
-    font-size: large;
-    font-size: 15px;
-  }
-  select.contatos {
-    color: rgba(107, 94, 94, 0.8235294118);
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    font-size: 15px;
-  }
-  .fieldsetFooter {
-    width: 100%;
-  }
-  div.redes-sociais {
-    padding-left: 0;
-    size: 5px;
-  }
+
   .fa-solid {
     font-size: 15px;
   }
-  /* -- COPYRIGHT -- */
-  div.copyright {
-    font-size: large;
-  }
 }
-
-/*# sourceMappingURL=_style.css.map */

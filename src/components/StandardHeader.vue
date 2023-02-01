@@ -1,101 +1,59 @@
 <template>
-    <header>
-        <section>
-            <div>
-                <div class="userBar">
-                    <a id="login">Login</a>
-                    <a id="logout">Sair</a>
-                </div>
-            </div>
+  <header>
+    <section>
+      <div>
+        <div class="userBar">
+          <a id="login">Login</a>
+          <a id="logout">Sair</a>
+        </div>
+        <span class="mainHeader">
+          <a href="./index.html">
+            <img src="../../public/images/logo_1800.png" alt="" />
+          </a>
 
-            <span class="mainHeader">
-                <a href="index.html">
-                    <img height="100%" src="../../public/images/logo_1800.png"
-                /></a>
-                <nav class="navbar menu">
-                    <a href="../index.html">Início</a>
-                    <a href="./sobre.html">Nosso Hotel</a>
-                    <a href="./acomodacoes.html">Acomodações</a>
-                    <a href="./reservas.html">Reservas</a>
-                    <a href="#contato">Contato</a>
-                </nav>
-            </span>
-            
-            <div class="nomeLogo">
-                <h1>Hotel 1800</h1>
-            </div>
-        </section>
-    </header>
+          <nav class="navbar menu">
+            <router-link to="/HomeView">Inicio</router-link>
+            <router-link to="/SobrePage">Nosso Hotel</router-link>
+            <router-link to="/acomodacoes">Acomodações</router-link>
+            <router-link to="/reservas">Reservas</router-link>
+            <router-link to="/contato">Contato</router-link>
+          </nav>
+          <router-view />
+          <!-- <nav class="navbar menu">
+            <router-link to="/">Home</router-link> |
+            <router-link to="/acomodacoes">Acomodações</router-link> |
+            <router-link to="/reservas">Reservas</router-link>
+          </nav>
+
+          <ul class="navbar menu">
+            <li v-for="(item, n) in menu" :key="n">
+              <a href="../pages/reservas">{{ item }}</a>
+            </li>
+          </ul> -->
+
+          <!-- <nav class="navbar menu">
+                        <a href="./index.html">Início</a>
+                        <a href="./pages/sobre.html">Nosso Hotel</a>
+                        <a href="./pages/acomodacoes.html">Acomodações</a>
+                        <a href="./pages/reservas.html">Reservas</a>
+                        <a href="#contato">Contato</a>
+                    </nav> -->
+        </span>
+        <div class="nomeLogo">
+          <h1>Hotel 1800</h1>
+        </div>
+      </div>
+    </section>
+  </header>
 </template>
 
-<script>
+<!-- <script>
 export default {
-    name: "StandardHeader",
+  name: "StandardHeader",
+  data() {
+    return {
+      menu: ["Inicio", "Nosso Hotel", "Acomodações", "Reserva", "Contato"],
+    };
+  },
 };
-</script>
-
-<style scoped>
-header {
-    display: flex;
-    background-color: #ede5e3;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-attachment: fixed;
-    background-image: url("../../public/images/imagemHeader.jpg");
-    background-attachment: fixed;
-}
-
-header section {
-    width: 100%;
-}
-
-.userBar {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    height: 1rem;
-    padding: 20px 40px 20px 20px;
-    gap: 0.3rem;
-    color: #fff3f1;
-}
-.userBar a {
-    display: flex;
-    min-width: 60px;
-    padding: 0.5rem;
-    justify-content: center;
-    background-color: #ad9479;
-    border-radius: 0.5rem;
-}
-.userBar a:hover {
-    font-weight: bold;
-    background-color: #82694e;
-}
-
-.mainHeader {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.mainHeader img {
-    max-height: 8rem;
-    max-width: 8rem;
-}
-
-.navbar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    gap: 0.3rem;
-}
-.navbar a {
-    padding: 0.5rem;
-    background-color: #ad9479;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-}
-.navbar a:hover {
-    font-weight: bold;
-    background-color: #82694e;
-}
-</style>
+</script> -->
