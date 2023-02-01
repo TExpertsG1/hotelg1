@@ -6,7 +6,7 @@ import SobrePage from "../pages/sobre/SobrePage.vue";
 
 const routes = [
   {
-    path: "/HomeView",
+    path: "/",
     name: "HomeView",
     component: HomeView,
   },
