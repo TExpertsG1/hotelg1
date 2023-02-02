@@ -1,14 +1,19 @@
 <template>
     <div>
-        <Button_1 @change="update" @click="mostrarModal = true" />
+        <Button_1 
+        @click="() => {
+            mostrarModal = true;
+            update();
+            }"
+         />
         <div v-if="mostrarModal" class="modal">
             <div class="conteudoModal">
-                <header class="headerModal">
+                <div class="headerModal">
                     <h3 class="titulo">{{ tituloModal }}</h3>
                     <button class="fecharButton" @click="mostrarModal = false">
                         X
                     </button>
-                </header>
+                </div>
                 <section class="corpoModal">
                     <slot>
                         Check-in: {{ checkIn }} <br />
@@ -17,9 +22,12 @@
                         Quantidade de crianças: {{ qtdCrianca }}
                     </slot>
                 </section>
-                <footer class="footerModal">
+                <div>
+                    Componente aqui
+                </div>
+                <div class="footerModal">
                     <Button_1 class="confirmar" />
-                </footer>
+                </div>
             </div>
         </div>
     </div>
@@ -68,6 +76,7 @@ export default {
             this.qtdCrianca = localStorage.getItem("qtdCrianca");
         },
     },
+
     components: {
         Button_1,
     },

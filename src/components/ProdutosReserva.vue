@@ -40,10 +40,8 @@
                     :key="servico.id"
                 >
                     <select
-                        @change="
-                            saveServicoAdicionais(servico.select, servico.id)
-                        "
-                        v-model="servico.select"
+                        @change="saveServicoAdicionais(servico, suite.id)"
+                        v-model="servico.qtd"
                         class="selectServicosAdicionais"
                     >
                         <option value="0">0</option>
@@ -118,6 +116,7 @@ export default {
                     name: "Café da manhã extra",
                     description: "Um café da manhã extra para acompanhante",
                     price: 25,
+                    qtd: 0
                 },
                 {
                     id: 2,
@@ -215,7 +214,7 @@ export default {
         saveServicoAdicionais(servico, id) {
             switch (id) {
                 case 1:
-                    this.servicosAdicionaisSuite1.push(servico);
+                    this.servicosAdicionaisSuite1.push(...servico);
                     localStorage.setItem(
                         "servicosAdicionaisSuite1",
                         this.servicosAdicionaisSuite1

@@ -3,7 +3,7 @@
         <div class="titleDiv">
             <h2 class="totalTitle">Total</h2>
             <h2 class="valorTitle">R$ 1200</h2>
-            <ModalReserva/>
+            <ModalReserva />
         </div>
         <div class="resultsDiv">
             <h4>Check-in: {{ checkIn }}</h4>
