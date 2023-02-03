@@ -92,8 +92,11 @@ h2 {
     grid-template-columns: 70% 22%;
 }
 
-.Algo {
-    border: 1px black solid;
-    height: 100rem;
+@media (max-width: 800px) {
+    .produtos {
+        display: initial;
+        margin: 0;
+        grid-template-columns: none;
+    }
 }
 </style>

@@ -99,4 +99,16 @@ select {
     padding: 0 0 0 5px;
     text-align: center;
 }
+
+@media (max-width: 800px) {
+    .full {
+        margin: 0.4rem 0 0rem 0;
+    }
+    .reserva {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+    }
+}
 </style>
