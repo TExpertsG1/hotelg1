@@ -10,7 +10,7 @@
             method="post"
             enctype="multipart/form-data"
           >
-            <fieldset class="fieldsetFooter">
+            <fieldset class="fieldsetFooter" id="contato">
               <legend>Envie sua Mensagem</legend>
               <label for="nome">
                 <input

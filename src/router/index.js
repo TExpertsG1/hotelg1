@@ -26,7 +26,7 @@ const routes = [
     component: ReservasPages,
   },
   {
-    path: "/contato",
+    path: "/contato/#contato",
     name: "contato",
     component: () => import("../components/StandardFooter"),
   },

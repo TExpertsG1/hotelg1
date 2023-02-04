@@ -1,3 +1,5 @@
+import { routerKey } from 'vue-router';
+
 <template>
   <header>
     <section>
@@ -16,7 +18,7 @@
             <router-link to="/SobrePage">Nosso Hotel</router-link>
             <router-link to="/acomodacoes">Acomodações</router-link>
             <router-link to="/reservas">Reservas</router-link>
-            <router-link to="/contato">Contato</router-link>
+            <router-link to="/SobrePage/contato">Contato</router-link>
           </nav>
           <router-view />
           <!-- <nav class="navbar menu">

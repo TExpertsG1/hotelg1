@@ -18,9 +18,9 @@
             Cigarrera, Lord Byron, Bécquer…
           </p>
           <div>
-            <a href="./../pages/sobre/SobrePage.vue">
-              <button>Saiba mais</button></a
-            >
+            <router-link to="/SobrePage">
+              <button>Saiba mais</button>
+            </router-link>
           </div>
         </div>
       </div>
@@ -44,31 +44,37 @@
     </ul>
   </div>
   <br />
+
   <section id="acomodacoes">
     <div class="galeria">
       <div id="acomodacoes">
         <h2>Nossas Acomodações</h2>
         <div class="gallery">
-          <a href="./pages/acomodacoes.html#suiteFamilia">
+          <router-link to="/acomodacoes#suiteFamilia">
             <img
               src="./../../public/images/acomodacao1.jpg"
               alt="Suíte Familia"
-          /></a>
+            />
+          </router-link>
           <br />
           <div class="desc">Suite Família</div>
         </div>
         <div class="gallery">
-          <a href="./pages/acomodacoes.html#suiteMaster">
-            <img src="./../../public/images/acomodacao2.jpg" alt="Suíte Master"
-          /></a>
+          <router-link to="/acomodacoes#suiteMaster">
+            <img
+              src="./../../public/images/acomodacao2.jpg"
+              alt="Suíte Master"
+            />
+          </router-link>
           <div class="desc">Suíte Master</div>
         </div>
         <div class="gallery">
-          <a href="./pages/acomodacoes.html#suitePremium"
+          <router-link to="/acomodacoes#suitePremium"
             ><img
               src="./../../public/images/acomodacao3.jpg"
               alt="Suíte Premium"
-          /></a>
+            /> </router-link
+          >>
           <div class="desc">Suíte Premium</div>
         </div>
       </div>
@@ -93,9 +99,9 @@
               precisar de flores, champanhe, chocolates e muito amor, e na Casa
               1800 temos de tudo, deixe-nos ajudá-lo...
             </p>
-            <a class="saibaMais" href="./pages/sobre.html#experienciaRomantica"
-              >Saiba mais</a
-            >
+            <router-link to="/SobrePage">
+              <a class="saibaMais">Saiba mais</a>
+            </router-link>
           </div>
           <div class="container-servicos2">
             <div class="divIcon">
@@ -108,9 +114,9 @@
               panorâmicas de uma área rica em história, incluindo vistas do Real
               Alcázar, do Hospital de los Venerables, da Catedral e da Giralda.
             </p>
-            <a class="saibaMais" href="./pages/sobre.html#bemEstar"
-              >Saiba mais</a
-            >
+            <router-link to="/SobrePage#bemEstar">
+              <a class="saibaMais">Saiba mais</a>
+            </router-link>
           </div>
           <div class="container-servicos2">
             <div class="divIcon">
@@ -123,9 +129,9 @@
               flamenca, o museu marítimo ou o típico e famoso museu das
               carruagens.
             </p>
-            <a class="saibaMais" href="./pages/sobre.html#cultura"
-              >Saiba mais</a
-            >
+            <router-link to="/SobrePage#cultura">
+              <a class="saibaMais">Saiba mais</a>
+            </router-link>
           </div>
         </div>
       </article>
@@ -147,9 +153,9 @@
             maravilhoso café da manhã...
           </p>
           <div>
-            <a href="./pages/sobre.html#gastronomia">
-              <button>Saiba mais</button></a
-            >
+            <router-link to="/SobrePage#gastronomia">
+              <button>Saiba mais</button>
+            </router-link>
           </div>
         </div>
         <div id="containergastro01">
@@ -162,9 +168,3 @@
     </div>
   </section>
 </template>
-
-<script>
-export default {
-  name: "StandardIndex",
-};
-</script>

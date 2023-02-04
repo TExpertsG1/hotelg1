@@ -1,21 +1,25 @@
 # hotelg1-2.0
 
 ## Project setup
+
 ```
 npm install
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
 npm run serve
 ```
 
 ### Compiles and minifies for production
+
 ```
 npm run build
 ```
 
 ### Lints and fixes files
+
 ```
 npm run lint
 ```
@@ -51,6 +55,9 @@ Neste projeto o aluno aprenderá a desenvolver um sistema WEB de gerenciamento d
 
 - HTML
 - CSS3
+- SASS
+- Javascript
+- VUE
 
 ## Status do Projeto
 
