@@ -75,10 +75,6 @@ export default {
 </script>
 
 <style scoped>
-/* * {
-    border: 1px solid blue;
-} */
-
 .modal {
     position: fixed;
     top: 0;
@@ -158,5 +154,19 @@ export default {
     color: #fff3f1;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+@media (max-width: 800px) {
+    .conteudoModal {
+        width: 80%;
+    }
+    .fecharButton {
+        margin: 0;
+    }
+
+    .confirmar {
+        margin: 0;
+        width: 50%;
+    }
 }
 </style>

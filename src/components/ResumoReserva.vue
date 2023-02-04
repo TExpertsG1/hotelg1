@@ -3,7 +3,7 @@
         <div class="titleDiv">
             <h2 class="totalTitle">Total</h2>
             <h2 class="valorTitle">R$ 1200</h2>
-            <ModalReserva/>
+            <ModalReserva />
         </div>
         <div class="resultsDiv">
             <h4>Check-in: {{ checkIn }}</h4>
@@ -77,5 +77,10 @@ h4 {
     border-radius: 15px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
+}
+@media (max-width: 800px) {
+    .fullDiv {
+        margin: 0 0 1rem 0;
+    }
 }
 </style>

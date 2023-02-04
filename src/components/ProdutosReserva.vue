@@ -367,4 +367,51 @@ input[type="checkbox"]:checked {
 .checkBoxName {
     margin: 12px;
 }
+
+@media (max-width: 800px) {
+    .postProduto {
+        display: block;
+        border: 1px solid #3f362d;
+        border-bottom: 5px solid #6f5f4e;
+        border-right: 5px solid #6f5f4e;
+        border-radius: 15px;
+        margin: 1rem 0 1rem 0;
+    }
+
+    .postProduto img {
+        max-width: 95%;
+        min-height: 40%;
+        margin: 10px;
+    }
+
+    .infoQuarto {
+        margin: 0;
+    }
+
+    .descQuartoTxt {
+        margin: 0 10px 0 10px;
+    }
+
+    .servicosAdicionais {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .servicosAdicionais h3 {
+        text-align: center;
+        margin: 1rem 45px 0 0;
+        color: #3f362d;
+    }
+
+    .servicosAdicionais ul {
+        margin: -10px 0 1rem 0;
+        padding: 0 0 0 13px;
+    }
+}
 </style>
