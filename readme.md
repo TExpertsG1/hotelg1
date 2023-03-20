@@ -71,24 +71,20 @@ Neste projeto o aluno aprenderá a desenvolver um sistema WEB de gerenciamento d
 
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/ohtten"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/ohtten" width="100px;" alt=""/><br /><sub><b>Alexandre Ohtten</b></sub></a><br />Developer💻
+    <td align="center"><a href="https://github.com/angelafelini"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/99025849?v=4" width="100px;" alt=""/><br /><sub><b>Angela Felini</b></sub></a><br />Developer💻</td>
     <td align="center"><a href="https://github.com/alsrodriguesbr"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/alsrodriguesbr" width="100px;" alt=""/><br /><sub><b>André Rodrigues</b></sub></a><br />Developer💻
     <td align="center"><a href="https://github.com/andrebarbosatech"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/117115177?v=4" width="100px;" alt=""/><br /><sub><b>André Barbosa</b></sub></a><br />Developer💻</td>
     <td align="center"><a href="https://github.com/Arthuremiliano"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/116170868?v=4" width="100px;" alt=""/><br /><sub><b>Arthur Emiliano</b></sub></a><br />Developer💻</td>
   </tr>
   <tr>
-    <td align="center"><a href="https://github.com/angelafelini"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/99025849?v=4" width="100px;" alt=""/><br /><sub><b>Angela Felini</b></sub></a><br />Developer💻</td>
     <td align="center"><a href="https://github.com/brunonnalves"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/104469512?v=4" width="100px;" alt=""/><br /><sub><b>Bruno Alves</b></sub></a><br />Developer💻</td>
     <td align="center"><a href="https://github.com/Mikallina"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/102254707?v=4" width="100px;" alt=""/><br /><sub><b>Michelle Borges</b></sub></a><br />Developer💻</td>
-    <td align="center"><a href="https://github.com/culyssander"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/26072777?v=4" width="100px;" alt=""/><br /><sub><b>Quitumba Culyssander</b></sub></a><br />Developer💻</td>
-  </tr>
-  <tr>
     <td align="center"><a href="https://github.com/Znilcosta"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/99926147?v=4" width="100px;" alt=""/><br /><sub><b>Zenilson Costa</b></sub></a><br />Developer💻</td>
     <td align="center"><a href="https://github.com/TExpertsG1/hotelg1/"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/ima" width="100px;" alt=""/><br /><sub><b>Gabriel Duarte</b></sub></a><br />Developer💻</td>
-    <td align="center"><a href="https://github.com/guiromao87"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/guiromao87" width="100px;" alt=""/><br /><sub><b>Guilherme Romão</b></sub></a><br />Instructor-TEX🏢</td>
-    <td align="center"><a href="https://github.com/ritacury"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/ritacury" width="100px;" alt=""/><br /><sub><b>Rita Cury</b></sub></a><br />PM-TEX🏢</td>
   </tr>
   <tr>
+    <td align="center"><a href="https://github.com/guiromao87"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/guiromao87" width="100px;" alt=""/><br /><sub><b>Guilherme Romão</b></sub></a><br />Instructor-TEX🏢</td>
+    <td align="center"><a href="https://github.com/ritacury"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/ritacury" width="100px;" alt=""/><br /><sub><b>Rita Cury</b></sub></a><br />PM-TEX🏢</td>
     <td align="center"><a href="https://github.com/Zeduh"><img style="border-radius: 50%;" src="https://media-exp1.licdn.com/dms/image/C4E03AQGTUy3R0pZpRw/profile-displayphoto-shrink_200_200/0/1592463196411?e=1676505600&v=beta&t=orTI-nzhzdxlHbeQ8HrY3yWRTNi4qziABZYFa_ml8J8" width="100px;" alt=""/><br /><sub><b>José Eduardo</b></sub></a><br />Tutor-TEX🏢</td>
   </tr>
 </table>
